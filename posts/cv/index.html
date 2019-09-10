@@ -55,7 +55,7 @@
 
 		pre,
 		code {
-			font-family: "Luxi Mono", Menlo, Monaco, "Courier New", monospace;
+			font-family: Monaco, "Luxi Mono", Menlo, "Courier New", monospace;
 		}
 		pre {
 			padding: .5rem;
@@ -243,10 +243,40 @@
 			color: #3c4c55;
 		}
 		blockquote {
-			border-left: 3px solid #fd888d;
-			border-bottom: 3px solid #fd888d;
-			padding-left: 1rem;
-			padding-right: 1rem;
+			padding: .5rem 1rem;
+			margin: .8rem 0;
+			color: #d7c39b;
+			border-left: .25rem solid #9c6a70;
+		}
+		blockquote p:last-child {
+			margin-bottom: 0;
+		}
+		@media (min-width: 30em) {
+			blockquote {
+				padding-right: 5rem;
+				padding-left: 1.25rem;
+			}
+		}
+		img {
+			display: block;
+			margin: 0 0 1rem;
+			border-radius: 5px;
+			max-width: 100%;
+		}
+		table {
+			margin-bottom: 1rem;
+			width: 100%;
+			border: 1px solid #ffebc3;
+			border-collapse: collapse;
+		}
+		td,
+		th {
+			padding: .25rem .5rem;
+			border: 1px solid #ffebc3;
+		}
+		tbody tr:nth-child(odd) td,
+		tbody tr:nth-child(odd) th {
+			background-color: #9c6a70;
 		}
 
 	</style>
