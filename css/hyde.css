@@ -56,8 +56,8 @@ html {
 .sidebar {
   text-align: center;
   padding: 2rem 1rem;
-  color: rgba(40, 42, 54,.5);
-  background-color: #c4b6ca;
+  color: rgba(48, 47, 48,.5);
+  background-color: #7a90a2;
 }
 @media (min-width: 48em) {
   .sidebar {
@@ -72,12 +72,12 @@ html {
 
 /* Sidebar links */
 .sidebar a {
-  color: #282A36;
+  color: #302f30;
 }
 
 /* About section */
 .sidebar-about h1 {
-  color: #282A36;
+  color: #302f30;
   margin-top: 0;
   font-family: "Luxi Mono", serif;
   font-size: 3.25rem;
@@ -179,11 +179,11 @@ a.sidebar-nav-item:focus {
 
 /* Red */
 .theme-base-08 .sidebar {
-  background-color: #b55655;
+  background-color: #900000;
 }
 .theme-base-08 .content a,
 .theme-base-08 .related-posts li a:hover {
-  color: #b55655;
+  color: #900000;
 }
 
 /* Orange */
@@ -197,54 +197,54 @@ a.sidebar-nav-item:focus {
 
 /* Yellow */
 .theme-base-0a .sidebar {
-  background-color: #939411;
+  background-color: #d79921;
 }
 .theme-base-0a .content a,
 .theme-base-0a .related-posts li a:hover {
-  color: #939411;
+  color: #d79921;
 }
 
 /* Green */
 .theme-base-0b .sidebar {
-  background-color: #48b06f;
+  background-color: #98971a;
 }
 .theme-base-0b .content a,
 .theme-base-0b .related-posts li a:hover {
-  color: #48b06f;
+  color: #98971a;
 }
 
 /* Cyan */
 .theme-base-0c .sidebar {
-  background-color: #68a7b8;
+  background-color: #689d6a;
 }
 .theme-base-0c .content a,
 .theme-base-0c .related-posts li a:hover {
-  color: #68a7b8;
+  color: #689d6a;
 }
 
 /* Blue */
 .theme-base-0d .sidebar {
-  background-color: #896eb6;
+  background-color: #458588;
 }
 .theme-base-0d .content a,
 .theme-base-0d .related-posts li a:hover {
-  color: #896eb6;
+  color: #458588;
 }
 
 /* Magenta */
 .theme-base-0e .sidebar {
-  background-color: #b56e9b;
+  background-color: #b16286;
 }
 .theme-base-0e .content a,
 .theme-base-0e .related-posts li a:hover {
-  color: #b56e9b;
+  color: #b16286;
 }
 
 /* Brown */
 .theme-base-0f .sidebar {
-  background-color: #c4b6ca;
+  background-color: #7a90a2;
 }
 .theme-base-0f .content a,
 .theme-base-0f .related-posts li a:hover {
-  color: #c4b6ca;
+  color: #7a90a2;
 }
