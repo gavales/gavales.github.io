@@ -17,7 +17,7 @@
       <pubDate>Tue, 03 Sep 2019 23:52:15 +0100</pubDate>
       
       <guid>https://stillanixrookie.github.io/posts/uni-work/</guid>
-      <description>2nd Year Group Project.pdf  (2478 ko)   3rd Year Dissertation.pdf  (3015 ko)     Master&amp;rsquo;s Group Project  themer  A script to change theme of configs using a theme file. Inspired by budlabs&amp;rsquo; mondo-generator from the AUR.  Usage themer [--dark|-D|--auto-dark|-t] [--change|-c|--new|-n] &amp;lt;name&amp;gt; themer [--getvar|-v] &amp;lt;variable&amp;gt; themer [--list|-l] themes|vars|vars-rofi|defaults themer [--force|-f] [--apply-single|-a] &amp;lt;directory&amp;gt; themer [--apply-all|-A|--updatelist|-u] themer --help|-h themer  Options  Run with no options to create defaults in:</description>
+      <description>      2nd Year Group Project.pdf  (2478 ko)   3rd Year Dissertation.pdf  (3015 ko)     Master&amp;rsquo;s Group Project  </description>
     </item>
     
     <item>
