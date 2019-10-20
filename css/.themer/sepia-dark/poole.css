@@ -26,8 +26,8 @@ html {
 }
 
 body {
-  color: #1A110A;
-  background-color: #FFD9B3;
+  color: #FFD9B3;
+  background-color: #1A110A;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5rem;
   font-weight: bold;
   line-height: 1.25;
-  color: #2e251e;
+  color: #ebc59f;
   text-rendering: optimizeLegibility;
 }
 h1 {
@@ -70,7 +70,7 @@ p {
 }
 
 strong {
-  color: #1A110A;
+  color: #FFD9B3;
 }
 
 
@@ -90,19 +90,19 @@ hr {
   position: relative;
   margin: 1.5rem 0;
   border: 0;
-  border-top: 1px solid #ebc59f;
-  border-bottom: 1px solid #FFD9B3;
+  border-top: 1px solid #2e251e;
+  border-bottom: 1px solid #1A110A;
 }
 
 abbr {
   font-size: 85%;
   font-weight: bold;
-  color: #2e251e;
+  color: #ebc59f;
   text-transform: uppercase;
 }
 abbr[title] {
   cursor: help;
-  border-bottom: 1px dotted #b88c66;
+  border-bottom: 1px dotted #452811;
 }
 
 code,
@@ -113,7 +113,7 @@ code {
   padding: .25em .5em;
   font-size: 85%;
   color: #714019;
-  background-color: #b88c66;
+  background-color: #452811;
   border-radius: 3px;
 }
 pre {
@@ -127,7 +127,7 @@ pre {
   white-space: pre-wrap;
   word-break: break-all;
   word-wrap: break-word;
-  background-color: #b88c66;
+  background-color: #452811;
 }
 pre code {
   padding: 0;
@@ -146,8 +146,8 @@ pre code {
 blockquote {
   padding: .5rem 1rem;
   margin: .8rem 0;
-  color: #423932;
-  border-left: .25rem solid #b88c66;
+  color: #d7b18b;
+  border-left: .25rem solid #452811;
 }
 blockquote p:last-child {
   margin-bottom: 0;
@@ -169,17 +169,17 @@ img {
 table {
   margin-bottom: 1rem;
   width: 100%;
-  border: 1px solid #1A110A;
+  border: 1px solid #FFD9B3;
   border-collapse: collapse;
 }
 td,
 th {
   padding: .25rem .5rem;
-  border: 1px solid #1A110A;
+  border: 1px solid #FFD9B3;
 }
 tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
-  background-color: #b88c66;
+  background-color: #452811;
 }
 
 
@@ -192,8 +192,8 @@ tbody tr:nth-child(odd) th {
 .message {
   margin-bottom: 1rem;
   padding: 1rem;
-  color: #FFD9B3;
-  background-color: #1A110A;
+  color: #1A110A;
+  background-color: #FFD9B3;
 }
 
 
@@ -214,15 +214,15 @@ tbody tr:nth-child(odd) th {
 .masthead-title {
   margin-top: 0;
   margin-bottom: 0;
-  color: #2e251e;
+  color: #ebc59f;
 }
 .masthead-title a {
-  color: #2e251e;
+  color: #ebc59f;
 }
 .masthead-title small {
   font-size: 75%;
   font-weight: 400;
-  color: #d7b18b;
+  color: #423932;
   letter-spacing: 0;
 }
 
@@ -235,7 +235,7 @@ tbody tr:nth-child(odd) th {
 .page-title,
 .post-title,
 .post-title a {
-  color: #2e251e;
+  color: #ebc59f;
 }
 .page-title,
 .post-title {
@@ -246,13 +246,13 @@ tbody tr:nth-child(odd) th {
   display: block;
   margin-top: -.5rem;
   margin-bottom: 1rem;
-  color: #c39d77;
+  color: #564d46;
 }
 
 .related {
   padding-top: 2rem;
   padding-bottom: 2rem;
-  border-top: 1px solid #ebc59f;
+  border-top: 1px solid #2e251e;
 }
 .related-posts {
   padding-left: 0;
@@ -263,7 +263,7 @@ tbody tr:nth-child(odd) th {
 }
 .related-posts li small {
   font-size: 75%;
-  color: #c39d77;
+  color: #564d46;
 }
 .related-posts li a:hover {
   color: #714019;
@@ -279,21 +279,21 @@ tbody tr:nth-child(odd) th {
   margin-left: -1rem;
   margin-right: -1rem;
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
-  color: #ebc59f;
+  color: #2e251e;
   text-align: center;
 }
 
 .pagination-item {
   display: block;
   padding: 1rem;
-  border: 1px solid #ebc59f;
+  border: 1px solid #2e251e;
 }
 .pagination-item:first-child {
   margin-bottom: -1px;
 }
 
 a.pagination-item:hover {
-  background-color: #FFD9B3;
+  background-color: #1A110A;
 }
 
 @media (min-width: 30em) {
