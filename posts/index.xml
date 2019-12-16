@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Gavin Vales</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Sep 2019 23:52:15 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 16 Dec 2019 23:07:39 +0000</lastBuildDate>
     
 	<atom:link href="https://stillanixrookie.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Startpage</title>
+      <link>https://stillanixrookie.github.io/posts/startpage/</link>
+      <pubDate>Mon, 16 Dec 2019 23:07:39 +0000</pubDate>
+      
+      <guid>https://stillanixrookie.github.io/posts/startpage/</guid>
+      <description>Utilities     draw.io   bash tcolors   Sed Cheatsheet   regex Cheatsheet   Tex Font Sizes   Tex Math   Tex colors   Pandoc Wiki   PDF Extract images       Bookmarks     Firefox, Getting Started   Amazon   eBay   eBay Retract Bid   BT Login   ClunkPad   Astronut Reqt.</description>
+    </item>
     
     <item>
       <title>Uni Work</title>
@@ -17,7 +26,7 @@
       <pubDate>Tue, 03 Sep 2019 23:52:15 +0100</pubDate>
       
       <guid>https://stillanixrookie.github.io/posts/uni-work/</guid>
-      <description>      2nd Year Group Project.pdf  (2478 ko)   3rd Year Dissertation.pdf  (3015 ko)     Master&amp;rsquo;s Group Project  </description>
+      <description>      2nd Year Group Project.pdf  (2478 ko)   3rd Year Dissertation.pdf  (3015 ko)     Master&#39;s Group Project  </description>
     </item>
     
     <item>
@@ -27,7 +36,7 @@
       
       <guid>https://stillanixrookie.github.io/posts/cv/</guid>
       <description>MOBILE 07832 965325   EMAIL gvales2831997@gmail.com   GITHUB github.com/StillANixRookie      PDF version of this CV   CV.pdf  (94 ko)    CAREER HISTORY Aug. 2014 –Oct. 2018  Subway West Quay Southampton Part‐time
-→ Sandwich Artist, at West Quay shopping centre in Southampton
+  → Sandwich Artist, at West Quay shopping centre in Southampton
  27th Oct. – 31st Oct. 2014  Griffon Hoverworks Ltd.</description>
     </item>
     
