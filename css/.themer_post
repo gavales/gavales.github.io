@@ -3,14 +3,10 @@
 declare -A TMR
 eval "$(themer --list varsh)"
 
-cp ".themer/${TMR[name]}/hyde.css" hyde.css
-cp ".themer/${TMR[name]}/poole.css" poole.css
+cp .themer/${TMR[name]}/hyde.css   hyde.css
+cp .themer/${TMR[name]}/poole.css  poole.css
+cp .themer/${TMR[name]}/themer.css themer.css
 
-SDIR=$USER_REPO_DIR/ghb/public
-FDIR=$USER_REPO_DIR/ghb/themes/hyde/static
-CWLL=$(readlink -f $XDG_PICTURES_DIR/gwc/current)
-
-convert "${CWLL}" -resize 64x64 ${FDIR}/favicon.png
-cp "${CWLL}" "${SDIR}/about.png"
-cd $USER_REPO_DIR/ghb
-hugo
+cd ..
+convert -fill "${TMR[fg0]}" -opaque black -fuzz 50% \
+	about_black.png about.png
