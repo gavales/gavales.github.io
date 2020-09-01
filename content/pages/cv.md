@@ -1,13 +1,6 @@
 ---
-layout: page
-title: "CV/Resume"
-date: 2019-09-02T23:09:35+01:00
-draft: false
-menu:
-  main:
-    weight: 1
+title: CV/Resume
 ---
-
 
 |        |                            |
 |:------ |:-------------------------- |
@@ -17,15 +10,15 @@ menu:
 
 {{%attachments title="PDF version of this CV" pattern=".*(pdf|mp4)"/%}}
 
-## CAREER HISTORY
+# CAREER HISTORY
 
-### Aug. 2014 –Oct. 2018
+## Aug. 2014 –Oct. 2018
 
 > **Subway West Quay Southampton Part‐time**
 
 > →  Sandwich Artist, at West Quay shopping centre in Southampton
 
-### 27th Oct. – 31st Oct. 2014
+## 27th Oct. – 31st Oct. 2014
 
 > **Griffon Hoverworks Ltd. Work experience**
 
@@ -33,9 +26,9 @@ menu:
 > experience in CAD software in the design office. Also toured the workshop
 > floor, gaining valuable insight of the jobs of the various mechanics.
 
-## SKILLS
+# SKILLS
 
-### CAD
+## CAD
 
 > **SolidWorks & AutoCAD**
 
@@ -43,7 +36,7 @@ menu:
 > pro‐ duced via 3D printing, laser‐cutting, machining. For example flexible
 > flippers, root and tip profiles of wire‐cut foam wings etc.
 
-### Coding & Programming
+## Coding & Programming
 
 > **Python**
 
@@ -64,7 +57,7 @@ menu:
 > that Linux was more appropriate for this, making simple bash scripting a
 > necessity.
 
-### Workshop 
+## Workshop 
 
 > **Machining**
 
@@ -83,7 +76,7 @@ menu:
 > → Very good at general soldering tasks, learned through the RC
 > hobby
 
-### Other
+## Other
 
 > **Customer Service**
 
@@ -95,9 +88,9 @@ menu:
 > → Currently stuyding for and taking driving lessons for a
 > Full UK driving license
 
-## EDUCATION
+# EDUCATION
 
-### Sep. 2015 – Sep. 2019
+## Sep. 2015 – Sep. 2019
 
 > **Higher Ed. University of Southampton**
 
@@ -106,13 +99,13 @@ menu:
 > course at the University of Southampton. Examples of my projects carried out
 > at Univesity can be found on my Github page (above)
 
-### Sep. 2013 ‐ Jul. 2015
+## Sep. 2013 ‐ Jul. 2015
 
 > **A‐levels Peter Symonds College, Winchester**
 
 > → Maths: A; Chemistry: B; Physics: B; Biology: A
 
-### Sep. 2008 ‐ Jul. 2013
+## Sep. 2008 ‐ Jul. 2013
 
 > **Secondary St George Catholic Voluntary Aided College, Southampton**
 
@@ -127,7 +120,7 @@ menu:
 > | Art                | B   | English Language  | B     |
 > | English Literature | B   | IT                | Merit |
 
-## REFERENCES
+# REFERENCES
 
 > **Rajeev Sharma - Rey Sub Ltd Director**
 
@@ -138,7 +131,7 @@ menu:
 
 > → Merlin Quay, Hazel Road, Southampton, SO19 7GB
 
-## HOBBIES & INTERESTS
+# HOBBIES & INTERESTS
 
 > **Music**
 

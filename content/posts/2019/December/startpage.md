@@ -1,7 +1,7 @@
 ---
-title: "Startpage"
-date: 2019-12-16T23:07:39Z
-draft: false
+title: Startpage
+date: 16 December 2019
+time: 23:07:39 Z
 ---
 
 | Utilities |

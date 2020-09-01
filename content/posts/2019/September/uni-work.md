@@ -1,10 +1,7 @@
 ---
-title: "Uni Work"
-date: 2019-09-03T23:52:15+01:00
-draft: false
-menu:
-  main:
-    weight: 1
+title: Uni Work
+date: 4 September 2019
+time: 00:52:15 Z
 ---
 
 + {{%attachments title="" pattern=".*(pdf|mp4)"/%}}
