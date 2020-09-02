@@ -3,9 +3,8 @@
 declare -A TMR
 eval "$(themer --list varsh)"
 
-cp .themer/${TMR[name]}/hyde.css   hyde.css
-cp .themer/${TMR[name]}/poole.css  poole.css
-cp .themer/${TMR[name]}/themer.css themer.css
+cp .themer/${TMR[name]}/page.css page.css
+cp .themer/${TMR[name]}/post.css post.css
 
 cd ..
 convert -fill "${TMR[fg0]}" -opaque black -fuzz 50% \
