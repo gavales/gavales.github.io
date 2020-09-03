@@ -1,15 +1,16 @@
 #HORNAV ul {
+	position: fixed;
+	top: 0;
+	left: 0;
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #e7ddb3;
 }
-
 #HORNAV li {
   float: left;
 }
-
 #HORNAV li a {
   display: block;
   color: white;
@@ -17,8 +18,9 @@
   padding: 14px 16px;
   text-decoration: none;
 }
-
-/* Change the link color to #111 (black) on hover */
 #HORNAV li a:hover {
-  background-color: #111;
+  background-color: #d3c99f;
+}
+#HORNAV li a:active {
+  background-color: #b1c798;
 }
