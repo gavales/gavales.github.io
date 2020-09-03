@@ -2,7 +2,8 @@
 	position: fixed;
 	top: 0;
   list-style-type: none;
-  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0;
   overflow: hidden;
   background-color: #e7ddb3;
