@@ -7,7 +7,7 @@ body {
 	color: %%fg0%%;
 	min-height: 100%;
 	min-width: 400px;
-	font-family: "%%romanfont%%", "Times New Roman", serif;
+	font-family: "%%romanfont%%", serif;
 	font-size: 20px;
 }
 html {
@@ -29,7 +29,7 @@ hr {
 
 code,
 pre {
-	font-family: "CMU Typewriter Text", Monaco, "Courier New", monospace;
+	font-family: "CMU Typewriter Text", monospace;
 }
 code {
 	padding: .1em;
@@ -194,6 +194,7 @@ table {
 	width: 100%;
 	border: 1px solid %%fg0%%;
 	border-collapse: collapse;
+	background-color: %%bg1%%;
 	font-family: "monospace";
 }
 td,
@@ -203,6 +204,6 @@ th {
 }
 tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
-	background-color: %%acb%%;
+	background-color: %%bg2%%;
 }
 
