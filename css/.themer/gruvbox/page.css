@@ -6,9 +6,9 @@ body {
 	background-color: #fbf1c7;
 	color: #282828;
 	min-height: 100%;
-	min-width: 400px;
+	min-width: 1000px;
 	font-family: "Garamond", serif;
-	font-size: 20px;
+	font-size: 25px;
 }
 html {
 	margin: 100px;
@@ -16,8 +16,8 @@ html {
 body {
 	counter-reset: heading;
 	line-height: 1.25;
-	margin-left: 100px;
-	margin-right: 100px;
+	margin-left: auto;
+	margin-right: auto;
 	padding: 20px 20px;
 }
 
@@ -78,15 +78,10 @@ a:active {
 }
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
-@media screen and (max-width: 700px) {
-	#TOC { top: 0; width: 100%; height: auto; left: 0;}
-	#TOC ul li a {float: left;}
-	body {min-width: 100%; margin-left: 0;}
+@media screen and (max-width: 1000px) {
+	body {width: 95%; margin: 0; font-size: 20px;}
+	html {width: 95%; margin: 0;}
 }
-//On screens that are less than 400px, display the bar vertically, instead of horizontally
-//@media screen and (max-width: 400px) {
-//	#TOC li a { text-align: center; float: none; }
-//}
 
 p, .retro-p { font-size: 1rem; margin-bottom: 1.3rem; }
 h1, .retro-h1, h2, .retro-h2, h3, .retro-h3, h4, .retro-h4 {
@@ -164,17 +159,16 @@ pre {
 
 blockquote {
 	padding-left:   0.8rem;
-	padding-top:    0.8rem;
+	padding-top:    0.4rem;
 	padding-right:  0.8rem;
 	padding-bottom: 0.8rem;
 	margin: 0.2rem;
 	color: #505050;
 	background-color: #e7ddb3;
 	border: 1px solid #d3c99f;
-	font-family: cursive;
+	font-family: "Lucida Handwriting", cursive;
 	font-size: 1.02rem;
 	font-weight: bold;
-/* 	font-style: italic; */
 }
 blockquote p:last-child {
 	margin-bottom: 0;
