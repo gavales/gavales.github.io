@@ -1,3 +1,27 @@
+main {
+	margin: 100px;
+	font-size: 25px;
+}
+html,
+body {
+	background-color: %%bg0%%;
+	color: %%fg0%%;
+	min-height: 100%;
+	min-width: 400px;
+	font-family: "%%romanfont%%", "Times New Roman", serif;
+	font-size: 25px;
+}
+html {
+	margin: 100px;
+}
+body {
+	counter-reset: heading;
+	line-height: 1.85;
+	margin-left: 100px;
+	margin-right: 100px;
+	padding: 20px 20px;
+}
+
 hr {
 	border: 0;
 	height: 5px;
@@ -10,7 +34,7 @@ pre {
 }
 code {
 	padding: .1em;
-	font-size: 20px;
+	font-size: 1rem;
 	color: %%acf%%;
 	background-color: %%acb%%;
 	border-radius: 5px;
@@ -20,7 +44,7 @@ pre {
 	margin-top: 0;
 	margin-bottom: 1rem;
 	padding: 1rem;
-	font-size: 20px;
+	font-size: 1rem;
 	line-height: 1.4;
 	white-space: pre;
 	white-space: pre-wrap;
@@ -30,7 +54,7 @@ pre {
 }
 pre code {
 	padding: 0;
-	font-size: 20px;
+	font-size: 1rem;
 	color: inherit;
 	background-color: transparent;
 }
@@ -65,13 +89,7 @@ a:active {
 //	#TOC li a { text-align: center; float: none; }
 //}
 
-html {
-	font-size: 25px;
-}
-
-body { line-height: 1.85; }
-
-p, .retro-p { font-size: 12px; margin-bottom: 1.3rem; }
+p, .retro-p { font-size: 1rem; margin-bottom: 1.3rem; }
 h1, .retro-h1, h2, .retro-h2, h3, .retro-h3, h4, .retro-h4 {
 	margin: 1.414rem 0 .5rem;
 	font-weight: inherit;
@@ -79,7 +97,7 @@ h1, .retro-h1, h2, .retro-h2, h3, .retro-h3, h4, .retro-h4 {
 }
 h1, .retro-h1 {
 	margin-top: 0;
-	font-size: 50px;
+	font-size: 2rem;
 	font-weight: bold;
 	text-align: center;
 	counter-reset: subheading;
@@ -88,23 +106,23 @@ h1:before {
 	content: counter(heading)". ";
 	counter-increment: heading;
 }
-h2, .retro-h2 { font-size: 30px; font-weight: bold; }
+h2, .retro-h2 { font-size: 1.75rem; font-weight: bold; }
 h2:before {
 	content: counter(heading)"." counter(subheading)". ";
 	counter-increment: subheading;
 }
-h3, .retro-h3 { font-size: 15px; font-weight: bold; font-style: italic; }
-h4, .retro-h4 { font-size: 7px; font-style: italic; }
-h5, .retro-h5 { font-size: 4px; font-style: italic; }
-h6, .retro-h6 { font-size: 2px; }
+h3, .retro-h3 { font-size: 1.5rem; font-weight: bold; font-style: italic; }
+h4, .retro-h4 { font-size: 1.3rem; font-style: italic; }
+h5, .retro-h5 { font-size: 1.2rem; font-style: italic; }
+h6, .retro-h6 { font-size: 1.1rem; }
 
 small,
 .retro-small {
-	font-size: 5px;
+	font-size: .6rem;
 }
 .title {
 	counter-reset: heading;
-	font-size: 80px;
+	font-size: 3rem;
 	font-weight: bold;
 	text-align: center;
 }
@@ -112,19 +130,20 @@ small,
 	content: "";
 }
 .subtitle {
-	font-size: 40px;
+	font-size: 2rem;
 	font-weight: bold;
 	text-align: center;
 }
 .author {
-	font-size: 20px;
+	font-size: 1.5rem;
 	font-style: italic;
 	text-align: center;
 }
 .date {
-	font-size: 20px;
+	font-size: 1.5rem;
 	text-align: center;
 }
+
 img,
 canvas,
 iframe,
@@ -133,30 +152,6 @@ svg,
 select,
 textarea {
 	max-width: 100%;
-}
-
-main {
-	margin: 100px;
-	font-size: 25px;
-}
-html,
-body {
-	background-color: %%bg0%%;
-	min-height: 100%;
-	min-width: 400px;
-}
-html {
-	margin: 100px;
-	font-size: 25px;
-}
-body {
-	counter-reset: heading;
-	color: %%fg0%%;
-	font-family: Garamond, "CMU Serif", "Times New Roman", serif;
-	line-height: 1.45;
-	margin-left: 100px;
-	margin-right: 100px;
-	padding: 20px 20px;
 }
 
 pre {
@@ -172,18 +167,21 @@ blockquote {
 blockquote p:last-child {
 	margin-bottom: 0;
 }
+
 @media (min-width: 30em) {
 	blockquote {
 		padding-right: 5rem;
 		padding-left: 1.25rem;
 	}
 }
+
 img {
 	display: block;
 	margin: 0 0 1rem;
 	border-radius: 5px;
 	max-width: 100%;
 }
+
 table {
 	margin-bottom: 1rem;
 	width: 100%;

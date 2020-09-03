@@ -16,7 +16,7 @@ html {
 }
 body {
 	counter-reset: heading;
-	line-height: 1.85;
+	line-height: 1.25;
 	margin-left: 100px;
 	margin-right: 100px;
 	padding: 20px 20px;
