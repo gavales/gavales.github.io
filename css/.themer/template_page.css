@@ -169,7 +169,6 @@ blockquote {
 	color: %%fg2%%;
 	background-color: %%bg1%%;
 	border: 1px solid %%bg2%%;
-	border-style: inset;
 	font-size: 1.02rem;
 	font-weight: bold;
 	font-style: italic;
@@ -196,6 +195,7 @@ table {
 	margin-bottom: 1rem;
 	width: 100%;
 	border: 1px solid %%fg0%%;
+	border-style: inset;
 	border-collapse: collapse;
 	background-color: %%bg1%%;
 	font-family: "monospace";
