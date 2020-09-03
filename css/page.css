@@ -162,9 +162,8 @@ pre {
 	color: #282828;
 }
 blockquote {
-	padding: 0.2rem;
-	margin-top: 0.5rem;
-	margin-bottom: 0.5rem;
+	padding: 0.3rem;
+	margin: 0;
 	color: #505050;
 	background-color: #e9e6bb;
 	border-left: .25rem solid #b1c798;
