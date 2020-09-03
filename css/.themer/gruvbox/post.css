@@ -1,11 +1,11 @@
 #TOC {
 	position: fixed;
-	top: 0;
+	top: 100px;
 	left: 100px;
 	height: 100%;
 	width: 250px;
 	background-color: #d6dcaf;
-	font-family: "Garamond", sans-serif;
+	font-family: "Corbel", sans-serif;
 	font-size: 20px;
 	font-weight: bold;
 	padding: 0;
@@ -39,7 +39,7 @@
 }
 #TOC ul li ul li { background: #e9e6bb; display: block; }
 #TOC ul li ul li a {
-	font-size: 15px;
+	font-size: 20px;
 	font-weight: normal;
 	text-align: left;
 	display:block !important;
