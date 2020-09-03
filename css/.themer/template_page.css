@@ -194,6 +194,7 @@ table {
 	width: 100%;
 	border: 1px solid %%fg0%%;
 	border-collapse: collapse;
+	font-family: "monospace";
 }
 td,
 th {
