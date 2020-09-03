@@ -1,6 +1,7 @@
 #HORNAV ul {
 	position: fixed;
-	top: 0;
+	top: 5px;
+	left: 5px;
   list-style-type: none;
   margin-left: 200px;
   margin-right: 200px;
@@ -16,5 +17,6 @@
   padding: 14px 16px;
   text-decoration: none;
 }
-#HORNAV li a:hover { background-color: #d3c99f; }
-#HORNAV li a:active { background-color: #b1c798; }
+#HORNAV li a:hover  { background-color: #d3c99f; }
+#HORNAV li a:home   { background-color: #b1c798; }
+#HORNAV li a:select { background-color: #d3c99f; }
