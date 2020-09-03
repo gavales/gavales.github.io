@@ -158,8 +158,8 @@ textarea {
 }
 
 pre {
-	background-color: #d79921;
-	color: #fbf1c7;
+	background-color: #e0af4a;
+	color: #282828;
 }
 blockquote {
 	padding: 1rem;
@@ -167,7 +167,7 @@ blockquote {
 	margin-bottom: 0.5rem;
 	color: #505050;
 	background-color: #e9e6bb;
-	border-right: .25rem solid #b1c798;
+	border-left: .25rem solid #b1c798;
 	border-bottom: .25rem solid #b1c798;
 	font-weight: bold;
 	font-style: italic;
