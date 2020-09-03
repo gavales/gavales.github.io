@@ -166,8 +166,7 @@ blockquote {
 	margin: 0;
 	color: %%fg2%%;
 	background-color: %%lightgnt%%;
-	border-left: .25rem solid %%darkgnt%%;
-	border-bottom: .25rem solid %%darkgnt%%;
+/* 	border-left: .25rem solid %%darkgnt%%; */
 	font-weight: bold;
 	font-style: italic;
 }
