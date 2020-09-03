@@ -8,19 +8,13 @@
   overflow: hidden;
   background-color: #e7ddb3;
 }
-#HORNAV li {
-  float: left;
-}
+#HORNAV li { float: left; }
 #HORNAV li a {
   display: block;
-  color: white;
+  color: #282828;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
-#HORNAV li a:hover {
-  background-color: #d3c99f;
-}
-#HORNAV li a:active {
-  background-color: #b1c798;
-}
+#HORNAV li a:hover { background-color: #d3c99f; }
+#HORNAV li a:active { background-color: #b1c798; }

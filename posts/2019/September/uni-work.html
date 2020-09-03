@@ -7,6 +7,19 @@
   <link rel="stylesheet" href="https://gavales.github.io/css/print.css" media="print"/>
   <link rel="stylesheet" href="https://gavales.github.io/css/post.css"/>
   <link rel="stylesheet" href="https://gavales.github.io/css/hornav.css"/>
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+	if (prevScrollpos > currentScrollPos) {
+		document.getElementById("TOC").style.left = "0";
+	}
+	else {
+		document.getElementById("TOC").style.left = "-250px";
+	}
+	prevScrollpos = currentScrollPos;
+}
+</script>
 <nav id="HORNAV" role="doc-toc">
 <ul>
 <li class=><a href="https://gavales.github.io"> HOME </a></li>
