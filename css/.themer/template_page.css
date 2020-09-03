@@ -163,9 +163,12 @@ pre {
 }
 blockquote {
 	padding: 1rem;
-	margin: 0;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
 	color: %%fg2%%;
-	border-left: .25rem solid %%acb%%;
+	background-color: %%ac88b%%;
+	border-right: .25rem solid %%acb%%;
+	border-bottom: .25rem solid %%acb%%;
 	font-weight: bold;
 	font-style: italic;
 }
