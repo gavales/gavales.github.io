@@ -1,4 +1,8 @@
-.sidebar {
+#HORNAV {
+  display: none !important;
+}
+
+#TOC {
   display: none !important;
 }
 
