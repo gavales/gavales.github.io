@@ -2,8 +2,8 @@
 	position: fixed;
 	top: 0;
   list-style-type: none;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 200px;
+  margin-right: 200px;
   padding: 0;
   overflow: hidden;
   background-color: #e7ddb3;
