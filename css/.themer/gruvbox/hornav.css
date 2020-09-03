@@ -18,5 +18,5 @@
   text-decoration: none;
 }
 #HORNAV li a:hover  { background-color: #d3c99f; }
-#HORNAV li:home   { background-color: #b1c798; }
-#HORNAV li:select { background-color: #d3c99f; }
+#home   { background-color: #b1c798; }
+#select { background-color: #d3c99f; }
