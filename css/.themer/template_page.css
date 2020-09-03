@@ -163,10 +163,12 @@ pre {
 	color: %%bg0%%;
 }
 blockquote {
-	padding: .5rem 1rem;
-	margin: .8rem 0;
+	padding: 1rem;
+	margin: 0;
 	color: %%fg2%%;
 	border-left: .25rem solid %%acb%%;
+	font-weight: bold;
+	font-style: italic;
 }
 blockquote p:last-child {
 	margin-bottom: 0;
