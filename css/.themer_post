@@ -6,6 +6,7 @@ eval "$(themer --list varsh)"
 cp .themer/${TMR[name]}/page.css   page.css
 cp .themer/${TMR[name]}/post.css   post.css
 cp .themer/${TMR[name]}/hornav.css hornav.css
+cp .themer/${TMR[name]}/toc.css    toc.css
 
 cd ..
 convert -fill "${TMR[fg0]}" -opaque black -fuzz 50% \
