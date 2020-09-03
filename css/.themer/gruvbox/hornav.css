@@ -5,6 +5,8 @@
   list-style-type: none;
   margin-left: 200px;
   margin-right: 200px;
+	font-family: sans-serif;
+	font-size: 20px;
   padding: 0;
   overflow: hidden;
   background-color: #e7ddb3;
@@ -17,6 +19,6 @@
   padding: 14px 16px;
   text-decoration: none;
 }
-#HORNAV li a:hover  { background-color: #d3c99f; }
+#HORNAV li a:hover  { background-color: #b1c798; }
 #home   { background-color: #b1c798; }
 #select { background-color: #d3c99f; }
