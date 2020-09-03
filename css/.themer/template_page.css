@@ -8,7 +8,7 @@ body {
 	color: %%fg0%%;
 	min-height: 100%;
 	min-width: 400px;
-	font-family: "%%romanfont%%", "CMU Serif", "Times New Roman", serif;
+	font-family: "%%romanfont%%", "Times New Roman", serif;
 	font-size: 25px;
 }
 html {
@@ -97,7 +97,7 @@ h1, .retro-h1, h2, .retro-h2, h3, .retro-h3, h4, .retro-h4 {
 }
 h1, .retro-h1 {
 	margin-top: 0;
-	font-size: 2.5rem;
+	font-size: 2rem;
 	font-weight: bold;
 	text-align: center;
 	counter-reset: subheading;
@@ -106,7 +106,7 @@ h1:before {
 	content: counter(heading)". ";
 	counter-increment: heading;
 }
-h2, .retro-h2 { font-size: 2rem; font-weight: bold; }
+h2, .retro-h2 { font-size: 1.75rem; font-weight: bold; }
 h2:before {
 	content: counter(heading)"." counter(subheading)". ";
 	counter-increment: subheading;
@@ -122,7 +122,7 @@ small,
 }
 .title {
 	counter-reset: heading;
-	font-size: 5rem;
+	font-size: 3rem;
 	font-weight: bold;
 	text-align: center;
 }
@@ -130,17 +130,17 @@ small,
 	content: "";
 }
 .subtitle {
-	font-size: 4rem;
+	font-size: 2rem;
 	font-weight: bold;
 	text-align: center;
 }
 .author {
-	font-size: 3rem;
+	font-size: 1.5rem;
 	font-style: italic;
 	text-align: center;
 }
 .date {
-	font-size: 3rem;
+	font-size: 1.5rem;
 	text-align: center;
 }
 
