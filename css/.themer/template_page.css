@@ -163,7 +163,8 @@ pre {
 }
 
 blockquote {
-	padding: 0.1rem;
+	padding-right: .8rem;
+	padding-bottom: .8rem;
 	margin: 0.2rem;
 	color: %%fg2%%;
 	background-color: %%lightgnt%%;
