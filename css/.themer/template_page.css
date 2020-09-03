@@ -161,12 +161,13 @@ pre {
 	background-color: %%lightylw%%;
 	color: %%fg0%%;
 }
+
 blockquote {
-	padding: 0.3rem;
-	margin: 0;
+	padding: 0.1rem;
+	margin: 0.2rem;
 	color: %%fg2%%;
 	background-color: %%lightgnt%%;
-/* 	border-left: .25rem solid %%darkgnt%%; */
+// 	border-left: .25rem solid %%darkgnt%%;
 	font-weight: bold;
 	font-style: italic;
 }

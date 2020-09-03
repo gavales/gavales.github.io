@@ -161,12 +161,13 @@ pre {
 	background-color: #e0af4a;
 	color: #282828;
 }
+
 blockquote {
-	padding: 0.3rem;
-	margin: 0;
+	padding: 0.1rem;
+	margin: 0.2rem;
 	color: #505050;
 	background-color: #c38596;
-/* 	border-left: .25rem solid #8e536e; */
+// 	border-left: .25rem solid #8e536e;
 	font-weight: bold;
 	font-style: italic;
 }
