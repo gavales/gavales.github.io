@@ -168,6 +168,7 @@ blockquote {
 	color: #505050;
 	background-color: #c38596;
 // 	border-left: .25rem solid #8e536e;
+	font-size: 1.02rem;
 	font-weight: bold;
 	font-style: italic;
 }
