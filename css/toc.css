@@ -4,7 +4,7 @@
 	left: 0;
 	height: auto;
 	width: 250px;
-	background-color: #2a2a2a;
+	background-color: #513e43;
 	font-family: sans-serif;
 	font-size: 0.9rem;
 	font-weight: bold;
@@ -21,23 +21,23 @@
 #TOC ul { text-align: right; }
 #TOC li a {
 	display: inline-block;
-	color: #989898;
+	color: #d5b0b8;
 	padding: 8px;
 	text-decoration: none;
 }
-#TOC li a:hover { color: #333333; }
-#TOC li a:active { background-color: #585858; }
+#TOC li a:hover { color: #724d56; }
+#TOC li a:active { background-color: #bb7b8b; }
 #TOC ul li:hover ul {display: block;}
 #TOC ul li ul {
 	position: absolute;
 	margin-top: -44px;
-	background: #262626;
+	background: #3f3739;
 	left: 250px;
 	display: none;
 	max-height: 50%;
 	overflow: auto;
 }
-#TOC ul li ul li { background: #262626; display: block; }
+#TOC ul li ul li { background: #3f3739; display: block; }
 #TOC ul li ul li a {
 	font-size: 0.9rem;
 	font-weight: normal;

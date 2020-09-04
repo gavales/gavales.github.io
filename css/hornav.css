@@ -7,16 +7,16 @@
 	font-size: 1.0rem;
   padding: 0;
   overflow: hidden;
-  background-color: #363636;
+  background-color: #444444;
 }
 #HORNAV li { float: left; }
 #HORNAV li a {
   display: block;
-  color: #ececec;
+  color: #f6f6f4;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
-#HORNAV li a:hover  { background-color: #333333; }
-#home   { background-color: #333333; }
-#select { background-color: #4a4a4a; }
+#HORNAV li a:hover  { background-color: #724d56; }
+#home   { background-color: #724d56; }
+#select { background-color: #585858; }
