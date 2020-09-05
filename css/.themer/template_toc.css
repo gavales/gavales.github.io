@@ -5,6 +5,7 @@
 	height: auto;
 	width: 250px;
 	background-color: %%ac75b%%;
+  list-style-type: none;
 	font-family: sans-serif;
 	font-size: 0.9rem;
 	font-weight: bold;
