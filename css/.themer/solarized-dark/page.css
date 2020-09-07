@@ -7,7 +7,7 @@ body {
 	color: #fdf6e3;
 	min-height: 100%;
 	min-width: 600px;
-	font-family: "Garamond", serif;
+	font-family: "Century Schoolbook Monospace", serif;
 	font-size: 25px;
 }
 html {
@@ -118,28 +118,29 @@ small,
 	counter-reset: heading;
 	font-size: 3rem;
 	font-weight: bold;
+	text-transform: uppercase;
 	text-align: center;
-	line-height: 1.1;
+	line-height: 0.8;
 }
 .title:before {
 	content: "";
 }
 .subtitle {
+	font-variant: small-caps;
 	font-size: 2rem;
 	font-weight: bold;
 	text-align: center;
-	line-height: 1.1;
+	line-height: 0.8;
 }
 .author {
-	font-size: 1.5rem;
-	font-style: italic;
+	font-size: 1rem;
 	text-align: center;
-	line-height: 1.5;
+	line-height: 0.8;
 }
 .date {
-	font-size: 1.5rem;
+	font-size: 1rem;
 	text-align: center;
-	line-height: 1.5;
+	line-height: 0.8;
 }
 
 img,
