@@ -3,23 +3,23 @@
 	top: 0;
 	left: 0;
   list-style-type: none;
-	font-family: "Lucida Sans", sans-serif;
+	font-family: sans-serif;
 	font-size: 1.0rem;
 	font-style: italic;
 	font-weight: bold;
 	margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #e9e2cf;
+  background-color: #143f4a;
 }
 #HORNAV li { float: left; }
 #HORNAV li a {
   display: block;
-  color: #002b36;
+  color: #fdf6e3;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
-#HORNAV li a:hover  { background-color: #93cbbd; }
-#home   { background-color: #93cbbd; }
-#select { background-color: #d5cebb; }
+#HORNAV li a:hover  { background-color: #156667; }
+#home   { background-color: #156667; }
+#select { background-color: #28535e; }

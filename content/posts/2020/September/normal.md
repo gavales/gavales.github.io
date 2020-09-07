@@ -2,6 +2,8 @@
 title: __Title__
 subtitle: _Subtitle_
 author: Author
+date: Mon  7 Sep 2020
+time: 18:02:33
 ---
 
 ---
@@ -45,7 +47,7 @@ _italic text_
 
 # Images
 
-![Luoping, China in 1080p!](Luoping, China 1920x1080.jpg){#fig:luoping}
+![Luoping, China in 1080p!](/home/gavarch/git/website/resources/Luoping, China 1920x1080.jpg){#fig:luoping}
 
 # Quotes
 

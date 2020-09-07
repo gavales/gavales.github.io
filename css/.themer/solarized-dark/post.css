@@ -1,13 +1,14 @@
 main {
 	margin: 100px;
+	font-size: 25px;
 }
 html,
 body {
-	background-color: %%bg0%%;
-	color: %%fg0%%;
+	background-color: #002b36;
+	color: #fdf6e3;
 	min-height: 100%;
-	min-width: 600px;
-	font-family: "%%romanfont%%", serif;
+	min-width: 400px;
+	font-family: "Garamond", "Times New Roman", serif;
 	font-size: 25px;
 }
 html {
@@ -15,27 +16,27 @@ html {
 }
 body {
 	counter-reset: heading;
-	line-height: 1.25;
-	margin-left: auto;
-	margin-right: auto;
+	line-height: 1.85;
+	margin-left: 100px;
+	margin-right: 100px;
 	padding: 20px 20px;
 }
 
 hr {
 	border: 0;
 	height: 5px;
-	background-image: linear-gradient(to right, rgba(%%bg0RGB%%, 0), rgba(%%acbRGB%%, 0.75), rgba(%%bg0RGB%%, 0));
+	background-image: linear-gradient(to right, rgba(0, 43, 54, 0), rgba(21, 102, 103, 0.75), rgba(0, 43, 54, 0));
 }
 
 code,
 pre {
-	font-family: "CMU Typewriter Text", monospace;
+	font-family: "CMU Typewriter Text", Monaco, "Courier New", monospace;
 }
 code {
 	padding: .1em;
 	font-size: 1rem;
-	color: %%acf%%;
-	background-color: %%acb%%;
+	color: #93cbbd;
+	background-color: #156667;
 	border-radius: 5px;
 }
 pre {
@@ -49,7 +50,7 @@ pre {
 	white-space: pre-wrap;
 	word-break: break-all;
 	word-wrap: break-word;
-	background-color: %%acb%%;
+	background-color: #156667;
 }
 pre code {
 	padding: 0;
@@ -66,22 +67,27 @@ pre code {
 }
 a,
 a:visited {
-	color: %%acc%%;
+	color: #2aa198;
 }
 a:hover,
 a:focus,
 a:active {
-	color: %%gnt%%;
+	color: #d33682;
 }
 .retro-no-decoration {
 	text-decoration: none;
 }
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
-@media screen and (max-width: 600px) {
-	body {width: 95%; margin: 0; font-size: 18px;}
-	html {width: 95%; margin: 0;}
+@media screen and (max-width: 700px) {
+	#TOC { top: 0; width: 100%; height: auto; left: 0;}
+	#TOC ul li a {float: left;}
+	body {min-width: 100%; margin-left: 0;}
 }
+//On screens that are less than 400px, display the bar vertically, instead of horizontally
+//@media screen and (max-width: 400px) {
+//	#TOC li a { text-align: center; float: none; }
+//}
 
 p, .retro-p { font-size: 1rem; margin-bottom: 1.3rem; }
 h1, .retro-h1, h2, .retro-h2, h3, .retro-h3, h4, .retro-h4 {
@@ -100,15 +106,15 @@ h1:before {
 	content: counter(heading)". ";
 	counter-increment: heading;
 }
-h2, .retro-h2 { font-size: 1.5rem; font-weight: bold; }
+h2, .retro-h2 { font-size: 1.75rem; font-weight: bold; }
 h2:before {
 	content: counter(heading)"." counter(subheading)". ";
 	counter-increment: subheading;
 }
-h3, .retro-h3 { font-size: 1.25rem; font-weight: bold; font-style: italic; }
-h4, .retro-h4 { font-size: 1.12rem; font-style: italic; }
-h5, .retro-h5 { font-size: 1.06rem; font-style: italic; }
-h6, .retro-h6 { font-size: 1.03rem; }
+h3, .retro-h3 { font-size: 1.5rem; font-weight: bold; font-style: italic; }
+h4, .retro-h4 { font-size: 1.3rem; font-style: italic; }
+h5, .retro-h5 { font-size: 1.2rem; font-style: italic; }
+h6, .retro-h6 { font-size: 1.1rem; }
 
 small,
 .retro-small {
@@ -118,29 +124,24 @@ small,
 	counter-reset: heading;
 	font-size: 3rem;
 	font-weight: bold;
-	text-transform: uppercase;
 	text-align: center;
-	line-height: 0.8;
 }
 .title:before {
 	content: "";
 }
 .subtitle {
-	font-variant: small-caps;
 	font-size: 2rem;
 	font-weight: bold;
 	text-align: center;
-	line-height: 0.8;
 }
 .author {
-	font-size: 1rem;
+	font-size: 1.5rem;
+	font-style: italic;
 	text-align: center;
-	line-height: 0.8;
 }
 .date {
-	font-size: 1rem;
+	font-size: 1.5rem;
 	text-align: center;
-	line-height: 0.8;
 }
 
 img,
@@ -154,22 +155,14 @@ textarea {
 }
 
 pre {
-	background-color: %%lightylw%%;
-	color: %%fg0%%;
+	background-color: #b58900;
+	color: #002b36;
 }
-
 blockquote {
-	padding-left:   0.8rem;
-	padding-top:    0.4rem;
-	padding-right:  0.8rem;
-	padding-bottom: 0.8rem;
-	margin: 0.2rem;
-	color: %%fg2%%;
-	background-color: %%bg1%%;
-	border: 1px solid %%bg2%%;
-	font-family: "Lucida Handwriting", cursive;
-	font-size: 1.02rem;
-	font-weight: bold;
+	padding: .5rem 1rem;
+	margin: .8rem 0;
+	color: #d5cebb;
+	border-left: .25rem solid #156667;
 }
 blockquote p:last-child {
 	margin-bottom: 0;
@@ -192,19 +185,16 @@ img {
 table {
 	margin-bottom: 1rem;
 	width: 100%;
-	border: 1px solid %%fg0%%;
-	border-style: inset;
+	border: 1px solid #fdf6e3;
 	border-collapse: collapse;
-	background-color: %%bg1%%;
-	font-family: "monospace";
 }
 td,
 th {
 	padding: .25rem .5rem;
-	border: 1px solid %%fg0%%;
+	border: 1px solid #fdf6e3;
 }
 tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
-	background-color: %%bg2%%;
+	background-color: #156667;
 }
 

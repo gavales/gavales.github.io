@@ -3,11 +3,11 @@ main {
 }
 html,
 body {
-	background-color: %%bg0%%;
-	color: %%fg0%%;
+	background-color: #002b36;
+	color: #fdf6e3;
 	min-height: 100%;
 	min-width: 600px;
-	font-family: "%%romanfont%%", serif;
+	font-family: "Garamond", serif;
 	font-size: 25px;
 }
 html {
@@ -24,7 +24,7 @@ body {
 hr {
 	border: 0;
 	height: 5px;
-	background-image: linear-gradient(to right, rgba(%%bg0RGB%%, 0), rgba(%%acbRGB%%, 0.75), rgba(%%bg0RGB%%, 0));
+	background-image: linear-gradient(to right, rgba(0, 43, 54, 0), rgba(21, 102, 103, 0.75), rgba(0, 43, 54, 0));
 }
 
 code,
@@ -34,8 +34,8 @@ pre {
 code {
 	padding: .1em;
 	font-size: 1rem;
-	color: %%acf%%;
-	background-color: %%acb%%;
+	color: #93cbbd;
+	background-color: #156667;
 	border-radius: 5px;
 }
 pre {
@@ -49,7 +49,7 @@ pre {
 	white-space: pre-wrap;
 	word-break: break-all;
 	word-wrap: break-word;
-	background-color: %%acb%%;
+	background-color: #156667;
 }
 pre code {
 	padding: 0;
@@ -66,12 +66,12 @@ pre code {
 }
 a,
 a:visited {
-	color: %%acc%%;
+	color: #2aa198;
 }
 a:hover,
 a:focus,
 a:active {
-	color: %%gnt%%;
+	color: #d33682;
 }
 .retro-no-decoration {
 	text-decoration: none;
@@ -118,29 +118,28 @@ small,
 	counter-reset: heading;
 	font-size: 3rem;
 	font-weight: bold;
-	text-transform: uppercase;
 	text-align: center;
-	line-height: 0.8;
+	line-height: 1.1;
 }
 .title:before {
 	content: "";
 }
 .subtitle {
-	font-variant: small-caps;
 	font-size: 2rem;
 	font-weight: bold;
 	text-align: center;
-	line-height: 0.8;
+	line-height: 1.1;
 }
 .author {
-	font-size: 1rem;
+	font-size: 1.5rem;
+	font-style: italic;
 	text-align: center;
-	line-height: 0.8;
+	line-height: 1.5;
 }
 .date {
-	font-size: 1rem;
+	font-size: 1.5rem;
 	text-align: center;
-	line-height: 0.8;
+	line-height: 1.5;
 }
 
 img,
@@ -154,8 +153,8 @@ textarea {
 }
 
 pre {
-	background-color: %%lightylw%%;
-	color: %%fg0%%;
+	background-color: #87710d;
+	color: #fdf6e3;
 }
 
 blockquote {
@@ -164,9 +163,9 @@ blockquote {
 	padding-right:  0.8rem;
 	padding-bottom: 0.8rem;
 	margin: 0.2rem;
-	color: %%fg2%%;
-	background-color: %%bg1%%;
-	border: 1px solid %%bg2%%;
+	color: #d5cebb;
+	background-color: #143f4a;
+	border: 1px solid #28535e;
 	font-family: "Lucida Handwriting", cursive;
 	font-size: 1.02rem;
 	font-weight: bold;
@@ -192,19 +191,19 @@ img {
 table {
 	margin-bottom: 1rem;
 	width: 100%;
-	border: 1px solid %%fg0%%;
+	border: 1px solid #fdf6e3;
 	border-style: inset;
 	border-collapse: collapse;
-	background-color: %%bg1%%;
+	background-color: #143f4a;
 	font-family: "monospace";
 }
 td,
 th {
 	padding: .25rem .5rem;
-	border: 1px solid %%fg0%%;
+	border: 1px solid #fdf6e3;
 }
 tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
-	background-color: %%bg2%%;
+	background-color: #28535e;
 }
 
