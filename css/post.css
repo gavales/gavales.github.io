@@ -1,14 +1,13 @@
 main {
 	margin: 100px;
-	font-size: 25px;
 }
 html,
 body {
-	background-color: #fdf6e3;
-	color: #002b36;
+	background-color: #3e443e;
+	color: #f9efe9;
 	min-height: 100%;
-	min-width: 400px;
-	font-family: "Century Schoolbook Monospace", "Times New Roman", serif;
+	min-width: 600px;
+	font-family: "Century Schoolbook Monospace", serif;
 	font-size: 25px;
 }
 html {
@@ -16,27 +15,27 @@ html {
 }
 body {
 	counter-reset: heading;
-	line-height: 1.85;
-	margin-left: 100px;
-	margin-right: 100px;
+	line-height: 1.25;
+	margin-left: auto;
+	margin-right: auto;
 	padding: 20px 20px;
 }
 
 hr {
 	border: 0;
 	height: 5px;
-	background-image: linear-gradient(to right, rgba(253, 246, 227, 0), rgba(147, 203, 189, 0.75), rgba(253, 246, 227, 0));
+	background-image: linear-gradient(to right, rgba(62, 68, 62, 0), rgba(141, 105, 83, 0.75), rgba(62, 68, 62, 0));
 }
 
 code,
 pre {
-	font-family: "CMU Typewriter Text", Monaco, "Courier New", monospace;
+	font-family: "CMU Typewriter Text", monospace;
 }
 code {
 	padding: .1em;
 	font-size: 1rem;
-	color: #156667;
-	background-color: #93cbbd;
+	color: #eabea9;
+	background-color: #8d6953;
 	border-radius: 5px;
 }
 pre {
@@ -50,7 +49,7 @@ pre {
 	white-space: pre-wrap;
 	word-break: break-all;
 	word-wrap: break-word;
-	background-color: #93cbbd;
+	background-color: #8d6953;
 }
 pre code {
 	padding: 0;
@@ -67,27 +66,22 @@ pre code {
 }
 a,
 a:visited {
-	color: #2aa198;
+	color: #DC8E69;
 }
 a:hover,
 a:focus,
 a:active {
-	color: #d33682;
+	color: #609AC1;
 }
 .retro-no-decoration {
 	text-decoration: none;
 }
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
-@media screen and (max-width: 700px) {
-	#TOC { top: 0; width: 100%; height: auto; left: 0;}
-	#TOC ul li a {float: left;}
-	body {min-width: 100%; margin-left: 0;}
+@media screen and (max-width: 600px) {
+	body {width: 95%; margin: 0; font-size: 18px;}
+	html {width: 95%; margin: 0;}
 }
-//On screens that are less than 400px, display the bar vertically, instead of horizontally
-//@media screen and (max-width: 400px) {
-//	#TOC li a { text-align: center; float: none; }
-//}
 
 p, .retro-p { font-size: 1rem; margin-bottom: 1.3rem; }
 h1, .retro-h1, h2, .retro-h2, h3, .retro-h3, h4, .retro-h4 {
@@ -106,15 +100,15 @@ h1:before {
 	content: counter(heading)". ";
 	counter-increment: heading;
 }
-h2, .retro-h2 { font-size: 1.75rem; font-weight: bold; }
+h2, .retro-h2 { font-size: 1.5rem; font-weight: bold; }
 h2:before {
 	content: counter(heading)"." counter(subheading)". ";
 	counter-increment: subheading;
 }
-h3, .retro-h3 { font-size: 1.5rem; font-weight: bold; font-style: italic; }
-h4, .retro-h4 { font-size: 1.3rem; font-style: italic; }
-h5, .retro-h5 { font-size: 1.2rem; font-style: italic; }
-h6, .retro-h6 { font-size: 1.1rem; }
+h3, .retro-h3 { font-size: 1.25rem; font-weight: bold; font-style: italic; }
+h4, .retro-h4 { font-size: 1.12rem; font-style: italic; }
+h5, .retro-h5 { font-size: 1.06rem; font-style: italic; }
+h6, .retro-h6 { font-size: 1.03rem; }
 
 small,
 .retro-small {
@@ -124,24 +118,29 @@ small,
 	counter-reset: heading;
 	font-size: 3rem;
 	font-weight: bold;
+	text-transform: uppercase;
 	text-align: center;
+	line-height: 0.8;
 }
 .title:before {
 	content: "";
 }
 .subtitle {
+	font-variant: small-caps;
 	font-size: 2rem;
 	font-weight: bold;
 	text-align: center;
+	line-height: 0.8;
 }
 .author {
-	font-size: 1.5rem;
-	font-style: italic;
+	font-size: 1rem;
 	text-align: center;
+	line-height: 0.8;
 }
 .date {
-	font-size: 1.5rem;
+	font-size: 1rem;
 	text-align: center;
+	line-height: 0.8;
 }
 
 img,
@@ -155,14 +154,22 @@ textarea {
 }
 
 pre {
-	background-color: #b58900;
-	color: #fdf6e3;
+	background-color: #8b7761;
+	color: #f9efe9;
 }
+
 blockquote {
-	padding: .5rem 1rem;
-	margin: .8rem 0;
-	color: #28535e;
-	border-left: .25rem solid #93cbbd;
+	padding-left:   0.8rem;
+	padding-top:    0.4rem;
+	padding-right:  0.8rem;
+	padding-bottom: 0.8rem;
+	margin: 0.2rem;
+	color: #d1c7c1;
+	background-color: #525852;
+	border: 1px solid #666c66;
+	font-family: "Lucida Handwriting", cursive;
+	font-size: 1.02rem;
+	font-weight: bold;
 }
 blockquote p:last-child {
 	margin-bottom: 0;
@@ -185,16 +192,19 @@ img {
 table {
 	margin-bottom: 1rem;
 	width: 100%;
-	border: 1px solid #002b36;
+	border: 1px solid #f9efe9;
+	border-style: inset;
 	border-collapse: collapse;
+	background-color: #525852;
+	font-family: "monospace";
 }
 td,
 th {
 	padding: .25rem .5rem;
-	border: 1px solid #002b36;
+	border: 1px solid #f9efe9;
 }
 tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
-	background-color: #93cbbd;
+	background-color: #666c66;
 }
 
