@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+  <link rel="stylesheet" href="file:///home/gavarch/git/website/css/print.css" media="print"/>
+  <link rel="stylesheet" href="file:///home/gavarch/git/website/css/hornav.css"/>
+  <link rel="stylesheet" href="file:///home/gavarch/git/website/css/post.css"/>
+  <link rel="stylesheet" href="file:///home/gavarch/git/website/css/toc.css"/>
+
+  <script>
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  	if (prevScrollpos > currentScrollPos) {
+  		document.getElementById("TOC").style.left = "0";
+  	}
+  	else {
+  		document.getElementById("TOC").style.left = "-250px";
+  	}
+  	prevScrollpos = currentScrollPos;
+  }
+  </script>
+
+  <nav id="HORNAV" role="doc-toc">
+  <ul>
+  <li id="home"><a href="file:///home/gavarch/git/website/local"> HOME </a></li>
+  <li><a href="file:///home/gavarch/git/website/local/pages/cv.html"> cv </a></li>
+  <li><a href="file:///home/gavarch/git/website/local/pages/normal.html"> normal </a></li>
+  </ul>
+  </nav>
+
+  <title>Uni Work</title>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Uni Work</h1>
+<p class="date">4 September 2019</p>
+</header>
+<ul>
+<li>{{%attachments title="" pattern=".*(pdf|mp4)"/%}}</li>
+<li><a href="http://uosdesign.org/designshow2019/project/seabug/">Master’s Group Project</a></li>
+</ul>
+</body>
+</html>

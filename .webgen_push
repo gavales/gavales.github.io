@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+ROOT="file://$PWD"
+RTLC="${ROOT}/local"
+DMN="https://gavales.github.io"
+
+find local -type d | \
+	sed '/^local$/d;s/local\///g' | \
+	xargs -I {} mkdir -p {}
+
+for i in $(find local -type f); do
+	sed "s;${RTLC};${DMN};g" $i > ${i/local\//}
+	sed -i "s;${ROOT};${DMN};g" ${i/local\//}
+done
