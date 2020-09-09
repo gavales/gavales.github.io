@@ -3,8 +3,8 @@ main {
 }
 html,
 body {
-	background-color: #60473A;
-	color: #fcfcfb;
+	background-color: #282828;
+	color: #fbf1c7;
 	min-height: 100%;
 	min-width: 600px;
 	font-family: "Century Schoolbook Monospace", serif;
@@ -24,7 +24,7 @@ body {
 hr {
 	border: 0;
 	height: 5px;
-	background-image: linear-gradient(to right, rgba(96, 71, 58, 0), rgba(143, 127, 128, 0.75), rgba(96, 71, 58, 0));
+	background-image: linear-gradient(to right, rgba(40, 40, 40, 0), rgba(72, 98, 73, 0.75), rgba(40, 40, 40, 0));
 }
 
 code,
@@ -34,8 +34,8 @@ pre {
 code {
 	padding: .1em;
 	font-size: 1rem;
-	color: #ddd9e0;
-	background-color: #8f7f80;
+	color: #b1c798;
+	background-color: #486249;
 	border-radius: 5px;
 }
 pre {
@@ -49,7 +49,7 @@ pre {
 	white-space: pre-wrap;
 	word-break: break-all;
 	word-wrap: break-word;
-	background-color: #8f7f80;
+	background-color: #486249;
 }
 pre code {
 	padding: 0;
@@ -66,12 +66,12 @@ pre code {
 }
 a,
 a:visited {
-	color: #BEB7C6;
+	color: #689d6a;
 }
 a:hover,
 a:focus,
 a:active {
-	color: #9FCCD3;
+	color: #b16286;
 }
 .retro-no-decoration {
 	text-decoration: none;
@@ -154,8 +154,8 @@ textarea {
 }
 
 pre {
-	background-color: #b4b995;
-	color: #fcfcfb;
+	background-color: #ab7c22;
+	color: #fbf1c7;
 }
 
 blockquote {
@@ -164,9 +164,9 @@ blockquote {
 	padding-right:  0.8rem;
 	padding-bottom: 0.8rem;
 	margin: 0.2rem;
-	color: #d4d4d3;
-	background-color: #745b4e;
-	border: 1px solid #886f62;
+	color: #d3c99f;
+	background-color: #3c3c3c;
+	border: 1px solid #505050;
 	font-family: "Lucida Handwriting", cursive;
 	font-size: 1.02rem;
 	font-weight: bold;
@@ -182,12 +182,6 @@ blockquote p:last-child {
 	}
 }
 
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
 img {
 	display: block;
 	margin: 0 0 1rem;
@@ -198,19 +192,19 @@ img {
 table {
 	margin-bottom: 1rem;
 	width: 100%;
-	border: 1px solid #fcfcfb;
+	border: 1px solid #fbf1c7;
 	border-style: inset;
 	border-collapse: collapse;
-	background-color: #745b4e;
+	background-color: #3c3c3c;
 	font-family: "monospace";
 }
 td,
 th {
 	padding: .25rem .5rem;
-	border: 1px solid #fcfcfb;
+	border: 1px solid #fbf1c7;
 }
 tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
-	background-color: #886f62;
+	background-color: #505050;
 }
 

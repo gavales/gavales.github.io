@@ -4,6 +4,4 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
   <link rel="shortcut icon" href="file:///home/gavarch/git/website/resources/favicon.png">
-  <figure>
-  <img src="/home/gavarch/git/website/resources/about.png" id="about" alt="" />
-  </figure>
+  <img src="file:///home/gavarch/git/website/resources/about.png" alt="jolly roger" class="center">

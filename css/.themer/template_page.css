@@ -182,6 +182,12 @@ blockquote p:last-child {
 	}
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 img {
 	display: block;
 	margin: 0 0 1rem;
