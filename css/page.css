@@ -24,7 +24,7 @@ body {
 hr {
 	border: 0;
 	height: 5px;
-	background-image: linear-gradient(to right, rgba(96, 71, 58, 0), rgba(143, 127, 128, 0.75), rgba(96, 71, 58, 0));
+	background-image: linear-gradient(to right, rgba(96, 71, 58, 0), rgba(129, 136, 107, 0.75), rgba(96, 71, 58, 0));
 }
 
 code,
@@ -34,8 +34,8 @@ pre {
 code {
 	padding: .1em;
 	font-size: 1rem;
-	color: #ddd9e0;
-	background-color: #8f7f80;
+	color: #cfe2cb;
+	background-color: #81886b;
 	border-radius: 5px;
 }
 pre {
@@ -49,7 +49,7 @@ pre {
 	white-space: pre-wrap;
 	word-break: break-all;
 	word-wrap: break-word;
-	background-color: #8f7f80;
+	background-color: #81886b;
 }
 pre code {
 	padding: 0;
@@ -66,7 +66,7 @@ pre code {
 }
 a,
 a:visited {
-	color: #BEB7C6;
+	color: #A3C99C;
 }
 a:hover,
 a:focus,
