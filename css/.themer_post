@@ -9,4 +9,5 @@ cp .themer/${TMR[name]}/hornav.css hornav.css
 cp .themer/${TMR[name]}/toc.css    toc.css
 
 cd ..
-convert -fill "${TMR[fg0]}" -opaque black -fuzz 50% resources/about_black.png resources/about.png
+convert -fill ${TMR[acf]} -draw 'color 50,170 replace' \
+	resources/about_white.png resources/about.png
