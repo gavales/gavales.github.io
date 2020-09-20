@@ -17,3 +17,6 @@ for i in $(find local -type f); do
 	sed "s;${RTLC};${DMN};g" $i > ${i/local\//}
 	sed -i "s;${ROOT};${DMN};g" ${i/local\//}
 done
+
+sed "s;${RTLC};${DMN};g" local/rss.xml > rss.xml
+sed -i "s;${ROOT};${DMN};g" rss.xml

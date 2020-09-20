@@ -1,6 +1,6 @@
 ---
 title: Blog Posts
-date: Updated Sun 20 Sep 12:30:22 GMT 2020
+date: Updated Sun 20 Sep 12:36:32 GMT 2020
 ---
 
 # 2020

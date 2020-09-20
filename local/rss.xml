@@ -7,12 +7,12 @@
 <title>Gavin Vales' Blog</title>
 <description>Updates from Gavin Vales</description>
 <language>en-us</language>
-<link>https://gavales.github.io/rss.xml</link>
-<atom:link href="https://gavales.github.io/rss.xml" rel="self" type="application/rss+xml" />
+<link>file:///home/gavarch/git/website/rss.xml</link>
+<atom:link href="file:///home/gavarch/git/website/rss.xml" rel="self" type="application/rss+xml" />
 <image>
 <title>Gavin Vales' Blog</title>
-<url>https://gavales.github.io/resources/about.png</url>
-<link>https://gavales.github.io/rss.xml</link>
+<url>file:///home/gavarch/git/website/resources/about.png</url>
+<link>file:///home/gavarch/git/website/rss.xml</link>
 </image>
 
 
