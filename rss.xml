@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <?xml-stylesheet type="text/css" href="rss.css" ?> -->
+<!-- <?xml-stylesheet href="rss.xsl" type="text/xsl" media="screen"?> -->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+
+<channel>
+<title>Gavin Vales' Blog</title>
+<description>Updates from Gavin Vales</description>
+<language>en-us</language>
+<link>file:///home/gavarch/git/website/rss.xml</link>
+<atom:link href="file:///home/gavarch/git/website/rss.xml" rel="self" type="application/rss+xml" />
+<image>
+<title>Gavin Vales' Blog</title>
+<url>file:///home/gavarch/git/website/resources/about.png</url>
+<link>file:///home/gavarch/git/website/rss.xml</link>
+</image>
+
+
+<item>
+<title>Title</title>
+<pubDate>Mon  7 Sep 2020 18:02:33 +0000</pubDate>
+<description><![CDATA[
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#heading">Heading</a></li>
+<li><a href="#subsections">Subsections</a>
+<ul>
+<li><a href="#subsection-heading">Subsection Heading</a>
+<ul>
+<li><a href="#subsubsection">Subsubsection</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#text-formatting">Text Formatting</a></li>
+<li><a href="#links">Links</a></li>
+<li><a href="#images">Images</a></li>
+<li><a href="#quotes">Quotes</a></li>
+<li><a href="#code">Code</a></li>
+<li><a href="#references">References</a></li>
+</ul>
+</nav>
+<hr />
+<h1 id="heading">Heading</h1>
+<p>Here is text.</p>
+<p>Here’s a list:</p>
+<ul>
+<li>This is a list.</li>
+<li>Here’s another list item</li>
+<li>More List items</li>
+<li>Even more items…</li>
+</ul>
+<p><span class="citation" data-cites="jenkins2003">[@jenkins2003]</span></p>
+<p>fig. 1</p>
+<h1 id="subsections">Subsections</h1>
+<h2 id="subsection-heading">Subsection Heading</h2>
+<p>Test Text in subsection</p>
+<h3 id="subsubsection">Subsubsection</h3>
+<p>text in ssec.</p>
+<h1 id="text-formatting">Text Formatting</h1>
+<p><strong>bold text</strong></p>
+<p><em>italic text</em></p>
+<p><del>strike-through</del></p>
+<h1 id="links">Links</h1>
+<p><a href="https://youtube.com">youtube</a></p>
+<h1 id="images">Images</h1>
+<figure>
+<img src="/home/gavarch/git/website/resources/Luoping,%20China%201920x1080.jpg" id="fig:luoping" alt="" /><figcaption>Figure 1: Luoping, China in 1080p!</figcaption>
+</figure>
+<h1 id="quotes">Quotes</h1>
+<blockquote>
+<p>line 1 line 1 line 1 line 1 line 1 line 1 line 1 line 1 line 1 line 1 line 1 line 1 line 1 line 1 line 1 line 1 line 1 line 1 line 1 line 1 line 1 line 1 line 1 line 1 line 1 line 1 line 1 line 1 line 1 line 1 line 1 line 1 line 1 line 1 line 1 line 1 line 1 line 1 line 1 line 1 line 1 line 1</p>
+</blockquote>
+<blockquote>
+<p>line 2 line 2 line 2 line 2 line 2 line 2 line 2 line 2 line 2 line 2 line 2 line 2 line 2 line 2 line 2 line 2 line 2 line 2 line 2 line 2 line 2 line 2 line 2 line 2 line 2 line 2 line 2 line 2 line 2 line 2 line 2 line 2 line 2 line 2 line 2 line 2 line 2 line 2 line 2 line 2 line 2 line 2</p>
+</blockquote>
+<blockquote>
+<p>line 3 line 3 line 3 line 3 line 3 line 3 line 3 line 3 line 3 line 3 line 3 line 3 line 3 line 3 line 3 line 3 line 3 line 3 line 3 line 3 line 3 line 3 line 3 line 3 line 3 line 3 line 3 line 3 line 3 line 3 line 3 line 3 line 3 line 3 line 3 line 3 line 3 line 3 line 3 line 3 line 3 line 3</p>
+</blockquote>
+<h1 id="code">Code</h1>
+<p>Some in-line code <code>echo name.md</code></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a>    var <span class="op">=</span> <span class="st">&quot;Hello World&quot;</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a>    <span class="bu">print</span>(var)</span></code></pre></div>
+<h1 id="references">References</h1>
+]]></description>
+</item>
+
+<item>
+<title>Uni Work</title>
+<pubDate>4 September 2019 00:52:15 +0000</pubDate>
+<description><![CDATA[
+<ul>
+<li>{{%attachments title="" pattern=".*(pdf|mp4)"/%}}</li>
+<li><a href="http://uosdesign.org/designshow2019/project/seabug/">Master’s Group Project</a></li>
+</ul>
+]]></description>
+</item>
+
+<item>
+<title>Startpage</title>
+<pubDate>16 December 2019 23:07:39 +0000</pubDate>
+<description><![CDATA[
+<table>
+<thead>
+<tr class="header">
+<th>Utilities</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.draw.io/">draw.io</a></td>
+</tr>
+<tr class="even">
+<td><a href="https://misc.flogisoft.com/bash/tip_colors_and_formatting">bash tcolors</a></td>
+</tr>
+<tr class="odd">
+<td><a href="https://edoras.sdsu.edu/doc/sed-oneliners.html">Sed Cheatsheet</a></td>
+</tr>
+<tr class="even">
+<td><a href="https://remram44.github.io/regex-cheatsheet/regex.html">regex Cheatsheet</a></td>
+</tr>
+<tr class="odd">
+<td><a href="http://www.sascha-frank.com/latex-font-size.html">Tex Font Sizes</a></td>
+</tr>
+<tr class="even">
+<td><a href="http://web.ift.uib.no/Teori/KURS/WRK/TeX/symALL.html">Tex Math</a></td>
+</tr>
+<tr class="odd">
+<td><a href="https://unix.stackexchange.com/questions/124407/what-color-codes-can-i-use-in-my-ps1-prompt">Tex colors</a></td>
+</tr>
+<tr class="even">
+<td><a href="https://pandoc.org/MANUAL.html">Pandoc Wiki</a></td>
+</tr>
+<tr class="odd">
+<td><a href="http://www.pdfaid.com/ExtractImages.aspx">PDF Extract images</a></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th>Bookmarks</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.mozilla.org/en-GB/firefox/central/">Firefox, Getting Started</a></td>
+</tr>
+<tr class="even">
+<td><a href="http://www.amazon.co.uk/">Amazon</a></td>
+</tr>
+<tr class="odd">
+<td><a href="http://www.ebay.co.uk/">eBay</a></td>
+</tr>
+<tr class="even">
+<td><a href="http://offer.ebay.com/ws/eBayISAPI.dll?RetractBidShow&amp;guest=1">eBay Retract Bid</a></td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.bt.com/appsconsumeraccount/secure/securityhub.do?lm=pc&amp;account_id=20832894&amp;journey=pcqa">BT Login</a></td>
+</tr>
+<tr class="even">
+<td><a href="https://forum.thinkpads.com/viewtopic.php?t=126860">ClunkPad</a></td>
+</tr>
+<tr class="odd">
+<td><a href="http://www.nasa.gov/audience/forstudents/postsecondary/features/F_Astronaut_Requirements.html">Astronut Reqt.</a></td>
+</tr>
+<tr class="even">
+<td><a href="https://groupsite.soton.ac.uk/academic/fee-engineering-design-and-manufacturing-centre/Pages/Home.aspx">Soton Groupsite</a></td>
+</tr>
+<tr class="odd">
+<td><a href="http://localhost:9091/transmission/web/#confirm">transmission</a></td>
+</tr>
+<tr class="even">
+<td><a href="https://dtsanytime.co.uk/application.aspx#theory">DTS</a></td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.tescomobile.com/help-and-support/pay-monthly/getting-started/understanding-sim-cards">Tesco Mob</a></td>
+</tr>
+<tr class="even">
+<td><a href="http://127.0.0.1:8080/">Syncthing</a></td>
+</tr>
+<tr class="odd">
+<td><a href="https://ichigos.com/">ichigo’s</a></td>
+</tr>
+<tr class="even">
+<td><a href="http://www.gutenberg.org/">gutenberg</a></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th>Canadian</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://onlineservices-servicesenligne.cic.gc.ca/eapp/documentsToSubmit">CANStudyPermit</a></td>
+</tr>
+<tr class="even">
+<td><a href="https://wwwapps.tc.gc.ca/saf-sec-sur/2/came-meac/d.aspx?lang=eng&amp;c=Hampshire&amp;p=&amp;x=&amp;aid=348123&amp;id=400452&amp;s=1&amp;l=826">CAME Deets</a></td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/application/account.html">CANStudyPermit How-to</a></td>
+</tr>
+</tbody>
+</table>
+]]></description>
+</item>
+
+</channel>
+
+</rss>
+
