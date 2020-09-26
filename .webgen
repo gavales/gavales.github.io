@@ -20,3 +20,5 @@ done
 
 sed "s;${RTLC};${DMN};g" local/rss.xml > rss.xml
 sed -i "s;${ROOT};${DMN};g" rss.xml
+
+gitcommit website
