@@ -4,7 +4,7 @@
 	left: 0;
 	height: auto;
 	width: 250px;
-	background-color: #706752;
+	background-color: #d5e6d5;
   list-style-type: none;
 	font-family: "Lucida Sans", sans-serif;
 	font-style: italic;
@@ -22,23 +22,23 @@
 #TOC ul { text-align: right; }
 #TOC li a {
 	display: inline-block;
-	color: #cfe2cb;
+	color: #5b7e5c;
 	padding: 8px;
 	text-decoration: none;
 }
-#TOC li a:hover { color: #81886b; }
-#TOC li a:active { background-color: #adcfa7; }
+#TOC li a:hover { color: #b0d3b1; }
+#TOC li a:active { background-color: #63a065; }
 #TOC ul li:hover ul {display: block;}
 #TOC ul li ul {
 	position: absolute;
 	margin-top: -44px;
-	background: #685645;
+	background: #e8f0e8;
 	left: 250px;
 	display: none;
 	max-height: 50%;
 	overflow: auto;
 }
-#TOC ul li ul li { background: #685645; display: block; }
+#TOC ul li ul li { background: #e8f0e8; display: block; }
 #TOC ul li ul li a {
 	font-size: 0.9rem;
 	font-weight: normal;
