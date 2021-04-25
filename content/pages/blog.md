@@ -1,6 +1,6 @@
 ---
 title: Blog Posts
-date: Updated Sat 24 Apr 19:02:57 PDT 2021
+date: Updated Sat 24 Apr 19:06:01 PDT 2021
 ---
 
 
@@ -13,4 +13,4 @@ date: Updated Sat 24 Apr 19:02:57 PDT 2021
 
 # 2021
 
-* **04/24** - [The Making of a YouTube Radical](file:///home/gavarch/git/website/local/posts/2021/04/24.html) <time>18:01:56 -0700</time>
+* **04/24** - [__The Making of a YouTube Radical__](file:///home/gavarch/git/website/local/posts/2021/04/24.html) <time>18:01:56 -0700</time>
