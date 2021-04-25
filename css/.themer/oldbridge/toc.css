@@ -4,7 +4,7 @@
 	left: 0;
 	height: auto;
 	width: 250px;
-	background-color: #4c434a;
+	background-color: #d4cbcc;
   list-style-type: none;
 	font-family: "Lucida Sans", sans-serif;
 	font-style: italic;
@@ -22,23 +22,23 @@
 #TOC ul { text-align: right; }
 #TOC li a {
 	display: inline-block;
-	color: #bfafb6;
+	color: #65545f;
 	padding: 8px;
 	text-decoration: none;
 }
-#TOC li a:hover { color: #65545f; }
-#TOC li a:active { background-color: #9f8494; }
+#TOC li a:hover { color: #bfafb6; }
+#TOC li a:active { background-color: #8a6e7f; }
 #TOC ul li:hover ul {display: block;}
 #TOC ul li ul {
 	position: absolute;
 	margin-top: -44px;
-	background: #3f3a3f;
+	background: #dfd9d8;
 	left: 250px;
 	display: none;
 	max-height: 50%;
 	overflow: auto;
 }
-#TOC ul li ul li { background: #3f3a3f; display: block; }
+#TOC ul li ul li { background: #dfd9d8; display: block; }
 #TOC ul li ul li a {
 	font-size: 0.9rem;
 	font-weight: normal;

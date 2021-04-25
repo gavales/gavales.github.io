@@ -10,16 +10,16 @@
 	margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #484649;
+  background-color: #e6e6e6;
 }
 #HORNAV li { float: left; }
 #HORNAV li a {
   display: block;
-  color: #e9e7e3;
+  color: #505050;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
-#HORNAV li a:hover  { background-color: #65545f; }
-#home   { background-color: #65545f; }
-#select { background-color: #5c5a5d; }
+#HORNAV li a:hover  { background-color: #b0d3b1; }
+#home   { background-color: #b0d3b1; }
+#select { background-color: #d2d2d2; }
