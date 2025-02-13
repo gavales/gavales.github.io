@@ -88,7 +88,6 @@ once you make your decision to begin flight training, your first step should be 
 See [CAR 404.04 (6)](https://laws-lois.justice.gc.ca/eng/regulations/SOR-96-433/FullText.html#h-991054)
 for a description of the validity period for each medical category and see [this section](#medical-exam) for a list of CAMEs.
 
-
 ### Age
 You must be 14 to _hold_ a Student Pilot Permit, 16 to _hold_ a Recreational Pilot Permit, 17 to
 _hold_ a Private Pilot Licence, and 18 to _hold_ a Commercial Pilot License. You can start
@@ -99,6 +98,7 @@ However, you will not be able to fly your first solo flight, and begin to obtain
 you are 14 years old and can obtain an SPP.
 
 </div>
+
 </div>
 
 
@@ -193,6 +193,8 @@ _apply good pilot decision making_.
 > - [Douglas Square Protractor](https://hammondaviation.com/products/hammond-protractor?_pos=1&_sid=3133944f6&_ss=r)
 > - [ICAO Chart Ruler](https://hammondaviation.com/products/icao-chart-ruler?_pos=1&_psq=icao+ruler&_ss=e&_v=1.0)
 > ![](/images/gs.svg)
+
+</div>
 
 </div>
 
