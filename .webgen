@@ -10,7 +10,7 @@ RTLC="${ROOT}/local"
 cd $WBST
 
 for i in $(ls views); do
-	pandoc views/$i -o ${i%.*}.html -t html --template template.html
+	pandoc views/$i -o ${i%.*}.html --template template.html
 done
 
 # find local -type d | \
