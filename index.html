@@ -1,1 +1,210 @@
-pages/home.html
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://unpkg.com/htmx.org@2.0.4"
+    integrity="sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="/css/index.css">
+
+  <style>
+    [data-theme=light],
+    :root:not([data-theme=dark]) {
+      --pico-font-size: 98%;
+      --pico-font-family-emoji: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      --pico-font-family-sans-serif: Arial, sans-serif, var(--pico-font-family-emoji);
+      --pico-font-family-serif: "CMU Serif", serif, var(--pico-font-family-emoji);
+      --pico-font-family-monospace: Consolas, monospace, var(--pico-font-family-emoji);
+      --pico-font-family: var(--pico-font-family-sans-serif);
+      --pico-text-selection-color: rgba(1, 44, 97, 0.25);
+      --pico-primary: hsl(213, 98%, 19%);
+      --pico-primary-background: hsl(213, 98%, 29%);
+      --pico-primary-underline: rgba(1, 44, 97, 0.5);
+      --pico-primary-hover: hsl(213, 98%, 14%);
+      --pico-primary-hover-background: hsl(213, 98%, 9%);
+      --pico-primary-focus: rgba(1, 44, 97, 0.5);
+      --pico-primary-inverse: #fff;
+    }
+
+    @media (max-width: 959px) {
+      #logo-wide {
+        display: block;
+      }
+
+      #logo-narr {
+        display: none;
+      }
+    }
+
+    @media (max-width: 700px) {
+      #logo-wide {
+        display: none;
+      }
+
+      #logo-narr {
+        display: block;
+      }
+    }
+
+    h1,
+    h2 {
+      text-decoration: none;
+      font-style: italic;
+      font-variant: small-caps;
+      color: #012c61;
+    }
+
+    h3,
+    h4 {
+      color: #000000;
+    }
+
+    h3 {
+      font-style: italic;
+      font-size: 1.25rem;
+    }
+
+    h4 {
+      font-size: 1.15rem;
+    }
+
+    :root {
+      background-image: url("/assets/oldlogo-s.png");
+      background-size: 50rem;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    #same {
+      overflow: hidden;
+      float: left;
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
+    }
+
+    #mycard {
+      backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0.5);
+      margin: 2rem 0 2rem 0;
+      box-shadow: 0px 0rem 0.8rem 0.5rem rgba(220, 220, 220, 0.5);
+      // padding: 1rem;
+    }
+
+    #logo-wide {
+      font-size: 2rem;
+      font-weight: bold;
+      font-style: italic;
+      transition: font-size 150ms, padding-top 150ms;
+      position: fixed;
+      top: 0;
+      padding-top: 1.5rem;
+      padding-left: 1.5rem;
+    }
+
+    #logo-narr {
+      transition: width 150ms;
+    }
+
+    #navbar {
+      backdrop-filter: blur(10px);
+      height: 5rem;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      margin-left: -1rem;
+      z-index: 1000;
+      border-image: linear-gradient(90deg, #cc0a00, #012c61, #cc0a00) 1;
+      border-radius: 5px;
+      border-width: 0 0 2px 0;
+      border-style: solid;
+      transition: height 150ms;
+      // box-shadow: 0px 0rem 0.8rem 0.5rem rgba(245, 245, 245, 0.5);
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    // #navfoot {
+    //   backdrop-filter: blur(10px);
+    //   height: 2rem;
+    //   position: fixed;
+    //   text-align: right;
+    //   bottom: 0;
+    //   width: 100%;
+    //   margin-left: -1rem;
+    //   transition: bottom 0.3s;
+    // }
+  </style>
+
+  <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("logo-wide").style.fontSize = "2rem";
+        document.getElementById("logo-wide").style.paddingTop = "1.5rem";
+        document.getElementById("logo-narr").style.width = "10rem";
+        document.getElementById("navbar").style.height = "5rem";
+      } else {
+        document.getElementById("logo-wide").style.fontSize = "1rem";
+        document.getElementById("logo-wide").style.paddingTop = "1.3rem";
+        document.getElementById("logo-narr").style.width = "5rem";
+        document.getElementById("navbar").style.height = "3.1rem";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+  </script>
+
+  <main class="container-fluid" style="margin-top:4rem;padding-left:1rem">
+    <nav id="navbar" class="container-fluid">
+      <ul>
+        <li>
+          <a href="/" id="logo-narr"><img alt="VFC" src="/assets/logo.svg" style="width:10rem"></a>
+          <a href="/" id="logo-wide" alt="VFC">Victoria Flying Club</a>
+        </li>
+      </ul>
+      <ul>
+        <em>
+          <li> <a hx-push-url="true" hx-get="/training" hx-swap="innerHTML" hx-target="body">Flight Training</a></li>
+          <li> <a hx-push-url="true" hx-get="/charters" hx-swap="innerHTML" hx-target="body">Charters</a> </li>
+          <li> <a hx-push-url="true" hx-get="/resources" hx-swap="innerHTML" hx-target="body">Resources</a></li>
+          <li><button hx-push-url="true" hx-get="/auth" hx-swap="innerHTML" hx-target="body"><em>Sign Up!</em></button>
+          </li>
+        </em>
+      </ul>
+      <!-- <hr style="background: linear-gradient(90deg, #012c61 0%, #cc0a00 100%); height: 2px; border: 0;" /> -->
+    </nav>
+  </main>
+</head>
+
+<body>
+  
+</body>
+
+<br />
+<br />
+<br />
+
+<foot id="mycard" role="group" style="font-size:0.8rem;box-shadow: none;margin-bottom:-1rem;padding:1rem;">
+  <div>
+    © Victoria Flying Club, 2025
+  </div>
+  <div style="text-align: right">
+    <a style="text-decoration:none;font-weight:bold" class="contrast" href="mailto:info@flyvfc.com">📧
+      info@flyvfc.com</a><br />
+    <a style="text-decoration:none;font-weight:bold" class="contrast" href="tel:+12506562833">📞 (250)
+      656-2833</a><br />
+    <a style="text-decoration:none" class="contrast"
+      href="https://www.google.com/maps/place/1852+Canso+Rd+%23101,+North+Saanich,+BC+V8L+5V5/@48.645088,-123.4226627,781m/data=!3m1!1e3!4m5!3m4!1s0x548f6862d4675999:0x1a95b70ceba8eea7!8m2!3d48.645088!4d-123.4200931?entry=ttu&g_ep=EgoyMDI1MDIwMi4wIKXMDSoASAFQAw%3D%3D">
+      <img src="/assets/pin.svg" style="height: 1rem">
+      <em>101 - 1852 Canso Rd <br /> North Saanich, BC <br /> V8L 5V5</em>
+    </a>
+  </div>
+</foot>
+
+</html>

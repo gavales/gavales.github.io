@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-WBST="$HOME/git/website"
+WBST="$HOME/git/gavales.github.io"
 DMN="https://gavales.github.io"
 
 PNDCMD="pandoc -F pandoc-crossref -s --toc -o"
@@ -9,16 +9,20 @@ RTLC="${ROOT}/local"
 
 cd $WBST
 
-find local -type d | \
-	sed '/^local$/d;s/local\///g' | \
-	xargs -I {} mkdir -p {}
-
-for i in $(find local -type f); do
-	sed "s;${RTLC};${DMN};g" $i > ${i/local\//}
-	sed -i "s;${ROOT};${DMN};g" ${i/local\//}
+for i in $(ls views); do
+	pandoc views/$i -o ${i%.*}.html -t html --template template.html
 done
 
-sed "s;${RTLC};${DMN};g" local/rss.xml > rss.xml
-sed -i "s;${ROOT};${DMN};g" rss.xml
+# find local -type d | \
+# 	sed '/^local$/d;s/local\///g' | \
+# 	xargs -I {} mkdir -p {}
 
-gitcommit website
+# for i in $(find local -type f); do
+# 	sed "s;${RTLC};${DMN};g" $i > ${i/local\//}
+# 	sed -i "s;${ROOT};${DMN};g" ${i/local\//}
+# done
+
+# sed "s;${RTLC};${DMN};g" local/rss.xml > rss.xml
+# sed -i "s;${ROOT};${DMN};g" rss.xml
+
+# gitcommit website
