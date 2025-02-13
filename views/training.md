@@ -185,15 +185,15 @@ _apply good pilot decision making_.
 <blockquote>
 _You'll find the below items very useful during your PPL/CPL training. They can also be found in our Pilot Shop:_
 
-- [From the Ground Up](https://www.amazon.ca/s?k=from+the+ground+up&i=stripbooks&crid=TGHGQ16NK2AK&sprefix=from+the+ground+up%2Cstripbooks%2C132&ref=nb_sb_noss_2)
-- [TP1102 - Flight Training Manual](https://www.amazon.ca/s?k=flight+training+manual&crid=1UYGEG1KR3WR9&sprefix=flight+training+manual%2Caps%2C131&ref=nb_sb_noss_1)
-- [TP14371 - Aeronautical Information Manual](https://tc.canada.ca/en/aviation/publications/transport-canada-aeronautical-information-manual-tc-aim-tp-14371)
-- [Generic C172S Pilot Operating Handbook](https://www.befa.org/wp-content/uploads/2019/12/POH-Cessna-172S.pdf)
-- [VFR Navigation / Terminal Area Charts](https://products.navcanada.ca/shop-vfr/)
-- [Pilot Logbook](https://hammondaviation.com/products/pilot-log-book-small?_pos=10&_sid=6ee1c7f5d&_ss=r)
-- [E6B Calculator](https://hammondaviation.com/search?search-filter=&q=e6b&options%5Bprefix%5D=last)
-- [Douglas Square Protractor](https://hammondaviation.com/products/hammond-protractor?_pos=1&_sid=3133944f6&_ss=r)
-- [ICAO Chart Ruler](https://hammondaviation.com/products/icao-chart-ruler?_pos=1&_psq=icao+ruler&_ss=e&_v=1.0)
+- [From the Ground Up](https://www.amazon.ca/s?k=from+the+ground+up&i=stripbooks&crid=TGHGQ16NK2AK&sprefix=from+the+ground+up%2Cstripbooks%2C132&ref=nb_sb_noss_2)  
+- [TP1102 - Flight Training Manual](https://www.amazon.ca/s?k=flight+training+manual&crid=1UYGEG1KR3WR9&sprefix=flight+training+manual%2Caps%2C131&ref=nb_sb_noss_1)  
+- [TP14371 - Aeronautical Information Manual](https://tc.canada.ca/en/aviation/publications/transport-canada-aeronautical-information-manual-tc-aim-tp-14371)  
+- [Generic C172S Pilot Operating Handbook](https://www.befa.org/wp-content/uploads/2019/12/POH-Cessna-172S.pdf)  
+- [VFR Navigation / Terminal Area Charts](https://products.navcanada.ca/shop-vfr/)  
+- [Pilot Logbook](https://hammondaviation.com/products/pilot-log-book-small?_pos=10&_sid=6ee1c7f5d&_ss=r)  
+- [E6B Calculator](https://hammondaviation.com/search?search-filter=&q=e6b&options%5Bprefix%5D=last)  
+- [Douglas Square Protractor](https://hammondaviation.com/products/hammond-protractor?_pos=1&_sid=3133944f6&_ss=r)  
+- [ICAO Chart Ruler](https://hammondaviation.com/products/icao-chart-ruler?_pos=1&_psq=icao+ruler&_ss=e&_v=1.0)  
 
 ![](/images/gs.svg)
 </blockquote>
