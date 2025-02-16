@@ -133,7 +133,9 @@ e-transfer._
 
 </div>
 
+<div>
 [![TC CAME](images/tccame.png)](https://wwwapps.tc.gc.ca/saf-sec-sur/2/came-meac/l.aspx)
+</div>
 
 </div>
 
@@ -232,7 +234,9 @@ The flight training is a minimum 45 hours of flight time, consisting of not less
 Most people need an average of 55 hrs of flight time, which the below estimate is based on.
 
 </div>
+<div>
 <img id="same" src="/images/rpp.jpg" />
+</div>
 </div>
 
 
@@ -249,7 +253,9 @@ Any instrument time obtained during your PPL training will count towards the 10 
 required for this rating.\
 
 </div>
+<div>
 <img id="same" style="height:30rem" src="/images/night.jpg" />
+</div>
 </div>
 
 
@@ -267,7 +273,9 @@ Thus, VFC requires that our pilots complete a _Mountain Awareness Course_ design
 sufficient knowledge and skills to fly safely in mountainous terrain.
 
 </div>
+<div>
 <img id="same" src="/images/mount1.jpg" />
+</div>
 </div>
 
 
@@ -305,7 +313,9 @@ flight time gained after the PPL license:
 
 </div>
 
+<div>
 <img id="same" src="/images/haze.jpg" />
+</div>
 
 </div>
 
@@ -336,7 +346,9 @@ The average candidate needs approximately 12 hours of flight time.
 > up requiring roughly 30% more flight time to complete these ratings.
 
 </div>
+<div>
 <img id="same" src="/images/hdp.jpg" />
+</div>
 </div>
 
 
@@ -373,7 +385,9 @@ _This estimate is based on the requirements in CAR Standard 421.46, and assumes 
 during their CPL training, 20 hrs of instrument time (including 10 hrs of simulated instrument time)_
 
 </div>
+<div>
 <img id="same" src="/images/606066.jpg" />
+</div>
 </div>
 
 
@@ -412,7 +426,9 @@ ground school and flight time), the candidate may attempt the flight test with a
 > as well as your instructor, who will demonstrate these PGIs.
 
 </div>
+<div>
 <img id="same" src="/images/" />
+</div>
 </div>
 
 
