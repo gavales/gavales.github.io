@@ -133,7 +133,7 @@ e-transfer._
 
 </div>
 
-<div>
+<div style="margin: auto;">
   <a href="https://wwwapps.tc.gc.ca/saf-sec-sur/2/came-meac/l.aspx"><img style="width: 100%" src="/images/tccame.png" /></a>
 </div>
 
