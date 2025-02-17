@@ -25,10 +25,10 @@
       --pico-text-selection-color: rgba(1, 44, 97, 0.25);
       --pico-primary: hsl(213, 98%, 19%);
       --pico-primary-background: hsl(213, 98%, 29%);
-      --pico-primary-underline: rgba(1, 44, 97, 0.5);
+      --pico-primary-underline: hsl(213, 98%, 19%);
       --pico-primary-hover: hsl(213, 98%, 14%);
       --pico-primary-hover-background: hsl(213, 98%, 9%);
-      --pico-primary-focus: rgba(1, 44, 97, 0.5);
+      --pico-primary-focus: hsl(213, 98%, 19%);
       --pico-primary-inverse: #fff;
     }
 
@@ -45,7 +45,7 @@
         --pico-primary-inverse: #fff;
 
         #navbar {
-          background: rgba(255, 255, 255, 0.01);
+          background: rgba(0, 0, 0);
         }
 
         #mycard {
@@ -175,17 +175,6 @@
       // box-shadow: 0px 0rem 0.8rem 0.5rem rgba(245, 245, 245, 0.5);
       background-color: rgba(255, 255, 255, 0.5);
     }
-
-    // #navfoot {
-    //   backdrop-filter: blur(10px);
-    //   height: 2rem;
-    //   position: fixed;
-    //   text-align: right;
-    //   bottom: 0;
-    //   width: 100%;
-    //   margin-left: -1rem;
-    //   transition: bottom 0.3s;
-    // }
   </style>
 
   <script>
@@ -232,13 +221,15 @@
 
 <body>
   <main id="pagebody" class="container">
+
   <h1 id="flight-training">Flight Training</h1>
   <div id="mycard" class="grid">
   <div style="padding:1rem">
+
   <p>There are many facets to flight training. The Victoria Flying Club
   staff would be delighted to show you how they fit together. The staff
   at Victoria Flying Club works with you to develop a training program
-  that will help you reach any of your flying goals. We’ve been doing
+  that will help you reach any of your flying goals. We've been doing
   this since shortly after the Wright Brothers lifted off the ground at
   Kitty Hawk!</p>
   <p>Some people want to fly just for the fun of it. Others want a
@@ -250,14 +241,16 @@
   there is nothing else like it.</p>
   </div>
   </div>
+
   <div id="mycard" class="grid">
-  <div id="getting-started" style="padding:1rem">
-  <h2>Getting Started</h2>
+  <div style="padding:1rem">
+
+  <h2 id="getting-started">Getting Started</h2>
   <h3 id="go-for-a-discovery-flight">Go for a Discovery Flight</h3>
-  <p>If you’re still indecisive about whether flying an aircraft or
+  <p>If you're still indecisive about whether flying an aircraft or
   flight training is for you, you may want to start your journey with a
   <em>Discovery Flight</em>. During this flight you will get to
-  <em>actually</em> fly and control one of our training aircraft. Don’t
+  <em>actually</em> fly and control one of our training aircraft. Don't
   worry, you would be accompanied by a qualified flight instructor so
   that they can teach you how the controls work and what they do to the
   aircraft.</p>
@@ -268,7 +261,7 @@
   <h3 id="get-a-medical-certificate">Get a Medical Certificate</h3>
   <p>In accordance with the CARs licensing requirements, you need a
   medical certificate to not only obtain a pilot license, but to
-  maintain one. So once you’ve made your decision to become a pilot,
+  maintain one. So once you've made your decision to become a pilot,
   your next step should be to complete an aviation medical exam.</p>
   <h3 id="sign-up">Sign Up!</h3>
   <p>Your final steps to getting started will be to:</p>
@@ -290,10 +283,12 @@
   </ul>
   </div>
   </div>
+
   <div id="mycard" class="grid">
-  <div id="requirements" style="padding:1rem">
-  <h2>Requirements</h2>
-  <h3 id="knowledge-skill-experience">Knowledge, Skill &amp;
+  <div style="padding:1rem">
+
+  <h2 id="requirements">Requirements</h2>
+  <h3 id="knowledge-skill--experience">Knowledge, Skill &amp;
   Experience</h3>
   <p>Most licenses/ratings/permits will require completion of a
   Transport Canada written examination, as well as a flight test (after
@@ -316,7 +311,9 @@
   href="https://tc.canada.ca/en/corporate-services/acts-regulations/list-regulations/canadian-aviation-regulations-sor-96-433/standards/standard-421-flight-crew-permits-licences-ratings-canadian-aviation-regulations-cars">CARs
   Standard 421 - Flight Crew Permits, Licences and Ratings</a>.</p>
   </div>
+
   <div style="padding:1rem">
+
   <h3 id="medical-fitness">Medical Fitness</h3>
   <p>To hold a pilot license, and to keep it valid, you must take
   regular medical examinations with a Civil Aviation Medical Examiner
@@ -336,42 +333,50 @@
   instructor) at any age as long as you can safely control the aircraft
   you will train on.</p>
   <p>However, you will not be able to fly your first solo flight, and
-  begin to obtain any ‘solo’ flight time until you are 14 years old and
+  begin to obtain any 'solo' flight time until you are 14 years old and
   can obtain an SPP.</p>
   </div>
+
   </div>
+
   <div id="mycard" class="grid">
-  <div id="medical-exam" style="padding:1rem">
-  <h2>Medical Exam</h2>
-  <p>Here’s a shortlist of Civil Aviation Medical Examiners in and
-  around Victoria. Alternatively, you can also go to Transport Canada’s
+  <div style="padding:1rem">
+
+  <h2 id="medical-exam">Medical Exam</h2>
+  <p>Here's a shortlist of Civil Aviation Medical Examiners in and
+  around Victoria. Alternatively, you can also go to Transport Canada's
   website to find their official list of examiners.</p>
   <h3 id="victoria">Victoria</h3>
-  <p><strong>Dr. Salmaniw</strong> — (250) 656-2833 - Victoria Flying
+  <p><strong>Dr. Salmaniw</strong> --- (250) 656-2833 - Victoria Flying
   Club<br />
-  <em>Check in at our front desk to book an exam with
-  Dr. Salmaniw!</em><br />
-  <em>The cost of an exam varies with each CAME, however Dr. Salmaniw
+  <em>Check in at our front desk to book an exam with Dr.
+  Salmaniw!</em><br />
+  <em>The cost of an exam varies with each CAME, however Dr. Salmaniw
   requests $250 via cash, cheque or e-transfer.</em></p>
-  <p><strong>Dr. Leong</strong> — (250) 384-3241 - 205-648 Herald St</p>
-  <p><strong>Dr. Houghton</strong> — (250) 658-5228 - 105A-5118 Cordova
-  Bay Rd</p>
-  <p><strong>Dr. Siu</strong> — (778) 967-2434 - Suite 371 1581-H
+  <p><strong>Dr. Leong</strong> --- (250) 384-3241 - 205-648 Herald
+  St</p>
+  <p><strong>Dr. Houghton</strong> --- (250) 658-5228 - 105A-5118
+  Cordova Bay Rd</p>
+  <p><strong>Dr. Siu</strong> --- (778) 967-2434 - Suite 371 1581-H
   Hillside Ave</p>
   <h3 id="mill-bay">Mill Bay</h3>
-  <p><strong>Dr. Decker</strong> — (250) 743-3211 - 230-2720 Mill Bay
+  <p><strong>Dr. Decker</strong> --- (250) 743-3211 - 230-2720 Mill Bay
   Rd</p>
   <h3 id="duncan">Duncan</h3>
-  <p><strong>Dr. De Wit</strong> — (250) 929-0197 - Unit A - 845 Deloume
-  Rd</p>
+  <p><strong>Dr. De Wit</strong> --- (250) 929-0197 - Unit A - 845
+  Deloume Rd</p>
   </div>
+
   <div>
-  <p><a href="https://wwwapps.tc.gc.ca/saf-sec-sur/2/came-meac/l.aspx"><img id="same" src="/images/tccame.png" /></a></p>
+    <a href="https://wwwapps.tc.gc.ca/saf-sec-sur/2/came-meac/l.aspx"><img id="same" src="/images/tccame.png" /></a>
   </div>
+
   </div>
+
   <div id="mycard" class="grid">
-  <div id="ground-school" style="padding:1rem">
-  <h2>Ground School</h2>
+  <div style="padding:1rem">
+
+  <h2 id="ground-school">Ground School</h2>
   <p>A big part of learning to fly is understanding how your aircraft
   works and how it responds to your control inputs, as well as the
   procedures for the airspace in which you will fly. Most of this is
@@ -387,7 +392,9 @@
   school runs on Saturdays and Sundays, from 09:00 to 16:00, on a
   ten-week cycle, and can be attended in-person or online.</p>
   </div>
+
   <div style="padding:1rem">
+
   <p>It begins with learning about the <em>Licensing Requirements</em>,
   followed closely by sessions on <em>Aerodynamics &amp; Theory of
   Flight</em> and <em>Airframes, Engines, Systems &amp; Instruments</em>
@@ -403,75 +410,82 @@
   <em>actually</em> navigate an aircraft safely on cross-country flights
   during the latter parts of their PPL and CPL training.</p>
   <p>Finally, all this information is tied together with discussions on
-  the effect of a pilot’s decision making on aviation. Knowing a variety
+  the effect of a pilot's decision making on aviation. Knowing a variety
   of <em>Human Factors</em> will help you to predict how your
   personality can affect your own aviating. Through your flight
   training, you would eventually learn how to use this knowledge to
   <em>apply good pilot decision making</em>.</p>
   </div>
+
   <div>
+
   <blockquote>
-  <p><em>You’ll find the below items very useful during your PPL/CPL
-  training. They can also be found in our Pilot Shop:</em></p>
+  _You'll find the below items very useful during your PPL/CPL training. They can also be found in our Pilot Shop:_
+
   <ul>
   <li><a
   href="https://www.amazon.ca/s?k=from+the+ground+up&amp;i=stripbooks&amp;crid=TGHGQ16NK2AK&amp;sprefix=from+the+ground+up%2Cstripbooks%2C132&amp;ref=nb_sb_noss_2">From
-  the Ground Up</a><br />
-  </li>
+  the Ground Up</a></li>
   <li><a
   href="https://www.amazon.ca/s?k=flight+training+manual&amp;crid=1UYGEG1KR3WR9&amp;sprefix=flight+training+manual%2Caps%2C131&amp;ref=nb_sb_noss_1">TP1102
-  - Flight Training Manual</a><br />
-  </li>
+  - Flight Training Manual</a></li>
   <li><a
   href="https://tc.canada.ca/en/aviation/publications/transport-canada-aeronautical-information-manual-tc-aim-tp-14371">TP14371
-  - Aeronautical Information Manual</a><br />
-  </li>
+  - Aeronautical Information Manual</a></li>
   <li><a
   href="https://www.befa.org/wp-content/uploads/2019/12/POH-Cessna-172S.pdf">Generic
-  C172S Pilot Operating Handbook</a><br />
-  </li>
+  C172S Pilot Operating Handbook</a></li>
   <li><a href="https://products.navcanada.ca/shop-vfr/">VFR Navigation /
-  Terminal Area Charts</a><br />
-  </li>
+  Terminal Area Charts</a></li>
   <li><a
   href="https://hammondaviation.com/products/pilot-log-book-small?_pos=10&amp;_sid=6ee1c7f5d&amp;_ss=r">Pilot
-  Logbook</a><br />
-  </li>
+  Logbook</a></li>
   <li><a
   href="https://hammondaviation.com/search?search-filter=&amp;q=e6b&amp;options%5Bprefix%5D=last">E6B
-  Calculator</a><br />
-  </li>
+  Calculator</a></li>
   <li><a
   href="https://hammondaviation.com/products/hammond-protractor?_pos=1&amp;_sid=3133944f6&amp;_ss=r">Douglas
-  Square Protractor</a><br />
-  </li>
+  Square Protractor</a></li>
   <li><a
   href="https://hammondaviation.com/products/icao-chart-ruler?_pos=1&amp;_psq=icao+ruler&amp;_ss=e&amp;_v=1.0">ICAO
   Chart Ruler</a></li>
   </ul>
-  <img src="/images/gs.svg" />
+  <p><img src="/images/gs.svg" /></p>
   </blockquote>
+
   </div>
+
   </div>
+
   <div id="mycard" class="grid">
-  <div id="private-pilot-license" style="padding:1rem">
-  <h2>Private Pilot License</h2>
+  <div style="padding:1rem">
+
+  <h2 id="private-pilot-license">Private Pilot License</h2>
   <p>To hold a Private Pilot License, you must be 17 years of age and
   possess a Category 3 Medical Certificate or higher. This licence
   allows you to fly all single engine, non-high-performance aircraft
   during daylight hours under VFR.</p>
-  <p>A minimum of 40 hours ground school classes must be taken (VFC’s is
+  <p>A minimum of 40 hours ground school classes must be taken (VFC's is
   48 hours), as well as 10 hours of flight time, before candidates can
   write the written exam (the PPAER). The topics to be covered can be
   found in the written exam guide.</p>
   <p>The flight training is a minimum 45 hours of flight time,
-  consisting of not less than: - 17 hours of dual training, including; -
-  3 hours to be acquired during cross country flight. - 5 hours
-  instrument flying (a maximum of 3 can be obtained on a Flight Training
-  Device, FTD). - 12 hours of solo flight time, including; - 5 hours
-  cross country flight time. - A cross country flight of not less than
-  150 nautical miles from the point of departure and including 2
-  landings at aerodromes other than the point of departure.</p>
+  consisting of not less than:</p>
+  <ul>
+  <li>17 hours of dual training, including;
+  <ul>
+  <li>3 hours to be acquired during cross country flight.</li>
+  <li>5 hours instrument flying (a maximum of 3 can be obtained on a
+  Flight Training Device, FTD).</li>
+  </ul></li>
+  <li>12 hours of solo flight time, including;
+  <ul>
+  <li>5 hours cross country flight time.</li>
+  <li>A cross country flight of not less than 150 nautical miles from
+  the point of departure and including 2 landings at aerodromes other
+  than the point of departure.</li>
+  </ul></li>
+  </ul>
   <blockquote>
   <p>The length of the course will not only depend on how well you
   prepare for each flight, but also on how often you fly. Most students
@@ -482,32 +496,34 @@
   expensive your training will be.</p>
   </blockquote>
   <p>Most people need an average of 55 hrs of flight time, which the
-  below estimate is based on.</p>
+  below estimate is based on. <br/></p>
   </div>
   <div>
-  <p><img id="same" src="/images/rpp.jpg" /></p>
+  <img id="same" src="/images/rpp.jpg" />
   </div>
   </div>
+
   <div id="mycard" class="grid">
-  <div id="night-rating" style="padding:1rem">
-  <h2>Night Rating</h2>
+  <div style="padding:1rem">
+
+  <h2 id="night-rating">Night Rating</h2>
   <p>A pilot endorsed with a Night Rating can fly during the night in
   Visual Meteorological Conditions (VMC) under VFR. Its requirements are
   described in <a
   href="https://tc.canada.ca/en/corporate-services/acts-regulations/list-regulations/canadian-aviation-regulations-sor-96-433/standards/standard-421-flight-crew-permits-licences-ratings-canadian-aviation-regulations-cars#421_42">CAR
   Standard 421.42</a>.</a></p>
   <p>Any instrument time obtained during your PPL training will count
-  towards the 10 hours of instrument time required for this
-  rating.<br />
-  </p>
+  towards the 10 hours of instrument time required for this rating.\</p>
   </div>
   <div>
-  <p><img id="same" style="height:30rem" src="/images/night.jpg" /></p>
+  <img id="same" style="height:30rem" src="/images/night.jpg" />
   </div>
   </div>
+
   <div id="mycard" class="grid">
-  <div id="mountain-awareness-course" style="padding:1rem">
-  <h2>Mountain Awareness Course</h2>
+  <div style="padding:1rem">
+
+  <h2 id="mountain-awareness-course">Mountain Awareness Course</h2>
   <p>After completing their PPL training, an inexperienced pilot may be
   eager to explore all of BC. However, in the Pacific Region, the
   combined effect of the great mountain ranges and the adjacent Pacific
@@ -519,12 +535,14 @@
   knowledge and skills to fly safely in mountainous terrain.</p>
   </div>
   <div>
-  <p><img id="same" src="/images/mount1.jpg" /></p>
+  <img id="same" src="/images/mount1.jpg" />
   </div>
   </div>
+
   <div id="mycard" class="grid">
-  <div id="commercial-pilot-license" style="padding:1rem">
-  <h2>Commercial Pilot License</h2>
+  <div style="padding:1rem">
+
+  <h2 id="commercial-pilot-license">Commercial Pilot License</h2>
   <p><a
   href="https://laws-lois.justice.gc.ca/eng/regulations/sor-96-433/page-38.html#h-990565">Privileges</a>
   ··· <a href="https://tc.canada.ca/node/29065">Flight Test Guide</a>
@@ -563,18 +581,22 @@
   </ul></li>
   </ul>
   </div>
+
   <div>
-  <p><img id="same" src="/images/haze.jpg" /></p>
+  <img id="same" src="/images/haze.jpg" />
   </div>
+
   </div>
+
   <div id="mycard" class="grid">
-  <div id="multi-engine-rating" style="padding:1rem">
-  <h2>Multi-Engine Rating</h2>
-  <p><a href="https://tc.canada.ca/node/29593">Flight Test Guide</a> A
-  pilot endorsed with a Multi-engine Rating can fly aircraft with more
-  than one engine. It has no minimum flight time requirements, so the
-  training involves flying with your instructor until you reach flight
-  test standard.</p>
+  <div style="padding:1rem">
+
+  <h2 id="multi-engine-rating">Multi-Engine Rating</h2>
+  <p><a href="https://tc.canada.ca/node/29593">Flight Test Guide</a></p>
+  <p>A pilot endorsed with a Multi-engine Rating can fly aircraft with
+  more than one engine. It has no minimum flight time requirements, so
+  the training involves flying with your instructor until you reach
+  flight test standard.</p>
   <p>The candidate must pass a flight test that shows their proficiency
   in all multi-engine manoeuvres and emergency procedures.</p>
   <p>The average candidate needs approximately 12 hours of flight
@@ -593,19 +615,19 @@
   </blockquote>
   </div>
   <div>
-  <p><img id="same" src="/images/hdp.jpg" /></p>
+  <img id="same" src="/images/hdp.jpg" />
   </div>
   </div>
+
   <div id="mycard" class="grid">
-  <div id="instrument-rating" style="padding:1rem">
-  <h1>Instrument Rating</h1>
-  <blockquote>
+  <div style="padding:1rem">
+
+  <h1 id="instrument-rating">Instrument Rating</h1>
   <p><a
   href="https://laws-lois.justice.gc.ca/eng/regulations/sor-96-433/page-38.html#h-990688">Privileges</a>
   ··· <a href="https://tc.canada.ca/node/30469">Flight Test Guide</a>
   ··· <a href="https://tc.canada.ca/node/30447">Written Exam
   Guide</a></p>
-  </blockquote>
   <p>A pilot endorsed with an Instrument Rating can fly an aircraft in
   Instrument Meteorological Conditions (IMC) under Instrument flight
   Rules (IFR).</p>
@@ -619,7 +641,7 @@
   probably obtain during your CPL time-building.</p>
   <p>No ground school is required to take the written exam and VFC does
   not currently run one, so you may want to use an online one like
-  Harv’s Air’s
+  Harv's Air's
   <a href="https://www.pilottraining.ca/index.php">pilottraining.ca</a>
   or <a href="https://courses.inratexamprep.com/">INRATExamPrep.com</a>
   to help you study.</p>
@@ -635,12 +657,14 @@
   time)</em></p>
   </div>
   <div>
-  <p><img id="same" src="/images/606066.jpg" /></p>
+  <img id="same" src="/images/606066.jpg" />
   </div>
   </div>
+
   <div id="mycard" class="grid">
-  <div id="class-4-instructor-rating" style="padding:1rem">
-  <h2>Class 4 Instructor Rating</h2>
+  <div style="padding:1rem">
+
+  <h2 id="class-4-instructor-rating">Class 4 Instructor Rating</h2>
   <p><a
   href="https://laws-lois.justice.gc.ca/eng/regulations/sor-96-433/page-39.html#h-990762">Privileges</a>
   ··· <a href="https://tc.canada.ca/node/30590">Flight Test Guide</a>
@@ -653,8 +677,8 @@
   <ul>
   <li>25 hours ground school
   <ul>
-  <li>students may want to supplement VFC’s in-house ground school using
-  another FTU’s, for example <a
+  <li>students may want to supplement VFC's in-house ground school using
+  another FTU's, for example <a
   href="https://www.pilottraining.ca/index.php">pilottraining.ca</a></li>
   </ul></li>
   <li>30 hours dual flight training, specifically for the rating.
@@ -676,7 +700,7 @@
   <blockquote>
   <p>Since you will be <em>learning</em> how to teach, you will be
   expected to spend about 250 hours of your own time developing lesson
-  plans (also known as Preparatory Ground Instruction, “PGIs”) and
+  plans (also known as Preparatory Ground Instruction, "PGIs") and
   refining your instructional techniques. All this will be done with
   help from <a
   href="https://tc.canada.ca/en/aviation/publications/flight-instructor-guide-aeroplane-tp-975">TP-975
@@ -685,9 +709,10 @@
   </blockquote>
   </div>
   <div>
-  <p><img id="same" src="/images/" /></p>
+  <img id="same" src="/images/" />
   </div>
   </div>
+
   </main>
 </body>
 

@@ -232,7 +232,7 @@ The flight training is a minimum 45 hours of flight time, consisting of not less
 > fly more often will adjust how much flight time you need, and, perhaps, how expensive your training will be.
 
 Most people need an average of 55 hrs of flight time, which the below estimate is based on.
-
+<br/>
 </div>
 <div>
 <img id="same" src="/images/rpp.jpg" />
@@ -326,6 +326,7 @@ flight time gained after the PPL license:
 ## Multi-Engine Rating
 
 [Flight Test Guide](https://tc.canada.ca/node/29593)
+
 A pilot endorsed with a Multi-engine Rating can fly aircraft with more than one engine. It has no minimum
 flight time requirements, so the training involves flying with your instructor until you reach flight test
 standard.
@@ -357,9 +358,9 @@ The average candidate needs approximately 12 hours of flight time.
 
 # Instrument Rating
 
-> [Privileges](https://laws-lois.justice.gc.ca/eng/regulations/sor-96-433/page-38.html#h-990688) ···
-> [Flight Test Guide](https://tc.canada.ca/node/30469) ···
-> [Written Exam Guide](https://tc.canada.ca/node/30447) 
+[Privileges](https://laws-lois.justice.gc.ca/eng/regulations/sor-96-433/page-38.html#h-990688) ···
+[Flight Test Guide](https://tc.canada.ca/node/30469) ···
+[Written Exam Guide](https://tc.canada.ca/node/30447) 
 
 A pilot endorsed with an Instrument Rating can fly an aircraft in Instrument
 Meteorological Conditions (IMC) under Instrument flight Rules (IFR).
