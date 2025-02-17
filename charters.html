@@ -40,6 +40,10 @@
       #logo-narr {
         display: none;
       }
+
+      #logo-shor {
+        display: none;
+      }
     }
 
     @media (max-width: 700px) {
@@ -48,6 +52,24 @@
       }
 
       #logo-narr {
+        display: block;
+      }
+
+      #logo-shor {
+        display: none;
+      }
+    }
+
+    @media (max-width: 700px) {
+      #logo-wide {
+        display: none;
+      }
+
+      #logo-narr {
+        display: none;
+      }
+
+      #logo-shor {
         display: block;
       }
     }
@@ -164,6 +186,7 @@
     <nav id="navbar" class="container-fluid">
       <ul>
         <li>
+          <a href="/" id="logo-shor"><img alt="VFC" src="/assets/logo.svg" style="height:2rem"></a>
           <a href="/" id="logo-narr"><img alt="VFC" src="/assets/logo.svg" style="width:10rem"></a>
           <a href="/" id="logo-wide" alt="VFC">Victoria Flying Club</a>
         </li>
