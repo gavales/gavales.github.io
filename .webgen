@@ -13,6 +13,11 @@ for i in $(ls views); do
 	pandoc views/$i -o ${i%.*}.html --template template.html
 done
 
+for i in $(ls *.html); do
+	sed -i 's;<section;<div;g' "$i"
+	sed -i 's;</section;</div;g' "$i"
+done
+
 # find local -type d | \
 # 	sed '/^local$/d;s/local\///g' | \
 # 	xargs -I {} mkdir -p {}
