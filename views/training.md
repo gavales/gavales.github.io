@@ -134,7 +134,7 @@ e-transfer._
 </div>
 
 <div>
-[![TC CAME](images/tccame.png)](https://wwwapps.tc.gc.ca/saf-sec-sur/2/came-meac/l.aspx)
+  <a href="https://wwwapps.tc.gc.ca/saf-sec-sur/2/came-meac/l.aspx"><img id="same" src="/images/tccame.png" /></a>
 </div>
 
 </div>
