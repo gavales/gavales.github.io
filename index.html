@@ -32,6 +32,30 @@
       --pico-primary-inverse: #fff;
     }
 
+    @media only screen and (prefers-color-scheme: dark) {
+      :root:not([data-theme]) {
+        background-color: black;
+        --pico-text-selection-color: rgba(1, 44, 97, 0.25);
+        --pico-primary: hsl(213, 98%, 29%);
+        --pico-primary-background: hsl(213, 98%, 39%);
+        --pico-primary-underline: hsl(213, 98%, 39%);
+        --pico-primary-hover: hsl(213, 98%, 24%);
+        --pico-primary-hover-background: hsl(213, 98%, 19%);
+        --pico-primary-focus: hsl(213, 98%, 29%);
+        --pico-primary-inverse: #fff;
+
+        #navbar {
+          background: rgba(255, 255, 255, 0.01);
+        }
+
+        #mycard {
+          background: rgba(255, 255, 255, 0.01);
+          box-shadow: none;
+        }
+
+      }
+    }
+
     @media screen and (min-width: 1024px) {
       #logo-wide {
         display: inline;
@@ -79,12 +103,12 @@
       text-decoration: none;
       font-style: italic;
       font-variant: small-caps;
-      color: #012c61;
+      color: var(--pico-primary);
     }
 
     h3,
     h4 {
-      color: #000000;
+      color: var(--pico-primary);
     }
 
     h3 {
@@ -101,6 +125,7 @@
       background-size: 50rem;
       background-position: center;
       background-attachment: fixed;
+
     }
 
     #same {
@@ -112,7 +137,7 @@
     }
 
     #mycard {
-      backdrop-filter: blur(10px);
+      backdrop-filter: blur(20px);
       background: rgba(255, 255, 255, 0.5);
       margin: 2rem 0 2rem 0;
       box-shadow: 0px 0rem 0.8rem 0.5rem rgba(220, 220, 220, 0.5);
@@ -135,7 +160,7 @@
     }
 
     #navbar {
-      backdrop-filter: blur(10px);
+      backdrop-filter: blur(20px);
       height: 5rem;
       position: fixed;
       top: 0;
@@ -186,8 +211,8 @@
     <nav id="navbar" class="container-fluid">
       <ul>
         <li>
-          <a href="/" id="logo-shor"><img alt="VFC" src="/assets/logo.svg" style="height:2rem"></a>
-          <a href="/" id="logo-narr"><img alt="VFC" src="/assets/logo.svg" style="width:10rem"></a>
+          <a href="/"><img id="logo-shor" alt="VFC" src="/assets/logo.svg" style="height:2rem"></a>
+          <a href="/"><img id="logo-narr" alt="VFC" src="/assets/logo.svg" style="width:10rem"></a>
           <a href="/" id="logo-wide" alt="VFC">Victoria Flying Club</a>
         </li>
       </ul>
