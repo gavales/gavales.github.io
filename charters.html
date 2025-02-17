@@ -32,23 +32,15 @@
       --pico-primary-inverse: #fff;
     }
 
-    @media (max-width: 959px) {
+    // 576
+    // 576
+    // 768
+    // 1024
+    // 1280
+    // 1536
+    @media screen and (min-width: 1024px) {
       #logo-wide {
         display: block;
-      }
-
-      #logo-narr {
-        display: none;
-      }
-
-      #logo-shor {
-        display: none;
-      }
-    }
-
-    @media (max-width: 700px) {
-      #logo-wide {
-        display: none;
       }
 
       #logo-narr {
@@ -60,7 +52,21 @@
       }
     }
 
-    @media (max-width: 400px) {
+    @media screen and (min-width: 576) {
+      #logo-wide {
+        display: none;
+      }
+
+      #logo-narr {
+        display: block;
+      }
+
+      #logo-shor {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 575px) {
       #logo-wide {
         display: none;
       }
