@@ -9,8 +9,12 @@ RTLC="${ROOT}/local"
 
 cd $WBST
 
+date
 for i in $(ls views); do
+	if [[ $i =~ "template.html" ]]; then continue
+	fi
 	[[ $i != "index.html" ]] && TOC="--table-of-contents --toc-depth=1"
+	echo "     converting $i"
 	pandoc views/$i -f gfm --template template.html $TOC -s -o ${i%.*}.html
 done
 
@@ -20,17 +24,3 @@ for i in $(ls *.html); do
 	sed -i 's;<section;<div;g' "$i"
 	sed -i 's;</section;</div;g' "$i"
 done
-
-# find local -type d | \
-# 	sed '/^local$/d;s/local\///g' | \
-# 	xargs -I {} mkdir -p {}
-
-# for i in $(find local -type f); do
-# 	sed "s;${RTLC};${DMN};g" $i > ${i/local\//}
-# 	sed -i "s;${ROOT};${DMN};g" ${i/local\//}
-# done
-
-# sed "s;${RTLC};${DMN};g" local/rss.xml > rss.xml
-# sed -i "s;${ROOT};${DMN};g" rss.xml
-
-# gitcommit website

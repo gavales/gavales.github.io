@@ -104,6 +104,12 @@
       color: #3f3a3f;
     }
 
+    @media screen and (min-width: 1536px) {
+      #pagebody {
+        margin-right: 20rem;
+      }
+    }
+
     @media screen and (min-width: 1024px) {
       #logo-wide {
         display: inline;
@@ -124,7 +130,7 @@
       }
 
       #pagebody {
-        margin-left: 300px;
+        margin-left: 20rem;
         margin-right: 2rem;
       }
     }
@@ -287,16 +293,16 @@
       <ul>
         <li>
           <a href="/"><img id="logo-shor" alt="VFC" src="/assets/logo.svg" style="height:2rem"></a>
-          <a href="/"><img id="logo-narr" alt="VFC" src="/assets/logo.svg" style="width: 10rem;"></a>
-          <a href="/" id="logo-wide" alt="VFC" style="font-size: 2rem; padding-top: 1.5rem;">
+          <a href="/"><img id="logo-narr" alt="VFC" src="/assets/logo.svg" style="width:10rem"></a>
+          <a href="/" id="logo-wide" alt="VFC" style="font-size:2rem;padding-top:1.5rem">
                         Flight Training
                       </a>
         </li>
       </ul>
       <ul>
         <em>
-          <li> <a hx-push-url="true" hx-get="/training" hx-swap="innerHTML" hx-target="body">Flight Training</a></li>
-          <li> <a hx-push-url="true" hx-get="/charters" hx-swap="innerHTML" hx-target="body">Charters</a> </li>
+          <li> <a hx-push-url="true" hx-get="/training" hx-swap="innerHTML" hx-target="body">Training</a></li>
+          <li> <a hx-push-url="true" hx-get="/charters" hx-swap="innerHTML" hx-target="body">Charters</a></li>
           <li> <a hx-push-url="true" hx-get="/resources" hx-swap="innerHTML" hx-target="body">Resources</a></li>
           <!-- <li><button hx-push-url="true" hx-get="/auth" hx-swap="innerHTML" hx-target="body"><em>Sign Up!</em></button> -->
         </em>
