@@ -1,6 +1,7 @@
-<main id="pagebody" class="container">
+---
+title: Charter Flights
+---
 
-# Sightseeing & Charter Flights
 
 > **To book a flight, for more information on destinations
 > and fares, or if you have a specific request, please contact our chief
@@ -25,7 +26,7 @@
 
 <summary>
 
-## Charter Flights
+# Charter Flights
 
 <small style="font-size:1rem;font-style:italic;font-weight: bold;">CAD$6.25 per nautical mile + tax</small>
 
@@ -40,7 +41,9 @@ Please review these tariffs for specific information about our charters:
 - [International Tariff](/documents/InternationalTariff.pdf)
 
 </div>
-<img id="same" src="/images/charter.jpg" alt="Charters" style="max-height:30rem">
+<div>
+  <img id="same" src="/images/charter.jpg" alt="Charters" style="max-height:30rem">
+</div>
 </div>
 
 
@@ -49,7 +52,7 @@ Please review these tariffs for specific information about our charters:
 
 <summary>
 
-## Sightseeing Flights
+# Sightseeing Flights
 
 <small style="font-size:1rem;font-style:italic;font-weight: bold;">CAD$400 per hour of flight time +
 tax</small>
@@ -77,8 +80,7 @@ Get a glimpse of the oceanic gateways to 19th century Victoria by seeing and lea
 Trial, Fisgard, and Race Rocks Lighthouses.
 
 </div>
-<img id="same" src="/images/scenic.jpg" alt="scenic">
+<div>
+  <img id="same" src="/images/scenic.jpg" alt="scenic">
 </div>
-
-
-</main>
+</div>

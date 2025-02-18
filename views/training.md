@@ -1,28 +1,28 @@
-<main id="pagebody" class="container">
+---
+title: Flight Training
+---
 
-# Flight Training
+<div id="mycard" class="grid">
+  <div style="padding:1rem">
+
+  There are many facets to flight training. The Victoria Flying Club staff would be delighted to show you how
+  they fit together. The staff at Victoria Flying Club works with you to develop a training program that will
+  help you reach any of your flying goals. We've been doing this since shortly after the Wright Brothers lifted
+  off the ground at Kitty Hawk!
+
+  Some people want to fly just for the fun of it. Others want a career in aviation. The Victoria Flying Club is
+  your doorstep into the wonderful world of flying, no matter which path you want to follow. Members of our club
+  have become Astronauts, Airline Pilots, Aerobatic Performers, Bush Pilots, Military Aviators, and more often
+  than not, just really good pilots who fly around Canada and the USA because there is nothing else like it.
+
+  </div>
+</div>
 
 <div id="mycard" class="grid">
 <div style="padding:1rem">
 
-There are many facets to flight training. The Victoria Flying Club staff would be delighted to show you how
-they fit together. The staff at Victoria Flying Club works with you to develop a training program that will
-help you reach any of your flying goals. We've been doing this since shortly after the Wright Brothers lifted
-off the ground at Kitty Hawk!
-
-Some people want to fly just for the fun of it. Others want a career in aviation. The Victoria Flying Club is
-your doorstep into the wonderful world of flying, no matter which path you want to follow. Members of our club
-have become Astronauts, Airline Pilots, Aerobatic Performers, Bush Pilots, Military Aviators, and more often
-than not, just really good pilots who fly around Canada and the USA because there is nothing else like it.
-
-</div>
-</div>
-
-<div id="mycard" class="grid">
-<div style="padding:1rem">
-
-## Getting Started
-### Go for a Discovery Flight
+# Getting Started
+## Go for a Discovery Flight
 
 If you're still indecisive about whether flying an aircraft or flight training is for you, you may want to
 start your journey with a _Discovery Flight_. During this flight you will get to _actually_ fly
@@ -34,13 +34,13 @@ Since these flights are treated exactly like a flight lesson, they are also pric
 <a>rates</a> you can budget for the flight assuming 1 hour on our Cessna Training Fleet aircraft and 1.5 hours
 of Flight Instructor time.
 
-### Get a Medical Certificate
+## Get a Medical Certificate
 
 In accordance with the CARs licensing requirements, you need a medical certificate to not only obtain a pilot
 license, but to maintain one. So once you've made your decision to become a pilot, your next step should be to
 complete an aviation medical exam.
 
-### Sign Up!
+## Sign Up!
 
 Your final steps to getting started will be to:
 
@@ -58,9 +58,9 @@ Your final steps to getting started will be to:
 <div id="mycard" class="grid">
 <div style="padding:1rem">
 
-## Requirements
+# Requirements
 
-### Knowledge, Skill & Experience
+## Knowledge, Skill & Experience
 
 Most licenses/ratings/permits will require completion of a Transport Canada written examination, as well as a
 flight test (after completing a certain amount of flight time) before you are able to obtain a license.
@@ -80,7 +80,7 @@ Refer specifically to [CARs Standard 421 - Flight Crew Permits, Licences and Rat
 
 <div style="padding:1rem">
 
-### Medical Fitness
+## Medical Fitness
 To hold a pilot license, and to keep it valid, you must take regular medical examinations with a Civil
 Aviation Medical Examiner (CAME), at varying levels (the medical categories in the above table). Given that,
 once you make your decision to begin flight training, your first step should be to take a medical examination.
@@ -88,7 +88,7 @@ once you make your decision to begin flight training, your first step should be 
 See [CAR 404.04 (6)](https://laws-lois.justice.gc.ca/eng/regulations/SOR-96-433/FullText.html#h-991054)
 for a description of the validity period for each medical category and see [this section](#medical-exam) for a list of CAMEs.
 
-### Age
+## Age
 You must be 14 to _hold_ a Student Pilot Permit, 16 to _hold_ a Recreational Pilot Permit, 17 to
 _hold_ a Private Pilot Licence, and 18 to _hold_ a Commercial Pilot License. You can start
 _learning_ to fly (with a qualified instructor) at any age as long as you can safely control the
@@ -105,12 +105,12 @@ you are 14 years old and can obtain an SPP.
 <div id="mycard" class="grid">
 <div style="padding:1rem">
 
-## Medical Exam
+# Medical Exam
 
 Here's a shortlist of Civil Aviation Medical Examiners in and around Victoria. Alternatively, you can also
 go to Transport Canada's website to find their official list of examiners.
 
-### Victoria
+## Victoria
 
 **Dr. Salmaniw** --- (250) 656-2833 - Victoria Flying Club  
 _Check in at our front desk to book an exam with Dr. Salmaniw!_  
@@ -123,11 +123,11 @@ e-transfer._
 
 **Dr. Siu** --- (778) 967-2434 - Suite 371 1581-H Hillside Ave
 
-### Mill Bay
+## Mill Bay
 
 **Dr. Decker** --- (250) 743-3211 - 230-2720 Mill Bay Rd
 
-### Duncan
+## Duncan
 
 **Dr. De Wit** --- (250) 929-0197 - Unit A - 845 Deloume Rd
 
@@ -143,7 +143,7 @@ e-transfer._
 <div id="mycard" class="grid">
 <div style="padding:1rem">
 
-## Ground School
+# Ground School
 
 A big part of learning to fly is understanding how your aircraft works and how it responds to your control
 inputs, as well as the procedures for the airspace in which you will fly. Most of this is learned during the
@@ -208,7 +208,7 @@ _You'll find the below items very useful during your PPL/CPL training. They can 
 <div id="mycard" class="grid">
 <div style="padding:1rem">
 
-## Private Pilot License
+# Private Pilot License
 To hold a Private Pilot License, you must be 17 years of age and possess a Category 3 Medical Certificate or
 higher. This licence allows you to fly all single engine, non-high-performance aircraft during daylight hours
 under VFR.
@@ -243,7 +243,7 @@ Most people need an average of 55 hrs of flight time, which the below estimate i
 <div id="mycard" class="grid">
 <div style="padding:1rem">
 
-## Night Rating
+# Night Rating
 
 A pilot endorsed with a Night Rating can fly during the night in Visual Meteorological Conditions (VMC) under
 VFR. Its requirements are described in
@@ -262,7 +262,7 @@ required for this rating.\
 <div id="mycard" class="grid">
 <div style="padding:1rem">
 
-## Mountain Awareness Course
+# Mountain Awareness Course
 
 After completing their PPL training, an inexperienced pilot may be eager to explore all of BC. However, in the
 Pacific Region, the combined effect of the great mountain ranges and the adjacent Pacific Ocean lead to varied
@@ -282,7 +282,7 @@ sufficient knowledge and skills to fly safely in mountainous terrain.
 <div id="mycard" class="grid">
 <div style="padding:1rem">
 
-## Commercial Pilot License
+# Commercial Pilot License
 
 [Privileges](https://laws-lois.justice.gc.ca/eng/regulations/sor-96-433/page-38.html#h-990565) ···
 [Flight Test Guide](https://tc.canada.ca/node/29065) ···
@@ -323,7 +323,7 @@ flight time gained after the PPL license:
 <div id="mycard" class="grid">
 <div style="padding:1rem">
 
-## Multi-Engine Rating
+# Multi-Engine Rating
 
 [Flight Test Guide](https://tc.canada.ca/node/29593)
 
@@ -395,7 +395,7 @@ during their CPL training, 20 hrs of instrument time (including 10 hrs of simula
 <div id="mycard" class="grid">
 <div style="padding:1rem">
 
-## Class 4 Instructor Rating
+# Class 4 Instructor Rating
 
 [Privileges](https://laws-lois.justice.gc.ca/eng/regulations/sor-96-433/page-39.html#h-990762) ···
 [Flight Test Guide](https://tc.canada.ca/node/30590) ···
@@ -431,6 +431,3 @@ ground school and flight time), the candidate may attempt the flight test with a
 <img id="same" src="/images/" />
 </div>
 </div>
-
-
-</main>

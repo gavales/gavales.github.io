@@ -68,6 +68,42 @@
       }
     }
 
+    #TOC {
+      padding-top: 2rem;
+    }
+
+    #pagebody {
+      padding-top: 1rem;
+    }
+
+    #TOC ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    #TOC li a {
+      width: 100%;
+      padding-left: 1rem;
+      display: inline-block;
+      text-decoration: none;
+    }
+
+    #TOC li a:hover {
+      text-decoration: underline;
+    }
+
+    #TOC li a:active {
+      font-weight: bold;
+      color: color-mix(in oklab, var(--pico-primary) 50%, black 50%);
+    }
+
+    #TOC ul li ul {
+      margin-left: 1rem;
+      color: #3f3a3f;
+    }
+
     @media screen and (min-width: 1024px) {
       #logo-wide {
         display: inline;
@@ -79,6 +115,17 @@
 
       #logo-shor {
         display: none;
+      }
+
+      #TOC {
+        position: fixed;
+        left: 0;
+        margin-left: 2rem;
+      }
+
+      #pagebody {
+        margin-left: 300px;
+        margin-right: 2rem;
       }
     }
 
@@ -110,17 +157,22 @@
       }
     }
 
-    h1,
-    h2 {
-      text-decoration: none;
+    h1 {
+      text-decoration: underline;
       font-style: italic;
       font-variant: small-caps;
       color: var(--pico-primary);
     }
 
+    h2,
     h3,
     h4 {
       color: var(--pico-primary);
+    }
+
+    h2 {
+      font-style: italic;
+      font-size: 1.5rem;
     }
 
     h3 {
@@ -206,15 +258,39 @@
       }
       prevScrollpos = currentScrollPos;
     }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          const id = entry.target.getAttribute('id');
+          if (entry.intersectionRatio > 0) {
+            document.querySelector(`#TOC ul li a[id="toc-${id}"]`).classList.add('active');
+          } else {
+            document.querySelector(`#TOC ul li a[id="toc-${id}"]`).classList.remove('active');
+          }
+        });
+      });
+
+      // Track all sections that have an `id` applied
+      document.querySelectorAll('h1[id]').forEach((h1) => {
+        observer.observe(h1);
+      });
+
+    });
   </script>
 
-  <main class="container-fluid" style="margin-top:4rem;padding-left:1rem">
-    <nav id="navbar" class="container-fluid">
+</head>
+
+<body>
+  <div class="container-fluid" style="margin-top:5rem">
+    <nav id="navbar" class="container-fluid" style="height: 5rem; padding-right: 2rem;">
       <ul>
         <li>
           <a href="/"><img id="logo-shor" alt="VFC" src="/assets/logo.svg" style="height:2rem"></a>
-          <a href="/"><img id="logo-narr" alt="VFC" src="/assets/logo.svg" style="width:10rem"></a>
-          <a href="/" id="logo-wide" alt="VFC">Victoria Flying Club</a>
+          <a href="/"><img id="logo-narr" alt="VFC" src="/assets/logo.svg" style="width: 10rem;"></a>
+          <a href="/" id="logo-wide" alt="VFC" style="font-size: 2rem; padding-top: 1.5rem;">
+                        Charter Flights
+                      </a>
         </li>
       </ul>
       <ul>
@@ -223,95 +299,111 @@
           <li> <a hx-push-url="true" hx-get="/charters" hx-swap="innerHTML" hx-target="body">Charters</a> </li>
           <li> <a hx-push-url="true" hx-get="/resources" hx-swap="innerHTML" hx-target="body">Resources</a></li>
           <!-- <li><button hx-push-url="true" hx-get="/auth" hx-swap="innerHTML" hx-target="body"><em>Sign Up!</em></button> -->
-          </li>
         </em>
       </ul>
       <!-- <hr style="background: linear-gradient(90deg, #012c61 0%, #cc0a00 100%); height: 2px; border: 0;" /> -->
     </nav>
-  </main>
-</head>
-
-<body>
-  <main id="pagebody" class="container">
-
-  <h1 id="sightseeing--charter-flights">Sightseeing &amp; Charter
-  Flights</h1>
-  <blockquote>
-  <p><strong>To book a flight, for more information on destinations and
-  fares, or if you have a specific request, please contact our chief
-  charter pilot, Ted Krasowski, <a href="mailto:tedk@flyvfc.com">by
-  email</a> or <a href="tel:+17783503213">over the
-  phone</a></strong>.</p>
-  <p>Our charter flights are limited to flights during the day only, and
-  a maximum of 3 passengers.</p>
-  <p>A CAD$120 deposit is required to secure a booking, and is
-  refundable for cancellations at least 24 hours before the flight or if
-  the pilot determines unacceptable weather conditions exist and
-  re-scheduling is not possible. Your pilot will contact you the day
-  before the flight to confirm conditions are suitable to fly.</p>
-  <p><strong>All prices are subject to change at any time.</strong></p>
-  </blockquote>
-  <div id="mycard" class="grid">
-
-  <div style="padding:1rem">
-
-  <summary>
-
-  <h2 id="charter-flights">Charter Flights</h2>
-  <p><small style="font-size:1rem;font-style:italic;font-weight: bold;">CAD$6.25
-  per nautical mile + tax</small></p>
-  <p><strong>Get affordable, timely and direct transportation that suits
-  your schedule to locations on Vancouver Island, the Lower Mainland and
-  Washington State.</strong></p>
-  </summary>
-
-  <p>Please review these tariffs for specific information about our
-  charters:</p>
-  <ul>
-  <li><a href="/documents/DomesticTariff.pdf">Domestic Tariff</a></li>
-  <li><a href="/documents/InternationalTariff.pdf">International
-  Tariff</a></li>
-  </ul>
-  </div>
-  <img id="same" src="/images/charter.jpg" alt="Charters" style="max-height:30rem">
   </div>
 
-  <div id="mycard" class="grid">
-  <div style="padding:1rem">
-
-  <summary>
-
-  <h2 id="sightseeing-flights">Sightseeing Flights</h2>
-  <p><small style="font-size:1rem;font-style:italic;font-weight: bold;">CAD$400
-  per hour of flight time + tax</small></p>
-  <p><strong>Enjoy an exciting aerial tour of the city, view the
-  stunning coastline from the air, or let romance take flight with a
-  private sightseeing excursion. Create an extraordinary experience that
-  will be remembered for years to come!</strong></p>
-  </summary>
-
-  <p>We've found the routes below to be very popular, but if you have a
-  more bespoke scenic route in mind for a special occasion, we will try
-  help you organise it, within the limits of the Canadian Aviation
-  Regulations and our Air Operator Certificate.</p>
-  <ol type="1">
-  <li><p><strong><em>City Tour</em></strong> --- <em>45 minutes</em> See
-  all of Victoria from above! Fly over quaint Sidney, the golf course of
-  Oak Bay, the Inner Harbour, and the emerald Highlands.</p></li>
-  <li><p><strong><em>Gulf Island Tour</em></strong> --- <em>60
-  minutes</em> Bring your camera to capture the beauty of the forests
-  and beaches of BC's islands - the Penders, Mayne, Galiano, Thetis,
-  Penelakut, and Saltspring Island.</p></li>
-  <li><p><strong><em>Lighthouse Tour</em></strong> --- <em>75
-  minutes</em> Get a glimpse of the oceanic gateways to 19th century
-  Victoria by seeing and learning about the Discovery, Trial, Fisgard,
-  and Race Rocks Lighthouses.</p></li>
-  </ol>
+    <div id="TOC">
+    <div class="container">
+      <p><b><em>On This Page</em></b></p>
+      <ul>
+      <li><a href="#charter-flights" id="toc-charter-flights">Charter
+      Flights</a></li>
+      <li><a href="#sightseeing-flights"
+      id="toc-sightseeing-flights">Sightseeing Flights</a></li>
+      </ul>
+    </div>
   </div>
-  <img id="same" src="/images/scenic.jpg" alt="scenic">
-  </div>
+  
+  <div id="pagebody">
+    <div class="container">
+      <blockquote>
+      <p><strong>To book a flight, for more information on destinations
+      and fares, or if you have a specific request, please contact our
+      chief charter pilot, Ted Krasowski, <a
+      href="mailto:tedk@flyvfc.com">by email</a> or <a
+      href="tel:+17783503213">over the phone</a></strong>.</p>
+      <p>Our charter flights are limited to flights during the day only,
+      and a maximum of 3 passengers.</p>
+      <p>A CAD$120 deposit is required to secure a booking, and is
+      refundable for cancellations at least 24 hours before the flight
+      or if the pilot determines unacceptable weather conditions exist
+      and re-scheduling is not possible. Your pilot will contact you the
+      day before the flight to confirm conditions are suitable to
+      fly.</p>
+      <p><strong>All prices are subject to change at any
+      time.</strong></p>
+      </blockquote>
+      <div id="mycard" class="grid">
 
-  </main>
+      <div style="padding:1rem">
+
+      <summary>
+
+      <h1 id="charter-flights">Charter Flights</h1>
+      <p><small style="font-size:1rem;font-style:italic;font-weight: bold;">CAD$6.25
+      per nautical mile + tax</small></p>
+      <p><strong>Get affordable, timely and direct transportation that
+      suits your schedule to locations on Vancouver Island, the Lower
+      Mainland and Washington State.</strong></p>
+      </summary>
+
+      <p>Please review these tariffs for specific information about our
+      charters:</p>
+      <ul>
+      <li><a href="/documents/DomesticTariff.pdf">Domestic
+      Tariff</a></li>
+      <li><a href="/documents/InternationalTariff.pdf">International
+      Tariff</a></li>
+      </ul>
+      </div>
+      <div>
+        <img id="same" src="/images/charter.jpg" alt="Charters" style="max-height:30rem">
+      </div>
+      </div>
+
+      <div id="mycard" class="grid">
+      <div style="padding:1rem">
+
+      <summary>
+
+      <h1 id="sightseeing-flights">Sightseeing Flights</h1>
+      <p><small style="font-size:1rem;font-style:italic;font-weight: bold;">CAD$400
+      per hour of flight time + tax</small></p>
+      <p><strong>Enjoy an exciting aerial tour of the city, view the
+      stunning coastline from the air, or let romance take flight with a
+      private sightseeing excursion. Create an extraordinary experience
+      that will be remembered for years to come!</strong></p>
+      </summary>
+
+      <p>We've found the routes below to be very popular, but if you
+      have a more bespoke scenic route in mind for a special occasion,
+      we will try help you organise it, within the limits of the
+      Canadian Aviation Regulations and our Air Operator
+      Certificate.</p>
+      <ol type="1">
+      <li><p><strong><em>City Tour</em></strong> --- <em>45 minutes</em>
+      See all of Victoria from above! Fly over quaint Sidney, the golf
+      course of Oak Bay, the Inner Harbour, and the emerald
+      Highlands.</p></li>
+      <li><p><strong><em>Gulf Island Tour</em></strong> --- <em>60
+      minutes</em> Bring your camera to capture the beauty of the
+      forests and beaches of BC's islands - the Penders, Mayne, Galiano,
+      Thetis, Penelakut, and Saltspring Island.</p></li>
+      <li><p><strong><em>Lighthouse Tour</em></strong> --- <em>75
+      minutes</em> Get a glimpse of the oceanic gateways to 19th century
+      Victoria by seeing and learning about the Discovery, Trial,
+      Fisgard, and Race Rocks Lighthouses.</p></li>
+      </ol>
+      </div>
+      <div>
+        <img id="same" src="/images/scenic.jpg" alt="scenic">
+      </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 <br />

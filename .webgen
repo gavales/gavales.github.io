@@ -10,10 +10,13 @@ RTLC="${ROOT}/local"
 cd $WBST
 
 for i in $(ls views); do
-	pandoc views/$i -f gfm -o ${i%.*}.html --template template.html
+	[[ $i != "index.html" ]] && TOC="--table-of-contents --toc-depth=1"
+	pandoc views/$i -f gfm --template template.html $TOC -s -o ${i%.*}.html
 done
 
 for i in $(ls *.html); do
+	if [[ $i =~ "template.html" ]]; then continue
+	fi
 	sed -i 's;<section;<div;g' "$i"
 	sed -i 's;</section;</div;g' "$i"
 done
