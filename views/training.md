@@ -185,6 +185,7 @@ _apply good pilot decision making_.
 <div>
 
 <blockquote>
+
 _You'll find the below items very useful during your PPL/CPL training. They can also be found in our Pilot Shop:_
 
 - [From the Ground Up](https://www.amazon.ca/s?k=from+the+ground+up&i=stripbooks&crid=TGHGQ16NK2AK&sprefix=from+the+ground+up%2Cstripbooks%2C132&ref=nb_sb_noss_2)  
