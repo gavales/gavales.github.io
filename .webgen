@@ -11,16 +11,14 @@ cd $WBST
 
 date
 for i in $(ls views); do
-	if [[ $i =~ "template.html" ]]; then continue
-	fi
+	[[ $i =~ "template.html" ]] && continue
 	[[ $i != "index.html" ]] && TOC="--table-of-contents --toc-depth=1"
-	echo "     converting $i"
-	pandoc views/$i -f gfm --template template.html $TOC -s -o ${i%.*}.html
+	pandoc views/$i -f gfm --template views/template.html $TOC -s -o ${i%.*}.html
+	echo "     converted $i"
 done
 
 for i in $(ls *.html); do
-	if [[ $i =~ "template.html" ]]; then continue
-	fi
+	[[ $i =~ "template.html" ]] && continue
 	sed -i 's;<section;<div;g' "$i"
 	sed -i 's;</section;</div;g' "$i"
 done
