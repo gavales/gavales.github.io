@@ -65,10 +65,20 @@
           box-shadow: none;
         }
 
+        h1,
+        h2,
+        h3,
+        h4,
+        navbar,
+        logo-wide {
+          color: var(--pico-primary-background);
+        }
+
       }
     }
 
     #TOC {
+      padding-left: 1rem;
       padding-top: 2rem;
     }
 
@@ -215,13 +225,12 @@
     }
 
     #logo-wide {
+      color: var(--pico-primary);
       font-size: 2rem;
       font-weight: bold;
       font-style: italic;
       transition: font-size 150ms, padding-top 150ms;
-      position: fixed;
-      top: 0;
-      padding-top: 1.5rem;
+      // padding-top: 1.5rem;
       padding-left: 1.5rem;
     }
 
@@ -291,9 +300,9 @@
       <li>
         <a href="/"><img id="logo-shor" alt="VFC" src="/assets/logo.svg" style="height:2rem"></a>
         <a href="/"><img id="logo-narr" alt="VFC" src="/assets/logo.svg" style="width:10rem"></a>
-        <a href="/" id="logo-wide" alt="VFC" style="font-size:2rem;padding-top:1.5rem">
+        <div id="logo-wide" alt="VFC" style="font-size:2rem">
                     Flight Training
-                  </a>
+                  </div>
       </li>
     </ul>
     <ul>
