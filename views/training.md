@@ -2,8 +2,10 @@
 title: Flight Training
 ---
 
-<div id="mycard" class="grid">
+<div class="grid">
   <div style="padding:1rem">
+
+  # Your Motivation
 
   There are many facets to flight training. The Victoria Flying Club staff would be delighted to show you how
   they fit together. The staff at Victoria Flying Club works with you to develop a training program that will

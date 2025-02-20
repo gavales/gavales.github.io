@@ -19,7 +19,7 @@
     :root:not([data-theme=dark]) {
       --pico-font-size: 98%;
       --pico-font-family-emoji: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-      --pico-font-family-sans-serif: Arial, sans-serif, var(--pico-font-family-emoji);
+      --pico-font-family-sans-serif: "SF Pro Rounded", Arial, sans-serif, var(--pico-font-family-emoji);
       --pico-font-family-serif: "CMU Serif", serif, var(--pico-font-family-emoji);
       --pico-font-family-monospace: Consolas, monospace, var(--pico-font-family-emoji);
       --pico-font-family: var(--pico-font-family-sans-serif);
@@ -142,7 +142,7 @@
 
       #pagebody {
         margin-left: 20rem;
-        margin-right: 2rem;
+        // margin-right: 2rem;
       }
     }
 
@@ -175,10 +175,11 @@
     }
 
     h1 {
-      text-decoration: underline;
       font-style: italic;
       font-variant: small-caps;
-      color: var(--pico-primary);
+      background: linear-gradient(90deg, #cc0a00, #012c61, #012c61);
+      background-clip: text;
+      color: transparent;
     }
 
     h2,
@@ -219,10 +220,14 @@
 
     #mycard {
       backdrop-filter: blur(20px);
-      background: rgba(255, 255, 255, 0.5);
+      background: rgba(255, 255, 255, 1.0);
       margin: 2rem 0 2rem 0;
-      box-shadow: 0px 0rem 0.8rem 0.5rem rgba(220, 220, 220, 0.5);
-      // padding: 1rem;
+      padding-top: 2rem;
+      box-shadow: none;
+      border-image: linear-gradient(90deg, rgba(1, 44, 97, 0.2), rgba(204, 10, 0, 0.2)) 1;
+      border-radius: 0px;
+      border-width: 2px 0 0 0;
+      border-style: solid;
     }
 
     #logo-wide {
@@ -248,7 +253,7 @@
       z-index: 1000;
       border-image: linear-gradient(90deg, #cc0a00, #012c61, #cc0a00) 1;
       border-radius: 5px;
-      border-width: 0 0 2px 0;
+      border-width: 0 0 3px 0;
       border-style: solid;
       transition: height 150ms;
       background-color: rgba(255, 255, 255, 0.5);
@@ -312,11 +317,15 @@
     </ul>
     <ul>
       <em>
-        <li><a href="/training">Training</a></li>
-        <li><a href="/charters">Charters</a></li>
-        <li><a href="/resources">Resources</a></li>
-        <li><button href="/auth">Sign In</button>
+        <b>
+          <li><a href="/training">Training</a></li>
+          <li><a href="/charters">Charters</a></li>
+          <li><a href="/resources">Resources</a></li>
+        </b>
       </em>
+    </ul>
+    <ul>
+      <li><button href="/auth">Sign In</button>
     </ul>
     <!-- <hr style="background: linear-gradient(90deg, #012c61 0%, #cc0a00 100%); height: 2px; border: 0;" /> -->
   </nav>
