@@ -12,14 +12,13 @@
 
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-  <link rel="stylesheet" href="/css/index.css">
 
   <style>
     [data-theme=light],
     :root:not([data-theme=dark]) {
       --pico-font-size: 98%;
       --pico-font-family-emoji: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-      --pico-font-family-sans-serif: "SF Pro Rounded", Arial, sans-serif, var(--pico-font-family-emoji);
+      --pico-font-family-sans-serif: Arial, sans-serif, var(--pico-font-family-emoji);
       --pico-font-family-serif: "CMU Serif", serif, var(--pico-font-family-emoji);
       --pico-font-family-monospace: Consolas, monospace, var(--pico-font-family-emoji);
       --pico-font-family: var(--pico-font-family-sans-serif);
@@ -247,7 +246,7 @@
     #navbar {
       backdrop-filter: blur(20px);
       height: 5rem;
-      position: sticky;
+      position: fixed;
       top: 0;
       width: 100%;
       z-index: 1000;
@@ -303,12 +302,8 @@
 <body>
   <nav id="navbar" class="container-fluid">
     <ul>
-      <li>
-        <a href="/"><img id="logo-shor" alt="VFC" src="/assets/logo.svg" style="height:2rem"></a>
-      </li>
-      <li>
-        <a href="/"><img id="logo-narr" alt="VFC" src="/assets/logo.svg" style="width:10rem"></a>
-      </li>
+      <li> <a href="/"><img id="logo-shor" alt="VFC" src="/assets/logo.svg" style="height:2rem"></a> </li>
+      <li> <a href="/"><img id="logo-narr" alt="VFC" src="/assets/logo.svg" style="width:10rem"></a> </li>
       <li>
         <div id="logo-wide" alt="VFC" style="font-size:2rem">
                     Flight Training
@@ -321,14 +316,16 @@
           <li><a href="/training">Training</a></li>
           <li><a href="/charters">Charters</a></li>
           <li><a href="/resources">Resources</a></li>
+          <li><button href="/auth">Sign In</button></li>
         </b>
       </em>
     </ul>
-    <ul>
-      <li><button href="/auth">Sign In</button>
-    </ul>
     <!-- <hr style="background: linear-gradient(90deg, #012c61 0%, #cc0a00 100%); height: 2px; border: 0;" /> -->
   </nav>
+
+  <br />
+  <br />
+  <br />
 
     <div id="TOC">
     <div class="container">
@@ -371,19 +368,22 @@
         <div style="padding:1rem">
 
       <h1 id="your-motivation">Your Motivation</h1>
-      <p>There are many facets to flight training. The Victoria Flying
-      Club staff would be delighted to show you how they fit together.
-      The staff at Victoria Flying Club works with you to develop a
-      training program that will help you reach any of your flying
-      goals. We've been doing this since shortly after the Wright
-      Brothers lifted off the ground at Kitty Hawk!</p>
-      <p>Some people want to fly just for the fun of it. Others want a
-      career in aviation. The Victoria Flying Club is your doorstep into
-      the wonderful world of flying, no matter which path you want to
-      follow. Members of our club have become Astronauts, Airline
-      Pilots, Aerobatic Performers, Bush Pilots, Military Aviators, and
-      more often than not, just really good pilots who fly around Canada
-      and the USA because there is nothing else like it.</p>
+      <p>The first thing you'll need to do is ask yourself: <em>Why do I
+      want to fly?</em></p>
+      <p>If you want to fly for fun, then you may just need to train for
+      an Recreational Pilot Permit (RPP) or Private Pilot License (PPL).
+      These licenses let you fly a non-high-performance, Canadian
+      registered, aircraft during the day. In the case of the RPP, you
+      can only fly a 4 seat aircraft with 1 passenger, in Canada.</p>
+      <p>On the other hand, if you would like to make a career out of
+      flying aeroplanes, then you will need to earn the Commercial Pilot
+      License (CPL), as well as additional <em>ratings</em> for the kind
+      of aircraft you see yourself flying.</p>
+      <p>For those who have aspirations to fly airliners, once
+      completing the CPL training they would need to complete the
+      Multi-engine &amp; Group 1 Instrument Ratings, and build up at
+      least 1,500 hrs to earn the Airline Transport Pilot License
+      (ATPL).</p>
         </div>
       </div>
 

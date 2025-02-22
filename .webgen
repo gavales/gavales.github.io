@@ -11,8 +11,12 @@ cd $WBST
 
 date
 for i in $(ls views); do
-	[[ $i =~ "template.html" ]] && continue
-	[[ $i != "index.html" ]] && TOC="--table-of-contents --toc-depth=1"
+	[[ $i =~ "template" ]] && continue
+	[[ $i != "index.md" ]] && TOC="--table-of-contents --toc-depth=1" || TOC=""
+	if [[ $i == "index.md" ]]; then
+		pandoc views/$i -f gfm --template views/template_index.html $TOC -s -o ${i%.*}.html
+		continue
+	fi
 	pandoc views/$i -f gfm --template views/template.html $TOC -s -o ${i%.*}.html
 	echo "     converted $i"
 done

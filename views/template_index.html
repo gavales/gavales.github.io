@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-  <title>Home</title>
+  <title>$title$</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://unpkg.com/htmx.org@2.0.4"
@@ -139,26 +139,16 @@
     </ul>
   </nav>
 
-  
-  <div class="home container-fluid" id="card1">
-
-  <h1 id="welcome">Welcome</h1>
+  $if(toc)$
+  <div id="TOC">
+    <div class="container">
+      <p><b><em>On This Page</em></b></p>
+      $toc$
+    </div>
   </div>
+  $endif$
 
-  <div class="home container-fluid" id="card2">
-
-  <h1 id="learn-to-fly">Learn to Fly!</h1>
-  </div>
-
-  <div class="home container-fluid" id="card3">
-
-  <h1 id="travel-with-us">Travel With Us!</h1>
-  </div>
-
-  <div class="home container-fluid" id="card4">
-
-  <h1 id="join-the-club">Join the Club.</h1>
-  </div>
+  $body$
 </body>
 
 <br />

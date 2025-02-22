@@ -7,15 +7,15 @@ title: Flight Training
 
   # Your Motivation
 
-  There are many facets to flight training. The Victoria Flying Club staff would be delighted to show you how
-  they fit together. The staff at Victoria Flying Club works with you to develop a training program that will
-  help you reach any of your flying goals. We've been doing this since shortly after the Wright Brothers lifted
-  off the ground at Kitty Hawk!
+  The first thing you'll need to do is ask yourself: _Why do I want to fly?_
+  
+  If you want to fly for fun, then you may just need to train for an Recreational Pilot Permit (RPP) or Private Pilot
+  License (PPL). These licenses let you fly a non-high-performance, Canadian registered, aircraft during the day. In the
+  case of the RPP, you can only fly a 4 seat aircraft with 1 passenger, in Canada.
 
-  Some people want to fly just for the fun of it. Others want a career in aviation. The Victoria Flying Club is
-  your doorstep into the wonderful world of flying, no matter which path you want to follow. Members of our club
-  have become Astronauts, Airline Pilots, Aerobatic Performers, Bush Pilots, Military Aviators, and more often
-  than not, just really good pilots who fly around Canada and the USA because there is nothing else like it.
+  On the other hand, if you would like to make a career out of flying aeroplanes, then you will need to earn the Commercial Pilot License (CPL), as well as additional _ratings_ for the kind of aircraft you see yourself flying.
+
+  For those who have aspirations to fly airliners, once completing the CPL training they would need to complete the Multi-engine & Group 1 Instrument Ratings, and build up at least 1,500 hrs to earn the Airline Transport Pilot License (ATPL).
 
   </div>
 </div>
