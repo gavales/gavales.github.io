@@ -28,14 +28,19 @@
       font-variant-emoji: unicode;
     }
 
-    body::before {
+    body {
       background-image: url("/assets/oldlogo-s.png");
-      background-size: min(80vw, 50rem);
-      background-position: center;
       background-attachment: fixed;
-      content: '';
-      z-index: -1;
     }
+
+    // body::before {
+    //   background-image: url("/assets/oldlogo-s.png");
+    //   background-size: min(80vw, 50rem);
+    //   background-position: center;
+    //   background-attachment: fixed;
+    //   content: '';
+    //   z-index: -1;
+    // }
 
 
     [data-theme=light],
