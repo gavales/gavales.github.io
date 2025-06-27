@@ -25,10 +25,8 @@
       --hslblue: 222, 98.1%;
       --hslred: 350, 85.2%;
       --hslwhite: #ffffff;
-      background-image: url("/assets/oldlogo-s.png");
+      background: url("/assets/oldlogo-s.png") no-repeat center center/cover fixed;
       background-size: min(80vw, 50rem);
-      background-position: center;
-      background-attachment: fixed;
       font-variant-emoji: unicode;
     }
 
@@ -64,7 +62,7 @@
         --pico-primary-inverse: var(--hexwhite);
 
         #navbar {
-          background: rgba(0, 0, 0);
+          background: rgba(0, 0, 0, 0.0);
         }
 
         #mycard {
@@ -160,11 +158,10 @@
   <nav id="navbar" class="container-fluid">
     <ul> </ul>
     <ul>
-      <li> <a href="/"><img id="logo-shor" alt="VFC" src="/assets/logo.svg" style="height:2rem"></a> </li>
+      <li> <img id="logo-shor" alt="VFC" src="/assets/logo.svg" style="height:2rem"> </li>
     </ul>
   </nav>
 
-  
   <div class="home container-fluid" id="card1">
 
   <h1 id="welcome">Welcome!</h1>
@@ -190,12 +187,12 @@
 
   <article style="max-width: 20rem;width:33%;">
     <header> <b>Regulatory Information</b> </header>
-    <div style="height:max-content;"">
-      Victoria Flying Club is designated by the BC EQA & PTIB, and regulated by the Private Training Institutions
-      Branch of the Ministry of Advanced Education, Skills & Training (PTIB).
-      <br/> <br/>
+    <div style="height:max-content;">
+      Victoria Flying Club is designated by the BC EQA & PTIB, and regulated by the Private Training Institutions Branch
+      of the Ministry of Advanced Education, Skills & Training (PTIB).
+      <br /> <br />
       <a href=" https://www.privatetraininginstitutions.gov.bc.ca/" target="_blank"><img id="ptib" alt="PTIB"
-        src="/assets/ptib.png" style="height:5rem"></a>
+          src="/assets/ptib.png" style="height:5rem"></a>
       <a href="https://www2.gov.bc.ca/gov/content/education-training/post-secondary-education/institution-resources-administration/education-quality-assurance"
         target="_blank"><img id="ptib" alt="PTIB" src="/assets/bcedu.png" style="height:5rem"></a>
     </div>
