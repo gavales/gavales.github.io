@@ -14,6 +14,19 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
 
   <style>
+    :root {
+      --hexblue: #012169;
+      --hexred: #C8102E;
+      --hexwhite: #ffffff;
+      --rgbblue: 1, 33, 105;
+      --rgbred: 200, 16, 46;
+      --rgbgreen: 4, 77, 41;
+      --rgbwhite: 255, 255, 255;
+      --hslblue: 222, 98.1%;
+      --hslred: 350, 85.2%;
+      --hslwhite: #ffffff;
+    }
+
     [data-theme=light],
     :root:not([data-theme=dark]) {
       --pico-font-size: 98%;
@@ -22,27 +35,27 @@
       --pico-font-family-serif: "CMU Serif", serif, var(--pico-font-family-emoji);
       --pico-font-family-monospace: Consolas, monospace, var(--pico-font-family-emoji);
       --pico-font-family: var(--pico-font-family-sans-serif);
-      --pico-text-selection-color: rgba(1, 44, 97, 0.25);
-      --pico-primary: hsl(213, 98%, 19%);
-      --pico-primary-background: hsl(213, 98%, 29%);
-      --pico-primary-underline: hsl(213, 98%, 19%);
-      --pico-primary-hover: hsl(213, 98%, 14%);
-      --pico-primary-hover-background: hsl(213, 98%, 9%);
-      --pico-primary-focus: hsl(213, 98%, 19%);
-      --pico-primary-inverse: #fff;
+      --pico-text-selection-color: rgba(var(--rgbblue), 0.25);
+      --pico-primary: hsl(var(--hslblue), 19%);
+      --pico-primary-background: hsl(var(--hslblue), 29%);
+      --pico-primary-underline: hsl(var(--hslblue), 19%);
+      --pico-primary-hover: hsl(var(--hslblue), 14%);
+      --pico-primary-hover-background: hsl(var(--hslblue), 9%);
+      --pico-primary-focus: hsl(var(--hslblue), 19%);
+      --pico-primary-inverse: var(--hexwhite);
     }
 
     @media only screen and (prefers-color-scheme: dark) {
       :root:not([data-theme]) {
         background-color: black;
-        --pico-text-selection-color: rgba(1, 44, 97, 0.25);
-        --pico-primary: hsl(213, 98%, 29%);
-        --pico-primary-background: hsl(213, 98%, 39%);
-        --pico-primary-underline: hsl(213, 98%, 39%);
-        --pico-primary-hover: hsl(213, 98%, 24%);
-        --pico-primary-hover-background: hsl(213, 98%, 19%);
-        --pico-primary-focus: hsl(213, 98%, 29%);
-        --pico-primary-inverse: #fff;
+        --pico-text-selection-color: rgba(var(--rgbblue), 0.25);
+        --pico-primary: hsl(var(--hslblue), 29%);
+        --pico-primary-background: hsl(var(--hslblue), 39%);
+        --pico-primary-underline: hsl(var(--hslblue), 39%);
+        --pico-primary-hover: hsl(var(--hslblue), 24%);
+        --pico-primary-hover-background: hsl(var(--hslblue), 19%);
+        --pico-primary-focus: hsl(var(--hslblue), 29%);
+        --pico-primary-inverse: var(--hexwhite);
 
         #navbar {
           background: rgba(0, 0, 0);
@@ -77,12 +90,13 @@
       width: 100%;
       z-index: 1000;
       transition: height 150ms;
-      background-color: rgba(255, 255, 255, 0.0);
+      background-color: rgba(var(--rgbwhite), 0.0);
     }
 
-    body {
+    html {
+      scroll-snap-type: y mandatory;
+      scroll-snap-align: start;
       overflow-y: scroll;
-      scroll-snap-type: y proximity;
       scroll-behavior: smooth;
     }
 
@@ -95,26 +109,23 @@
     }
 
     #card1 {
-      background: linear-gradient(90deg, rgba(1, 44, 97, 0.25), rgba(204, 10, 0, 0.25));
+      background: linear-gradient(90deg, rgba(var(--rgbblue), 0.25), rgba(var(--rgbred), 0.25));
     }
 
     #card2 {
-      background: rgba(1, 44, 97, 0.25);
-      // background: #012c61;
+      background: rgba(var(--rgbblue), 0.25);
     }
 
     #card3 {
-      background: rgba(4, 77, 41, 0.25);
-      // background: #044d29;
+      background: rgba(var(--rgbgreen), 0.25);
     }
 
     #card4 {
-      background: rgba(204, 10, 0, 0.25);
-      // background: #cc0a00;
+      background: rgba(var(--rgbred), 0.25);
     }
 
     h1 {
-      color: #012c61;
+      color: var(--hexblue);
       font-size: 4rem;
       font-style: italic;
     }
@@ -133,7 +144,7 @@
           <li><a href="/training">Training</a></li>
           <li><a href="/charters">Charters</a></li>
           <li><a href="/resources">Resources</a></li>
-          <li><button href="/auth">Sign In</button></li>
+          <li><button href="/members">Sign In</button></li>
         </b>
       </em>
     </ul>

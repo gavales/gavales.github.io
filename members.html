@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-  <title>$title$</title>
+  <title>For Members</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://unpkg.com/htmx.org@2.0.4"
@@ -280,12 +280,8 @@
       <li> <a href="/"><img id="logo-narr" alt="VFC" src="/assets/logo.svg" style="width:10rem"></a> </li>
       <li>
         <div id="logo-wide" alt="VFC" style="font-size:2rem">
-          $if(title)$
-          $title$
-          $else$
-          Victoria Flying Club
-          $endif$
-        </div>
+                    For Members
+                  </div>
       </li>
     </ul>
     <ul>
@@ -305,16 +301,30 @@
   <br />
   <br />
 
-  $if(toc)$
-  <div class="container" id="TOC">
+    <div class="container" id="TOC">
     <p><b><em>On This Page</em></b></p>
-    $toc$
+    <ul>
+    <li><a href="#sign-in" id="toc-sign-in">Sign In</a></li>
+    </ul>
   </div>
-  $endif$
-
+  
   <div id="pagebody">
     <div class="container">
-      $body$
+      <div class="grid">
+
+      <div class="container" id="mycard">
+
+      <h1 id="sign-in">Sign In</h1>
+      </div>
+
+      <div class="container" id="mycard">
+
+        <iframe frameborder="no" height="800px" https:="" onload="tryToEnableWACookies(" src="https://vfc-members.wildapricot.org/widget/join-us" width="750px"></iframe><br />
+      Powered by Wild Apricot <a href="http://www.wildapricot.com/features" target="_blank">Membership Software</a><script  type="text/javascript" language="javascript" src="https://vfc-members.wildapricot.org/Common/EnableCookies.js" ></script>
+
+      </div>
+
+      </div>
     </div>
   </div>
 </body>

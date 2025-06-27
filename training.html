@@ -14,6 +14,19 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
 
   <style>
+    :root {
+      --hexblue: #012169;
+      --hexred: #C8102E;
+      --hexwhite: #ffffff;
+      --rgbblue: 1, 33, 105;
+      --rgbred: 200, 16, 46;
+      --rgbgreen: 4, 77, 41;
+      --rgbwhite: 255, 255, 255;
+      --hslblue: 222, 98.1%;
+      --hslred: 350, 85.2%;
+      --hslwhite: #ffffff;
+    }
+
     [data-theme=light],
     :root:not([data-theme=dark]) {
       --pico-font-size: 98%;
@@ -22,14 +35,14 @@
       --pico-font-family-serif: "CMU Serif", serif, var(--pico-font-family-emoji);
       --pico-font-family-monospace: Consolas, monospace, var(--pico-font-family-emoji);
       --pico-font-family: var(--pico-font-family-sans-serif);
-      --pico-text-selection-color: rgba(1, 44, 97, 0.25);
-      --pico-primary: hsl(213, 98%, 19%);
-      --pico-primary-background: hsl(213, 98%, 29%);
-      --pico-primary-underline: hsl(213, 98%, 19%);
-      --pico-primary-hover: hsl(213, 98%, 14%);
-      --pico-primary-hover-background: hsl(213, 98%, 9%);
-      --pico-primary-focus: hsl(213, 98%, 19%);
-      --pico-primary-inverse: #fff;
+      --pico-text-selection-color: rgba(var(--rgbblue), 0.25);
+      --pico-primary: hsl(var(--hslblue), 19%);
+      --pico-primary-background: hsl(var(--hslblue), 29%);
+      --pico-primary-underline: hsl(var(--hslblue), 19%);
+      --pico-primary-hover: hsl(var(--hslblue), 14%);
+      --pico-primary-hover-background: hsl(var(--hslblue), 9%);
+      --pico-primary-focus: hsl(var(--hslblue), 19%);
+      --pico-primary-inverse: var(--hexwhite);
     }
 
     @media (min-width: 768px) {
@@ -47,14 +60,14 @@
     @media only screen and (prefers-color-scheme: dark) {
       :root:not([data-theme]) {
         background-color: black;
-        --pico-text-selection-color: rgba(1, 44, 97, 0.25);
-        --pico-primary: hsl(213, 98%, 29%);
-        --pico-primary-background: hsl(213, 98%, 39%);
-        --pico-primary-underline: hsl(213, 98%, 39%);
-        --pico-primary-hover: hsl(213, 98%, 24%);
-        --pico-primary-hover-background: hsl(213, 98%, 19%);
-        --pico-primary-focus: hsl(213, 98%, 29%);
-        --pico-primary-inverse: #fff;
+        --pico-text-selection-color: rgba(var(--rgbblue), 0.25);
+        --pico-primary: hsl(var(--hslblue), 29%);
+        --pico-primary-background: hsl(var(--hslblue), 39%);
+        --pico-primary-underline: hsl(var(--hslblue), 39%);
+        --pico-primary-hover: hsl(var(--hslblue), 24%);
+        --pico-primary-hover-background: hsl(var(--hslblue), 19%);
+        --pico-primary-focus: hsl(var(--hslblue), 29%);
+        --pico-primary-inverse: var(--hexwhite);
 
         #navbar {
           background: rgba(0, 0, 0);
@@ -93,25 +106,20 @@
       overflow: hidden;
     }
 
-    #TOC li a {
+    #TOC ul li a {
       width: 100%;
       padding-left: 1rem;
       display: inline-block;
       text-decoration: none;
     }
 
-    #TOC li a:hover {
+    #TOC ul li a .hover {
       text-decoration: underline;
     }
 
-    #TOC li a:active {
+    #TOC ul li a .active {
       font-weight: bold;
       color: color-mix(in oklab, var(--pico-primary) 50%, black 50%);
-    }
-
-    #TOC ul li ul {
-      margin-left: 1rem;
-      color: #3f3a3f;
     }
 
     @media screen and (min-width: 1280px) {
@@ -223,7 +231,7 @@
       margin: 2rem 0 2rem 0;
       padding-top: 2rem;
       box-shadow: none;
-      border-image: linear-gradient(90deg, rgba(1, 44, 97, 0.2), rgba(204, 10, 0, 0.2)) 1;
+      border-image: linear-gradient(90deg, rgba(255, 255, 255, 0.3), rgba(204, 10, 0, 0.3), rgba(1, 44, 97, 0.3), rgba(204, 10, 0, 0.3), rgba(255, 255, 255, 0.3)) 1;
       border-radius: 0px;
       border-width: 2px 0 0 0;
       border-style: solid;
@@ -259,43 +267,9 @@
     }
   </style>
 
-  <script>
-    var prevScrollpos = window.pageYOffset;
-    window.onscroll = function () {
-      var currentScrollPos = window.pageYOffset;
-      if (prevScrollpos > currentScrollPos) {
-        document.getElementById("logo-wide").style.fontSize = "2rem";
-        document.getElementById("logo-wide").style.paddingTop = "1.5rem";
-        document.getElementById("logo-narr").style.width = "10rem";
-        document.getElementById("navbar").style.height = "5rem";
-      } else {
-        document.getElementById("logo-wide").style.fontSize = "1rem";
-        document.getElementById("logo-wide").style.paddingTop = "1.3rem";
-        document.getElementById("logo-narr").style.width = "5rem";
-        document.getElementById("navbar").style.height = "3.1rem";
-      }
-      prevScrollpos = currentScrollPos;
-    }
+  <script src="views/navhide.js"></script>
+  <script src="views/toc.js"></script>
 
-    window.addEventListener('DOMContentLoaded', () => {
-      const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-          const id = entry.target.getAttribute('id');
-          if (entry.intersectionRatio > 0) {
-            document.querySelector(`#TOC ul li a[id="toc-${id}"]`).classList.add('active');
-          } else {
-            document.querySelector(`#TOC ul li a[id="toc-${id}"]`).classList.remove('active');
-          }
-        });
-      });
-
-      // Track all sections that have an `id` applied
-      document.querySelectorAll('h1[id]').forEach((h1) => {
-        observer.observe(h1);
-      });
-
-    });
-  </script>
 
 </head>
 
@@ -316,7 +290,7 @@
           <li><a href="/training">Training</a></li>
           <li><a href="/charters">Charters</a></li>
           <li><a href="/resources">Resources</a></li>
-          <li><button href="/auth">Sign In</button></li>
+          <li><button href="/members">Sign In</button></li>
         </b>
       </em>
     </ul>
@@ -327,39 +301,36 @@
   <br />
   <br />
 
-    <div id="TOC">
-    <div class="container">
-      <p><b><em>On This Page</em></b></p>
-      <ul>
-      <li><a href="#your-motivation" id="toc-your-motivation">Your
-      Motivation</a></li>
-      <li><a href="#getting-started" id="toc-getting-started">Getting
-      Started</a></li>
-      <li><a href="#requirements"
-      id="toc-requirements">Requirements</a></li>
-      <li><a href="#medical-exam" id="toc-medical-exam">Medical
-      Exam</a></li>
-      <li><a href="#ground-school" id="toc-ground-school">Ground
-      School</a></li>
-      <li><a href="#private-pilot-license"
-      id="toc-private-pilot-license">Private Pilot License</a></li>
-      <li><a href="#night-rating" id="toc-night-rating">Night
-      Rating</a></li>
-      <li><a href="#mountain-awareness-course"
-      id="toc-mountain-awareness-course">Mountain Awareness
-      Course</a></li>
-      <li><a href="#commercial-pilot-license"
-      id="toc-commercial-pilot-license">Commercial Pilot
-      License</a></li>
-      <li><a href="#multi-engine-rating"
-      id="toc-multi-engine-rating">Multi-Engine Rating</a></li>
-      <li><a href="#instrument-rating"
-      id="toc-instrument-rating">Instrument Rating</a></li>
-      <li><a href="#class-4-instructor-rating"
-      id="toc-class-4-instructor-rating">Class 4 Instructor
-      Rating</a></li>
-      </ul>
-    </div>
+    <div class="container" id="TOC">
+    <p><b><em>On This Page</em></b></p>
+    <ul>
+    <li><a href="#your-motivation" id="toc-your-motivation">Your
+    Motivation</a></li>
+    <li><a href="#getting-started" id="toc-getting-started">Getting
+    Started</a></li>
+    <li><a href="#requirements"
+    id="toc-requirements">Requirements</a></li>
+    <li><a href="#medical-exam" id="toc-medical-exam">Medical
+    Exam</a></li>
+    <li><a href="#ground-school" id="toc-ground-school">Ground
+    School</a></li>
+    <li><a href="#private-pilot-license"
+    id="toc-private-pilot-license">Private Pilot License</a></li>
+    <li><a href="#night-rating" id="toc-night-rating">Night
+    Rating</a></li>
+    <li><a href="#mountain-awareness-course"
+    id="toc-mountain-awareness-course">Mountain Awareness
+    Course</a></li>
+    <li><a href="#commercial-pilot-license"
+    id="toc-commercial-pilot-license">Commercial Pilot License</a></li>
+    <li><a href="#multi-engine-rating"
+    id="toc-multi-engine-rating">Multi-Engine Rating</a></li>
+    <li><a href="#instrument-rating"
+    id="toc-instrument-rating">Instrument Rating</a></li>
+    <li><a href="#class-4-instructor-rating"
+    id="toc-class-4-instructor-rating">Class 4 Instructor
+    Rating</a></li>
+    </ul>
   </div>
   
   <div id="pagebody">

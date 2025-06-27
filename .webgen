@@ -12,6 +12,7 @@ cd $WBST
 date
 for i in $(ls views); do
 	[[ $i =~ "template" ]] && continue
+	[[ $i =~ '.js' ]] && continue
 	[[ $i != "index.md" ]] && TOC="--table-of-contents --toc-depth=1" || TOC=""
 	if [[ $i == "index.md" ]]; then
 		pandoc views/$i -f gfm --template views/template_index.html $TOC -s -o ${i%.*}.html
@@ -26,3 +27,6 @@ for i in $(ls *.html); do
 	sed -i 's;<section;<div;g' "$i"
 	sed -i 's;</section;</div;g' "$i"
 done
+
+echo "Done!"
+

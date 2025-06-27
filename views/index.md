@@ -2,30 +2,30 @@
 title: Home
 ---
 
-<div class="home container-fluid" id="card1">
+<section class="home container-fluid" id="card1">
 
-  # Welcome
+  # Welcome!
 
 
-</div>
+</section>
 
-<div class="home container-fluid" id="card2">
+<section class="home container-fluid" id="card2">
 
   # Learn to Fly!
 
 
-</div>
+</section>
 
-<div class="home container-fluid" id="card3">
+<section class="home container-fluid" id="card3">
 
   # Travel With Us!
 
 
-</div>
+</section>
 
-<div class="home container-fluid" id="card4">
+<section class="home container-fluid" id="card4">
 
   # Join the Club.
 
 
-</div>
+</section>

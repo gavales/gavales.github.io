@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-  <title>$title$</title>
+  <title>Resources</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://unpkg.com/htmx.org@2.0.4"
@@ -280,12 +280,8 @@
       <li> <a href="/"><img id="logo-narr" alt="VFC" src="/assets/logo.svg" style="width:10rem"></a> </li>
       <li>
         <div id="logo-wide" alt="VFC" style="font-size:2rem">
-          $if(title)$
-          $title$
-          $else$
-          Victoria Flying Club
-          $endif$
-        </div>
+                    Resources
+                  </div>
       </li>
     </ul>
     <ul>
@@ -305,16 +301,40 @@
   <br />
   <br />
 
-  $if(toc)$
-  <div class="container" id="TOC">
+    <div class="container" id="TOC">
     <p><b><em>On This Page</em></b></p>
-    $toc$
+    <ul>
+    <li><a href="#flight-planning" id="toc-flight-planning">Flight
+    Planning</a></li>
+    <li><a href="#weather" id="toc-weather">Weather</a></li>
+    <li><a href="#fleet-information" id="toc-fleet-information">Fleet
+    Information</a></li>
+    <li><a href="#rates--fees" id="toc-rates--fees">Rates &amp;
+    Fees</a></li>
+    </ul>
   </div>
-  $endif$
-
+  
   <div id="pagebody">
     <div class="container">
-      $body$
+      <div class="home container-fluid" id="card1">
+
+      <h1 id="flight-planning">Flight Planning</h1>
+      </div>
+
+      <div class="home container-fluid" id="card2">
+
+      <h1 id="weather">Weather</h1>
+      </div>
+
+      <div class="home container-fluid" id="card3">
+
+      <h1 id="fleet-information">Fleet Information</h1>
+      </div>
+
+      <div class="home container-fluid" id="card4">
+
+      <h1 id="rates--fees">Rates &amp; Fees</h1>
+      </div>
     </div>
   </div>
 </body>
