@@ -25,6 +25,11 @@
       --hslblue: 222, 98.1%;
       --hslred: 350, 85.2%;
       --hslwhite: #ffffff;
+      background-image: url("/assets/oldlogo-s.png");
+      background-size: min(80vw, 50rem);
+      background-position: center;
+      background-attachment: fixed;
+      font-variant-emoji: unicode;
     }
 
     [data-theme=light],
@@ -165,6 +170,13 @@
       #logo-shor {
         display: none;
       }
+
+      #TOC {
+        margin: 2rem;
+        margin-left: 6rem;
+        margin-right: 6rem;
+      }
+
     }
 
     @media screen and (max-width: 575px) {
@@ -207,14 +219,6 @@
 
     h4 {
       font-size: 1.15rem;
-    }
-
-    :root {
-      background-image: url("/assets/oldlogo-s.png");
-      background-size: min(80vw, 50rem);
-      background-position: center;
-      background-attachment: fixed;
-      font-variant-emoji: unicode;
     }
 
     #same {
@@ -301,8 +305,8 @@
   <br />
   <br />
 
-    <div class="container" id="TOC">
-    <p><b><em>On This Page</em></b></p>
+    <details id="TOC" open>
+    <summary> <em><b>On This Page</b></em> </summary>
     <ul>
     <li><a href="#your-motivation" id="toc-your-motivation">Your
     Motivation</a></li>
@@ -331,8 +335,9 @@
     id="toc-class-4-instructor-rating">Class 4 Instructor
     Rating</a></li>
     </ul>
-  </div>
+  </details>
   
+
   <div id="pagebody">
     <div class="container">
       <div class="grid">
@@ -856,20 +861,32 @@
 <br />
 <br />
 
-<foot id="mycard" role="group" style="font-size:0.8rem;box-shadow: none;margin-bottom:-1rem;padding:1rem;">
-  <div>
-    © Victoria Flying Club, 2025
+<foot class="home" id="mycard" role="group" style="font-size:0.8rem;box-shadow: none;padding:1rem;height:20rem">
+  <div style="width: 35%;">
+    <div>
+      <a href="https://www.privatetraininginstitutions.gov.bc.ca/" target="_blank"><img id="ptib" alt="PTIB"
+          src="/assets/ptib.png" style="height:5rem"></a>
+      <a href="https://www2.gov.bc.ca/gov/content/education-training/post-secondary-education/institution-resources-administration/education-quality-assurance"
+        target="_blank"><img id="ptib" alt="PTIB" src="/assets/ptib.png" style="height:5rem"></a>
+    </div>
+    <br />
+    Victoria Flying Club is designated by the BC EQA & PTIB, and regulated by the Private Training Institutions
+    Branch of the Ministry of Advanced Education, Skills & Training (PTIB).
   </div>
-  <div style="text-align: right">
-    <a style="text-decoration:none;font-weight:bold" class="contrast" href="mailto:info@flyvfc.com">📧
-      info@flyvfc.com</a><br />
-    <a style="text-decoration:none;font-weight:bold" class="contrast" href="tel:+12506562833">📞 (250)
-      656-2833</a><br />
-    <a style="text-decoration:none" class="contrast"
-      href="https://www.google.com/maps/place/1852+Canso+Rd+%23101,+North+Saanich,+BC+V8L+5V5/@48.645088,-123.4226627,781m/data=!3m1!1e3!4m5!3m4!1s0x548f6862d4675999:0x1a95b70ceba8eea7!8m2!3d48.645088!4d-123.4200931?entry=ttu&g_ep=EgoyMDI1MDIwMi4wIKXMDSoASAFQAw%3D%3D">
-      <img src="/assets/pin.svg" style="height: 1rem">
-      <em>101 - 1852 Canso Rd <br /> North Saanich, BC <br /> V8L 5V5</em>
-    </a>
+
+  <div style="width: 65%;">
+    <div style="text-align: right">
+      <a style="text-decoration:none;font-weight:bold" class="contrast" href="mailto:info@flyvfc.com">📧
+        info@flyvfc.com</a><br />
+      <a style="text-decoration:none;font-weight:bold" class="contrast" href="tel:+12506562833">📞 (250)
+        656-2833</a><br />
+      <a style="text-decoration:none" class="contrast"
+        href="https://www.google.com/maps/place/1852+Canso+Rd+%23101,+North+Saanich,+BC+V8L+5V5/@48.645088,-123.4226627,781m/data=!3m1!1e3!4m5!3m4!1s0x548f6862d4675999:0x1a95b70ceba8eea7!8m2!3d48.645088!4d-123.4200931?entry=ttu&g_ep=EgoyMDI1MDIwMi4wIKXMDSoASAFQAw%3D%3D">
+        <img src="/assets/pin.svg" style="height: 1rem">
+        <em>101 - 1852 Canso Rd <br /> North Saanich, BC <br /> V8L 5V5</em>
+      </a>
+      <br /><br /> © Victoria Flying Club, 2025
+    </div>
   </div>
 </foot>
 

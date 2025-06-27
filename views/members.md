@@ -6,7 +6,6 @@ title: For Members
 
 <div class="container" id="mycard">
 
-  # Sign In
 
 
 

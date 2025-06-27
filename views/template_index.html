@@ -25,7 +25,13 @@
       --hslblue: 222, 98.1%;
       --hslred: 350, 85.2%;
       --hslwhite: #ffffff;
+      background-image: url("/assets/oldlogo-s.png");
+      background-size: min(80vw, 50rem);
+      background-position: center;
+      background-attachment: fixed;
+      font-variant-emoji: unicode;
     }
+
 
     [data-theme=light],
     :root:not([data-theme=dark]) {
@@ -60,6 +66,12 @@
         #navbar {
           background: rgba(0, 0, 0);
         }
+
+        #mycard {
+          background: rgba(var(--rgbwhite), 0.01);
+          box-shadow: none;
+        }
+
       }
     }
 
@@ -99,6 +111,7 @@
 
     .home {
       scroll-snap-align: start;
+      scroll-snap-stop: normal;
       scroll-padding-top: 5rem;
       padding-top: 5rem;
       width: 100%;
@@ -127,6 +140,18 @@
       font-size: 4rem;
       font-style: italic;
     }
+
+    #mycard {
+      backdrop-filter: blur(20px);
+      background: rgba(255, 255, 255, 1.0);
+      margin: 2rem 0 2rem 0;
+      padding-top: 2rem;
+      box-shadow: none;
+      border-image: linear-gradient(90deg, rgba(var(--rgbwhite), 0.3), rgba(var(--rgbred), 0.3), rgba(var(--rgbblue), 0.3), rgba(var(--rgbred), 0.3), rgba(var(--rgbwhite), 0.3)) 1;
+      border-radius: 0px;
+      border-width: 2px 0 0 0;
+      border-style: solid;
+    }
   </style>
 
 </head>
@@ -149,35 +174,43 @@
   </nav>
 
   $if(toc)$
-  <div id="TOC">
-    <div class="container">
+  <details id="TOC">
+    <summary class="container">
       <p><b><em>On This Page</em></b></p>
-      $toc$
-    </div>
-  </div>
+    </summary>
+    $toc$
+  </details>
   $endif$
 
   $body$
 </body>
 
-<br />
-<br />
-<br />
-
-<foot id="mycard" role="group" style="font-size:0.8rem;box-shadow: none;margin-bottom:-1rem;padding:1rem;">
-  <div>
-    © Victoria Flying Club, 2025
+<foot class="home" id="mycard" role="group" style="font-size:0.8rem;box-shadow: none;padding:1rem;height:20rem">
+  <div style="width: 35%;">
+    <div>
+      <a href="https://www.privatetraininginstitutions.gov.bc.ca/" target="_blank"><img id="ptib" alt="PTIB"
+          src="/assets/ptib.png" style="height:5rem"></a>
+      <a href="https://www2.gov.bc.ca/gov/content/education-training/post-secondary-education/institution-resources-administration/education-quality-assurance"
+        target="_blank"><img id="ptib" alt="PTIB" src="/assets/ptib.png" style="height:5rem"></a>
+    </div>
+    <br />
+    Victoria Flying Club is designated by the BC EQA & PTIB, and regulated by the Private Training Institutions
+    Branch of the Ministry of Advanced Education, Skills & Training (PTIB).
   </div>
-  <div style="text-align: right">
-    <a style="text-decoration:none;font-weight:bold" class="contrast" href="mailto:info@flyvfc.com">📧
-      info@flyvfc.com</a><br />
-    <a style="text-decoration:none;font-weight:bold" class="contrast" href="tel:+12506562833">📞 (250)
-      656-2833</a><br />
-    <a style="text-decoration:none" class="contrast"
-      href="https://www.google.com/maps/place/1852+Canso+Rd+%23101,+North+Saanich,+BC+V8L+5V5/@48.645088,-123.4226627,781m/data=!3m1!1e3!4m5!3m4!1s0x548f6862d4675999:0x1a95b70ceba8eea7!8m2!3d48.645088!4d-123.4200931?entry=ttu&g_ep=EgoyMDI1MDIwMi4wIKXMDSoASAFQAw%3D%3D">
-      <img src="/assets/pin.svg" style="height: 1rem">
-      <em>101 - 1852 Canso Rd <br /> North Saanich, BC <br /> V8L 5V5</em>
-    </a>
+
+  <div style="width: 65%;">
+    <div style="text-align: right">
+      <a style="text-decoration:none;font-weight:bold" class="contrast" href="mailto:info@flyvfc.com">📧
+        info@flyvfc.com</a><br />
+      <a style="text-decoration:none;font-weight:bold" class="contrast" href="tel:+12506562833">📞 (250)
+        656-2833</a><br />
+      <a style="text-decoration:none" class="contrast"
+        href="https://www.google.com/maps/place/1852+Canso+Rd+%23101,+North+Saanich,+BC+V8L+5V5/@48.645088,-123.4226627,781m/data=!3m1!1e3!4m5!3m4!1s0x548f6862d4675999:0x1a95b70ceba8eea7!8m2!3d48.645088!4d-123.4200931?entry=ttu&g_ep=EgoyMDI1MDIwMi4wIKXMDSoASAFQAw%3D%3D">
+        <img src="/assets/pin.svg" style="height: 1rem">
+        <em>101 - 1852 Canso Rd <br /> North Saanich, BC <br /> V8L 5V5</em>
+      </a>
+      <br /><br /> © Victoria Flying Club, 2025
+    </div>
   </div>
 </foot>
 
