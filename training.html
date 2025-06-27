@@ -74,7 +74,7 @@
         }
 
         #mycard {
-          background: rgba(255, 255, 255, 0.01);
+          background: rgba(var(--rgbwhite), 0.01);
           box-shadow: none;
         }
 
@@ -84,7 +84,7 @@
         h4,
         navbar,
         logo-wide {
-          color: var(--pico-primary-background);
+          color: var(--rgbblue);
         }
 
       }
@@ -184,7 +184,7 @@
     h1 {
       font-style: italic;
       font-variant: small-caps;
-      background: linear-gradient(90deg, #cc0a00, #012c61, #012c61);
+      background: linear-gradient(90deg, var(--hexred), var(--hexblue), var(--hexblue));
       background-clip: text;
       color: transparent;
     }
@@ -192,7 +192,7 @@
     h2,
     h3,
     h4 {
-      color: var(--pico-primary);
+      color: var(--rgbblue);
     }
 
     h2 {
@@ -231,14 +231,14 @@
       margin: 2rem 0 2rem 0;
       padding-top: 2rem;
       box-shadow: none;
-      border-image: linear-gradient(90deg, rgba(255, 255, 255, 0.3), rgba(204, 10, 0, 0.3), rgba(1, 44, 97, 0.3), rgba(204, 10, 0, 0.3), rgba(255, 255, 255, 0.3)) 1;
+      border-image: linear-gradient(90deg, rgba(var(--rgbwhite), 0.3), rgba(var(--rgbred), 0.3), rgba(var(--rgbblue), 0.3), rgba(var(--rgbred), 0.3), rgba(var(--rgbwhite), 0.3)) 1;
       border-radius: 0px;
       border-width: 2px 0 0 0;
       border-style: solid;
     }
 
     #logo-wide {
-      color: var(--pico-primary);
+      color: var(--rgbblue);
       font-size: 2rem;
       font-weight: bold;
       font-style: italic;
@@ -258,12 +258,12 @@
       top: 0;
       width: 100%;
       z-index: 1000;
-      border-image: linear-gradient(90deg, #cc0a00, #012c61, #cc0a00) 1;
+      border-image: linear-gradient(90deg, var(--hexred), var(--hexblue), var(--hexred)) 1;
       border-radius: 5px;
       border-width: 0 0 3px 0;
       border-style: solid;
       transition: height 150ms;
-      background-color: rgba(255, 255, 255, 0.5);
+      background-color: rgba(var(--rgbwhite), 0.5);
     }
   </style>
 
