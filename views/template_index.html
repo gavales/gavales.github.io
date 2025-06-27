@@ -25,9 +25,14 @@
       --hslblue: 222, 98.1%;
       --hslred: 350, 85.2%;
       --hslwhite: #ffffff;
-      background: url("/assets/oldlogo-s.png") no-repeat center center/cover fixed;
-      background-size: min(80vw, 50rem);
       font-variant-emoji: unicode;
+    }
+
+    body::before {
+      background-image: url("/assets/oldlogo-s.png");
+      background-size: min(80vw, 50rem);
+      background-position: center;
+      background-attachment: fixed;
     }
 
 
