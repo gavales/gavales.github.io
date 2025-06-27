@@ -25,22 +25,12 @@
       --hslblue: 222, 98.1%;
       --hslred: 350, 85.2%;
       --hslwhite: #ffffff;
+      background-image: url("/assets/oldlogo-s.png");
+      background-size: min(80vw, 50rem);
+      background-position: center;
+      background-attachment: fixed;
       font-variant-emoji: unicode;
     }
-
-    body {
-      background-image: url("/assets/oldlogo-s.png");
-      background-attachment: fixed;
-    }
-
-    // body::before {
-    //   background-image: url("/assets/oldlogo-s.png");
-    //   background-size: min(80vw, 50rem);
-    //   background-position: center;
-    //   background-attachment: fixed;
-    //   content: '';
-    //   z-index: -1;
-    // }
 
 
     [data-theme=light],
@@ -63,7 +53,7 @@
 
     @media only screen and (prefers-color-scheme: dark) {
       :root:not([data-theme]) {
-        background-color: black;
+        background-color: rgb(0, 0, 0, 0.5);
         --pico-text-selection-color: rgba(var(--rgbblue), 0.25);
         --pico-primary: hsl(var(--hslblue), 29%);
         --pico-primary-background: hsl(var(--hslblue), 39%);
@@ -151,13 +141,21 @@
       font-style: italic;
     }
 
+    #same {
+      overflow: hidden;
+      float: left;
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
+    }
+
     #mycard {
       backdrop-filter: blur(20px);
       background: rgba(255, 255, 255, 1.0);
       margin: 2rem 0 2rem 0;
-      padding-top: 2rem;
+      padding-top: 1rem;
       box-shadow: none;
-      border-image: linear-gradient(90deg, rgba(var(--rgbwhite), 0.3), rgba(var(--rgbred), 0.3), rgba(var(--rgbblue), 0.3), rgba(var(--rgbred), 0.3), rgba(var(--rgbwhite), 0.3)) 1;
+      border-image: linear-gradient(90deg, rgba(var(--rgbwhite), 0.0), rgba(var(--rgbred), 0.5), rgba(var(--rgbblue), 0.5), rgba(var(--rgbred), 0.5), rgba(var(--rgbwhite), 0.0)) 1;
       border-radius: 0px;
       border-width: 2px 0 0 0;
       border-style: solid;

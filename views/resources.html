@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-  <title>Members</title>
+  <title>Resources</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://unpkg.com/htmx.org@2.0.4"
@@ -235,7 +235,7 @@
       margin: 2rem 0 2rem 0;
       padding-top: 2rem;
       box-shadow: none;
-      border-image: linear-gradient(90deg, rgba(var(--rgbwhite), 0.0), rgba(var(--rgbred), 0.5), rgba(var(--rgbblue), 0.5), rgba(var(--rgbred), 0.5), rgba(var(--rgbwhite), 0.0)) 1;
+      border-image: linear-gradient(90deg, rgba(var(--rgbwhite), 0.3), rgba(var(--rgbred), 0.3), rgba(var(--rgbblue), 0.3), rgba(var(--rgbred), 0.3), rgba(var(--rgbwhite), 0.3)) 1;
       border-radius: 0px;
       border-width: 2px 0 0 0;
       border-style: solid;
@@ -284,7 +284,7 @@
       <li> <a href="/"><img id="logo-narr" alt="VFC" src="/assets/logo.svg" style="width:10rem"></a> </li>
       <li>
         <div id="logo-wide" alt="VFC" style="font-size:2rem">
-                    Members
+                    Resources
                   </div>
       </li>
     </ul>
@@ -305,27 +305,41 @@
   <br />
   <br />
 
+    <details id="TOC" open>
+    <summary> <em><b>On This Page</b></em> </summary>
+    <ul>
+    <li><a href="#flight-planning" id="toc-flight-planning">Flight
+    Planning</a></li>
+    <li><a href="#weather" id="toc-weather">Weather</a></li>
+    <li><a href="#fleet-information" id="toc-fleet-information">Fleet
+    Information</a></li>
+    <li><a href="#rates--fees" id="toc-rates--fees">Rates &amp;
+    Fees</a></li>
+    </ul>
+  </details>
   
 
   <div id="pagebody">
     <div class="container">
-      <div class="grid">
+      <div class="home container-fluid" id="card1">
 
-      <article>
-      <iframe frameborder="no" height="800px" https:="" onload="tryToEnableWACookies(" src="https://vfc-members.wildapricot.org/widget/Sys/Profile" width="100%"></iframe><br />
-      </article>
-
-      <article>
-        <iframe frameborder="no" height="800px" https:="" onload="tryToEnableWACookies(" src="https://vfc-members.wildapricot.org/widget/join-us" width="100%"></iframe><br />
-      </article>
-
+      <h1 id="flight-planning">Flight Planning</h1>
       </div>
 
-      <script  type="text/javascript" language="javascript" src="https://vfc-members.wildapricot.org/Common/EnableCookies.js" ></script>
+      <div class="home container-fluid" id="card2">
 
-      <p>Powered by Wild Apricot
-      <a href="http://www.wildapricot.com/features" target="_blank">Membership
-      Software</a></p>
+      <h1 id="weather">Weather</h1>
+      </div>
+
+      <div class="home container-fluid" id="card3">
+
+      <h1 id="fleet-information">Fleet Information</h1>
+      </div>
+
+      <div class="home container-fluid" id="card4">
+
+      <h1 id="rates--fees">Rates &amp; Fees</h1>
+      </div>
     </div>
   </div>
 </body>

@@ -1,31 +1,41 @@
 ---
-title: Home
+title: Victoria Flying Club
 ---
 
-<section class="home container-fluid" id="card1">
+<section class="home container-fluid grid" id="card1">
+  <div>
 
-  # Welcome!
+  # Victoria Flying Club
 
+  ### _Incorporated 1946_
 
+  </div>
+  <div> <img id="same" src="/images/vfc2.jpg" alt="VFC 1"> </div>
 </section>
 
-<section class="home container-fluid" id="card2">
+<section class="home container-fluid grid" id="card2">
+  <div>
 
   # Learn to Fly!
 
-
+  </div>
+  <div> <img id="same" src="/images/vfc2.jpg" alt="VFC 1"> </div>
 </section>
 
-<section class="home container-fluid" id="card3">
+<section class="home container-fluid grid" id="card3">
+  <div>
 
   # Travel With Us!
 
-
+  </div>
+  <div> <img id="same" src="/images/vfc2.jpg" alt="VFC 1"> </div>
 </section>
 
-<section class="home container-fluid" id="card4">
+<section class="home container-fluid grid" id="card4">
+  <div>
 
   # Join the Club.
 
-
+  </div>
+  <div> <img id="same" src="/images/vfc2.jpg" alt="VFC 1"> </div>
 </section>

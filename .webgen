@@ -18,8 +18,10 @@ for i in $(ls views); do
 		pandoc views/$i -f gfm --template views/template_index.html $TOC -s -o ${i%.*}.html
 		continue
 	fi
+	if [[ $i =~ ".md" ]]; then
 	pandoc views/$i -f gfm --template views/template.html $TOC -s -o ${i%.*}.html
 	echo "     converted $i"
+	fi
 done
 
 for i in $(ls *.html); do
