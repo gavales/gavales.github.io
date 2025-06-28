@@ -93,7 +93,7 @@
     @media screen and (min-width: 1024px) {
       #same {
         height: 100%;
-        width: 60%;
+        width: 100%;
         -webkit-mask-image: -webkit-gradient(linear, left bottom, right bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
         mask-image: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
       }
@@ -101,7 +101,7 @@
 
     @media screen and (max-width: 1023px) {
       #same {
-        height: 50%;
+        height: 100%;
         width: 100%;
         -webkit-mask-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
         mask-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
@@ -151,7 +151,9 @@
     }
 
     h1 {
-      color: var(--hexblue);
+      background: linear-gradient(90deg, var(--hexred), var(--hexblue), var(--hexblue));
+      background-clip: text;
+      color: transparent;
       font-size: 4rem;
       font-style: italic;
     }
@@ -159,9 +161,7 @@
     #same {
       overflow: hidden;
       float: left;
-      width: 100%;
       object-fit: cover;
-      height: 100%;
     }
 
     .mycard {

@@ -93,7 +93,7 @@
     @media screen and (min-width: 1024px) {
       #same {
         height: 100%;
-        width: 60%;
+        width: 100%;
         -webkit-mask-image: -webkit-gradient(linear, left bottom, right bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
         mask-image: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
       }
@@ -101,7 +101,7 @@
 
     @media screen and (max-width: 1023px) {
       #same {
-        height: 50%;
+        height: 100%;
         width: 100%;
         -webkit-mask-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
         mask-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
@@ -151,7 +151,9 @@
     }
 
     h1 {
-      color: var(--hexblue);
+      background: linear-gradient(90deg, var(--hexred), var(--hexblue), var(--hexblue));
+      background-clip: text;
+      color: transparent;
       font-size: 4rem;
       font-style: italic;
     }
@@ -159,9 +161,7 @@
     #same {
       overflow: hidden;
       float: left;
-      width: 100%;
       object-fit: cover;
-      height: 100%;
     }
 
     .mycard {
@@ -188,7 +188,23 @@
     <div style="padding-top:2rem">
 
   <h1 id="victoria-flying-club">Victoria Flying Club</h1>
-  <h3 id="incorporated-1946"><em>Incorporated 1946</em></h3>
+  <h3 id="since-1946"><em>Since 1946</em></h3>
+    <br />
+    <br />
+
+  <p><button onclick="location.href='/members'" type="button" target="_blank"><em>Become
+  a Member!</em></button></p>
+  <p><button class="outline" onclick="location.href='mailto:info@flyvfc.com'" type="button"><img src="assets/mail.svg">
+  <a href="mailto:info@flyvfc.com">info@flyvfc.com</a></button>
+  <button class="outline" onclick="location.href='tel:+12506562833'" type="button"><img src="assets/phone.svg">
+  (250) 656 - 2833</button>
+  <button class="outline" onclick="location.href='https://www.google.com/maps/place/1852+Canso+Rd+%23101,+North+Saanich,+BC+V8L+5V5/@48.645088,-123.4226627,781m/data=!3m1!1e3!4m5!3m4!1s0x548f6862d4675999:0x1a95b70ceba8eea7!8m2!3d48.645088!4d-123.4200931?entry=ttu&g_ep=EgoyMDI1MDIwMi4wIKXMDSoASAFQAw%3D%3D'" type="button"><img src="assets/location.svg">
+  101 - 1852 Canso Rd, North Saanich, BC, V8L 5V5</button></p>
+  <h2
+  id="whether-its-a-career-move-a-new-hobby-or-you-crave-a-friendly-club-atmosphere-come-say-hi"><em>Whether
+  it's a career move, a new hobby, or you crave a friendly club
+  atmosphere, come say hi!</em></h2>
+  <h2 id="well-aim-to-help-you-"><em>We'll aim to help you ...</em></h2>
     </div>
     <div style="margin:-2em"> <img id="same" src="images/vfc2.jpg" alt="VFC 1"> </div>
   </div>
@@ -196,25 +212,28 @@
   <div class="mycard home container-fluid grid" id="card2">
     <div style="padding-top:2rem">
 
-  <h1 id="learn-to-fly">Learn to Fly!</h1>
+  <h1 id="-learn-to-fly-">... Learn to Fly ...</h1>
+  <p><a href="/training">... Learn to Fly</a></p>
     </div>
-    <div style="margin:-2em"> <img id="same" src="images/vfc2.jpg" alt="VFC 1"> </div>
+    <div style="margin:-2em"> <img id="same" src="images/xtztlf.jpg" alt="VFC 2"> </div>
   </div>
 
   <div class="mycard home container-fluid grid" id="card3">
     <div style="padding-top:2rem">
 
-  <h1 id="travel-with-us">Travel With Us!</h1>
+  <h1 id="-see-the-sights-">... See the Sights ...</h1>
+  <p><a href="/charters">See the Sights</a></p>
     </div>
-    <div style="margin:-2em"> <img id="same" src="images/vfc2.jpg" alt="VFC 1"> </div>
+    <div style="margin:-2em"> <img id="same" src="images/scenic.jpg" alt="VFC 3"> </div>
   </div>
 
   <div class="mycard home container-fluid grid" id="card4">
     <div style="padding-top:2rem">
 
-  <h1 id="join-the-club">Join the Club.</h1>
+  <h1 id="-join-the-club">... Join the Club!</h1>
+  <p><a href="/resources">Resources</a></p>
     </div>
-    <div style="margin:-2em"> <img id="same" src="images/vfc2.jpg" alt="VFC 1"> </div>
+    <div style="margin:-2em"> <img id="same" src="images/vfc2.jpg" alt="VFC 4"> </div>
   </div>
 </body>
 
