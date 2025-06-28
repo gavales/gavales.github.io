@@ -12,7 +12,7 @@ title: Victoria Flying Club
   <br />
   <br />
 
-  <button onclick="location.href='/members'" type="button" target="_blank">_Become a Member!_</button>
+  <button onclick="location.href='/members'" type="button" target="_blank">_Sign In_</button>
 
   <button class="outline" onclick="location.href='mailto:info@flyvfc.com'" type="button"><img src="assets/mail.svg"> info@flyvfc.com</button>
   <button class="outline secondary" onclick="location.href='tel:+12506562833'" type="button"><img src="assets/phone.svg"> (250) 656 - 2833</button>
@@ -63,9 +63,11 @@ title: Victoria Flying Club
 
   <br />
 
-  ### _The VFC Charter offers both Sightseeing Flights and private Charters to meet your specific needs.  Let us know how we can help you get where you need to go, and make some incredible memories along the way!_
-
   ## _There's no better way to experience the beauty of the west coast than from the air!_
+
+  <br />
+
+  ### _The VFC Charter offers both Sightseeing Flights and private Charters to meet your specific needs.  Let us know how we can help you get where you need to go, and make some incredible memories along the way!_
 
   <br />
 
@@ -82,7 +84,11 @@ title: Victoria Flying Club
 
   # ... Join the Club!
 
-  <a href="/resources">Resources</a>
+  <br/>
+
+  <button onclick="location.href='/members'" type="button" target="_blank">_Become A Member_</button>
+
+  <button onclick="location.href='/resources'" type="button" target="_blank">_Resources_</button>
 
   </div>
   <div style="overflow:hidden;margin:-2em"> <img id="same" src="images/vfc2.jpg" alt="VFC 4"> </div>

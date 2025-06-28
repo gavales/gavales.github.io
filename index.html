@@ -135,23 +135,23 @@
     }
 
     #card1 {
-      background: linear-gradient(90deg, rgba(var(--rgbblue), 0.25), rgba(var(--rgbred), 0.25));
+      background: linear-gradient(90deg, rgba(var(--rgbblue), 0.4), rgba(var(--rgbred), 0.4));
     }
 
     #card2 {
-      background: rgba(var(--rgbblue), 0.25);
+      background: rgba(var(--rgbblue), 0.4);
     }
 
     #card3 {
-      background: rgba(var(--rgbgreen), 0.25);
+      background: rgba(var(--rgbgreen), 0.4);
     }
 
     #card4 {
-      background: rgba(var(--rgbred), 0.25);
+      background: rgba(var(--rgbred), 0.4);
     }
 
     h1 {
-      background: linear-gradient(90deg, var(--hexred), var(--hexblue), var(--hexblue));
+      background: linear-gradient(90deg, var(--hexred), hsl(var(--hslblue), 35%));
       background-clip: text;
       color: transparent;
       font-size: 4rem;
@@ -191,8 +191,8 @@
     <br />
     <br />
 
-  <p><button onclick="location.href='/members'" type="button" target="_blank"><em>Become
-  a Member!</em></button></p>
+  <p><button onclick="location.href='/members'" type="button" target="_blank"><em>Sign
+  In</em></button></p>
   <p><button class="outline" onclick="location.href='mailto:info@flyvfc.com'" type="button"><img src="assets/mail.svg">
   <a href="mailto:info@flyvfc.com">info@flyvfc.com</a></button>
   <button class="outline secondary" onclick="location.href='tel:+12506562833'" type="button"><img src="assets/phone.svg">
@@ -251,16 +251,18 @@
 
     <br />
 
+  <h2
+  id="theres-no-better-way-to-experience-the-beauty-of-the-west-coast-than-from-the-air"><em>There's
+  no better way to experience the beauty of the west coast than from the
+  air!</em></h2>
+    <br />
+
   <h3
   id="the-vfc-charter-offers-both-sightseeing-flights-and-private-charters-to-meet-your-specific-needs-let-us-know-how-we-can-help-you-get-where-you-need-to-go-and-make-some-incredible-memories-along-the-way"><em>The
   VFC Charter offers both Sightseeing Flights and private Charters to
   meet your specific needs. Let us know how we can help you get where
   you need to go, and make some incredible memories along the
   way!</em></h3>
-  <h2
-  id="theres-no-better-way-to-experience-the-beauty-of-the-west-coast-than-from-the-air"><em>There's
-  no better way to experience the beauty of the west coast than from the
-  air!</em></h2>
     <br />
 
     <br />
@@ -275,7 +277,11 @@
     <div style="padding-top:2rem">
 
   <h1 id="-join-the-club">... Join the Club!</h1>
-  <p><a href="/resources">Resources</a></p>
+    <br/>
+
+  <p><button onclick="location.href='/members'" type="button" target="_blank"><em>Become
+  A Member</em></button></p>
+  <p><button onclick="location.href='/resources'" type="button" target="_blank"><em>Resources</em></button></p>
     </div>
     <div style="overflow:hidden;margin:-2em"> <img id="same" src="images/vfc2.jpg" alt="VFC 4"> </div>
   </div>
