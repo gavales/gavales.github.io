@@ -15,15 +15,15 @@ title: Victoria Flying Club
   <button onclick="location.href='/members'" type="button" target="_blank">_Become a Member!_</button>
 
   <button class="outline" onclick="location.href='mailto:info@flyvfc.com'" type="button"><img src="assets/mail.svg"> info@flyvfc.com</button>
-  <button class="outline" onclick="location.href='tel:+12506562833'" type="button"><img src="assets/phone.svg"> (250) 656 - 2833</button>
-  <button class="outline" onclick="location.href='https://www.google.com/maps/place/1852+Canso+Rd+%23101,+North+Saanich,+BC+V8L+5V5/@48.645088,-123.4226627,781m/data=!3m1!1e3!4m5!3m4!1s0x548f6862d4675999:0x1a95b70ceba8eea7!8m2!3d48.645088!4d-123.4200931?entry=ttu&g_ep=EgoyMDI1MDIwMi4wIKXMDSoASAFQAw%3D%3D'" type="button"><img src="assets/location.svg"> 101 - 1852 Canso Rd, North Saanich, BC, V8L 5V5</button>
+  <button class="outline secondary" onclick="location.href='tel:+12506562833'" type="button"><img src="assets/phone.svg"> (250) 656 - 2833</button>
+  <button class="outline contrast" onclick="location.href='https://www.google.com/maps/place/1852+Canso+Rd+%23101,+North+Saanich,+BC+V8L+5V5/@48.645088,-123.4226627,781m/data=!3m1!1e3!4m5!3m4!1s0x548f6862d4675999:0x1a95b70ceba8eea7!8m2!3d48.645088!4d-123.4200931?entry=ttu&g_ep=EgoyMDI1MDIwMi4wIKXMDSoASAFQAw%3D%3D'" type="button"><img src="assets/location.svg"> 101 - 1852 Canso Rd, North Saanich, BC, V8L 5V5</button>
 
 
-  ## _Whether it's a career move, a new hobby, or you crave a friendly club atmosphere, come say hi!_
+  ## _Whether you're planning for a career move, delving into a new hobby, or simply crave a friendly club atmosphere, come say hi!_
   ## _We'll aim to help you ..._
 
   </div>
-  <div style="margin:-2em"> <img id="same" src="images/vfc2.jpg" alt="VFC 1"> </div>
+  <div style="overflow:hidden;margin:-2em"> <img id="same" src="images/vfc2.jpg" alt="VFC 1"> </div>
 </section>
 
 <section class="mycard home container-fluid grid" id="card2">
@@ -31,20 +31,50 @@ title: Victoria Flying Club
 
   # ... Learn to Fly ...
 
-  <a href="/training">... Learn to Fly</a>
+  <br />
 
+  <br />
+
+  ### _At one of Canada's busiest airports, our students benefit from top-notch instruction on a standardized fleet of Cessna 172SP/R Model aircraft, in varied terrain._
+  ### _Learn to fly with VFC and enjoy our well-rounded, professional, flight training!_
+
+  <br />
+
+  <button onclick="location.href='/training'" type="button" target="_blank">_Learn More_</button>
+
+  <br />
+
+  Victoria Flying Club is regulated by the Private Training Institutions Branch of the Ministry of Advanced Education, Skills & Training (PTIB), and designated by the BC EQA & PTIB.
+  <br /> <br />
+  <a href=" https://www.privatetraininginstitutions.gov.bc.ca/" target="_blank"><img id="ptib" alt="PTIB"
+      src="assets/ptib.png" style="height:5rem"></a>
+  <a href="https://www2.gov.bc.ca/gov/content/education-training/post-secondary-education/institution-resources-administration/education-quality-assurance"
+    target="_blank"><img id="ptib" alt="PTIB" src="assets/bcedu.png" style="height:5rem"></a>
   </div>
-  <div style="margin:-2em"> <img id="same" src="images/xtztlf.jpg" alt="VFC 2"> </div>
+  <div style="overflow:hidden;margin:-2em"> <img id="same" src="images/xtztlf.jpg" alt="VFC 2"> </div>
 </section>
 
 <section class="mycard home container-fluid grid" id="card3">
   <div style="padding-top:2rem">
 
   # ... See the Sights ...
-  <a href="/charters">See the Sights</a>
+
+  <br />
+
+  <br />
+
+  ### _The VFC Charter offers both Sightseeing Flights and private Charters to meet your specific needs.  Let us know how we can help you get where you need to go, and make some incredible memories along the way!_
+
+  ## _There's no better way to experience the beauty of the west coast than from the air!_
+
+  <br />
+
+  <br />
+
+  <button onclick="location.href='/charters'" type="button" target="_blank">_Learn More_</button>
 
   </div>
-  <div style="margin:-2em"> <img id="same" src="images/scenic.jpg" alt="VFC 3"> </div>
+  <div style="overflow:hidden;margin:-2em"> <img id="same" src="images/scenic.jpg" alt="VFC 3"> </div>
 </section>
 
 <section class="mycard home container-fluid grid" id="card4">
@@ -55,5 +85,5 @@ title: Victoria Flying Club
   <a href="/resources">Resources</a>
 
   </div>
-  <div style="margin:-2em"> <img id="same" src="images/vfc2.jpg" alt="VFC 4"> </div>
+  <div style="overflow:hidden;margin:-2em"> <img id="same" src="images/vfc2.jpg" alt="VFC 4"> </div>
 </section>
