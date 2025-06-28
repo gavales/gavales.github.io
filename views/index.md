@@ -86,10 +86,12 @@ title: Victoria Flying Club
 
   <br/>
 
-  <button onclick="location.href='/members'" type="button" target="_blank">_Become A Member_</button>
+  ### _Do you want to take that first step into aviation?_
+  <button onclick="location.href='/members'" type="button" target="_blank">_Become A Member!_</button>
 
-  <button onclick="location.href='/resources'" type="button" target="_blank">_Resources_</button>
+  ### _Looking for specific information? Browse our..._
+  <button class="contrast" onclick="location.href='/resources'" type="button" target="_blank">_Resources_</button>
 
   </div>
-  <div style="overflow:hidden;margin:-2em"> <img id="same" src="images/vfc2.jpg" alt="VFC 4"> </div>
+  <div style="margin:-2em"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/jfKfPfyJRdk" title="lofi hip hop radio 📚 beats to relax/study to" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 </section>
