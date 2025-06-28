@@ -10,7 +10,7 @@ title: Victoria Flying Club
   ### _Incorporated 1946_
 
   </div>
-  <div> <img id="same" src="/images/vfc2.jpg" alt="VFC 1"> </div>
+  <div style="margin:-2em"> <img id="same" src="images/vfc2.jpg" alt="VFC 1"> </div>
 </section>
 
 <section class="mycard home container-fluid grid" id="card2">
@@ -19,7 +19,7 @@ title: Victoria Flying Club
   # Learn to Fly!
 
   </div>
-  <div> <img id="same" src="/images/vfc2.jpg" alt="VFC 1"> </div>
+  <div style="margin:-2em"> <img id="same" src="images/vfc2.jpg" alt="VFC 1"> </div>
 </section>
 
 <section class="mycard home container-fluid grid" id="card3">
@@ -28,7 +28,7 @@ title: Victoria Flying Club
   # Travel With Us!
 
   </div>
-  <div> <img id="same" src="/images/vfc2.jpg" alt="VFC 1"> </div>
+  <div style="margin:-2em"> <img id="same" src="images/vfc2.jpg" alt="VFC 1"> </div>
 </section>
 
 <section class="mycard home container-fluid grid" id="card4">
@@ -37,5 +37,5 @@ title: Victoria Flying Club
   # Join the Club.
 
   </div>
-  <div> <img id="same" src="/images/vfc2.jpg" alt="VFC 1"> </div>
+  <div style="margin:-2em"> <img id="same" src="images/vfc2.jpg" alt="VFC 1"> </div>
 </section>

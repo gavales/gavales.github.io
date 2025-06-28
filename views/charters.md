@@ -27,7 +27,7 @@ title: Charter Flights
 
   </div>
   <div>
-    <img id="same" src="/images/charter.jpg" alt="Charters" style="max-height:30rem">
+    <img id="same" src="images/charter.jpg" alt="Charters" style="max-height:30rem">
   </div>
 </div>
 
@@ -53,5 +53,5 @@ title: Charter Flights
   Get a glimpse of the oceanic gateways to 19th century Victoria by seeing and learning about the Discovery, Trial, Fisgard, and Race Rocks Lighthouses.
 
   </div>
-  <div> <img id="same" src="/images/scenic.jpg" alt="scenic"> </div>
+  <div> <img id="same" src="images/scenic.jpg" alt="scenic"> </div>
 </div>

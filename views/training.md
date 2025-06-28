@@ -136,7 +136,7 @@ e-transfer._
 </div>
 
 <div style="margin: auto;">
-  <a href="https://wwwapps.tc.gc.ca/saf-sec-sur/2/came-meac/l.aspx"><img style="width: 100%" src="/images/tccame.png" /></a>
+  <a href="https://wwwapps.tc.gc.ca/saf-sec-sur/2/came-meac/l.aspx"><img style="width: 100%" src="images/tccame.png" /></a>
 </div>
 
 </div>
@@ -238,7 +238,7 @@ Most people need an average of 55 hrs of flight time, which the below estimate i
 <br/>
 </div>
 <div>
-<img id="same" src="/images/rpp.jpg" />
+<img id="same" src="images/rpp.jpg" />
 </div>
 </div>
 
@@ -257,7 +257,7 @@ required for this rating.\
 
 </div>
 <div>
-<img id="same" style="height:30rem" src="/images/night.jpg" />
+<img id="same" style="height:30rem" src="images/night.jpg" />
 </div>
 </div>
 
@@ -277,7 +277,7 @@ sufficient knowledge and skills to fly safely in mountainous terrain.
 
 </div>
 <div>
-<img id="same" src="/images/mount1.jpg" />
+<img id="same" src="images/mount1.jpg" />
 </div>
 </div>
 
@@ -317,7 +317,7 @@ flight time gained after the PPL license:
 </div>
 
 <div>
-<img id="same" src="/images/haze.jpg" />
+<img id="same" src="images/haze.jpg" />
 </div>
 
 </div>
@@ -351,7 +351,7 @@ The average candidate needs approximately 12 hours of flight time.
 
 </div>
 <div>
-<img id="same" src="/images/hdp.jpg" />
+<img id="same" src="images/hdp.jpg" />
 </div>
 </div>
 
@@ -390,7 +390,7 @@ during their CPL training, 20 hrs of instrument time (including 10 hrs of simula
 
 </div>
 <div>
-<img id="same" src="/images/606066.jpg" />
+<img id="same" src="images/606066.jpg" />
 </div>
 </div>
 
@@ -431,6 +431,6 @@ ground school and flight time), the candidate may attempt the flight test with a
 
 </div>
 <div>
-<img id="same" src="/images/" />
+<img id="same" src="images/" />
 </div>
 </div>
