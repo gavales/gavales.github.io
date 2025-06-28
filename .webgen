@@ -10,17 +10,15 @@ RTLC="${ROOT}/local"
 cd $WBST
 
 date
+pandoc views/index.md -f gfm --template views/template_index.html $TOC -s -o index.html
 for i in $(ls views); do
 	[[ $i =~ "template" ]] && continue
 	[[ $i =~ '.js' ]] && continue
 	[[ $i != "index.md" ]] && TOC="--table-of-contents --toc-depth=1" || TOC=""
-	if [[ $i == "index.md" ]]; then
-		pandoc views/$i -f gfm --template views/template_index.html $TOC -s -o ${i%.*}.html
-		continue
-	fi
+	[[ $i == "index.md" ]] && continue
 	if [[ $i =~ ".md" ]]; then
-	pandoc views/$i -f gfm --template views/template.html $TOC -s -o ${i%.*}.html
-	echo "     converted $i"
+		pandoc views/$i -f gfm --template views/template.html $TOC -s -o ${i%.*}.html
+		echo "     converted $i"
 	fi
 done
 

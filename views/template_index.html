@@ -26,8 +26,8 @@
       --hslred: 350, 85.2%;
       --hslwhite: #ffffff;
       background-image: url("assets/oldlogo-s.png");
-      background-size: min(80vw, 50rem);
-      background-position: center;
+      background-size: 80vw;
+      background-position: left -100% bottom -100%;
       background-attachment: fixed;
       font-variant-emoji: unicode;
     }
@@ -85,13 +85,28 @@
       .grid {
         grid-template-columns: repeat(auto-fit, minmax(0%, 1fr));
       }
+
     }
 
     @media screen and (min-width: 1280px) {}
 
-    @media screen and (min-width: 1024px) {}
+    @media screen and (min-width: 1024px) {
+      #same {
+        height: 100%;
+        width: 60%;
+        -webkit-mask-image: -webkit-gradient(linear, left bottom, right bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
+        mask-image: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+      }
+    }
 
-    @media screen and (max-width: 1023px) {}
+    @media screen and (max-width: 1023px) {
+      #same {
+        height: 50%;
+        width: 100%;
+        -webkit-mask-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
+        mask-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+      }
+    }
 
     @media screen and (max-width: 575px) {}
 
@@ -150,10 +165,7 @@
     }
 
     .mycard {
-      backdrop-filter: blur(20px);
       background: rgba(255, 255, 255, 1.0);
-      // margin: 2rem 0 2rem 0;
-      padding-top: 1rem;
       box-shadow: none;
       border-image: linear-gradient(90deg, rgba(var(--rgbwhite), 0.0), rgba(var(--rgbred), 0.5), rgba(var(--rgbblue), 0.5), rgba(var(--rgbred), 0.5), rgba(var(--rgbwhite), 0.0)) 1;
       border-radius: 0px;

@@ -3,7 +3,7 @@ title: Victoria Flying Club
 ---
 
 <section class="mycard home container-fluid grid" id="card1">
-  <div>
+  <div style="padding-top:2rem">
 
   # Victoria Flying Club
 
@@ -14,7 +14,7 @@ title: Victoria Flying Club
 </section>
 
 <section class="mycard home container-fluid grid" id="card2">
-  <div>
+  <div style="padding-top:2rem">
 
   # Learn to Fly!
 
@@ -23,7 +23,7 @@ title: Victoria Flying Club
 </section>
 
 <section class="mycard home container-fluid grid" id="card3">
-  <div>
+  <div style="padding-top:2rem">
 
   # Travel With Us!
 
@@ -32,7 +32,7 @@ title: Victoria Flying Club
 </section>
 
 <section class="mycard home container-fluid grid" id="card4">
-  <div>
+  <div style="padding-top:2rem">
 
   # Join the Club.
 
