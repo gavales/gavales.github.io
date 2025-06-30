@@ -25,7 +25,7 @@
       --hslblue: 222, 98.1%;
       --hslred: 350, 85.2%;
       --hslwhite: #ffffff;
-      background-image: url("assets/oldlogo-s.png");
+      background-image: url("assets/oldlogo.svg");
       background-size: 80vw;
       background-position: left -100% bottom -100%;
       background-attachment: fixed;
@@ -53,7 +53,7 @@
 
     @media only screen and (prefers-color-scheme: dark) {
       :root:not([data-theme]) {
-        background-color: rgb(0, 0, 0, 0.5);
+        background-color: rgb(var(--rgbwhite), 0.001);
         --pico-text-selection-color: rgba(var(--rgbblue), 0.25);
         --pico-primary: hsl(var(--hslblue), 29%);
         --pico-primary-background: hsl(var(--hslblue), 39%);
@@ -149,6 +149,12 @@
       font-style: italic;
     }
 
+    h2,
+    h3 {
+      line-height: 150%;
+      word-spacing: 0.3rem;
+    }
+
     #same {
       float: left;
       object-fit: cover;
@@ -163,25 +169,35 @@
       border-style: solid;
     }
 
-    .scroll-down {
-      position: absolute;
-      left: 50%;
-      bottom: 3rem;
-      display: block;
-      text-align: center;
-      font-size: 20px;
+    .scroll1 {
+      position: relative;
+      left: calc(50vw - sqrt(3)*0.55rem);
+      bottom: 4rem;
       z-index: 100;
-      text-decoration: none;
-      text-shadow: 0;
-      width: 2rem;
-      height: 2rem;
-      border-bottom: 4px solid hsl(var(--hslblue), 45%);
-      border-right: 4px solid hsl(var(--hslblue), 45%);
-      z-index: 9;
-      left: 50%;
+      width: 3rem;
+      height: 7px;
+      background: rgb(var(--rgbwhite), 0.5);
+      backdrop-filter: invert(1);
       -webkit-transform: translate(-50%, 0%) rotate(45deg);
       -moz-transform: translate(-50%, 0%) rotate(45deg);
       transform: translate(-50%, 0%) rotate(45deg);
+      // -webkit-animation: fade_move_down 4s ease-in-out infinite;
+      // -moz-animation: fade_move_down 4s ease-in-out infinite;
+      // animation: fade_move_down 4s ease-in-out infinite;
+    }
+
+    .scroll2 {
+      position: relative;
+      left: calc(50vw + sqrt(3)*0.55rem);
+      bottom: calc(4rem + 7px);
+      z-index: 100;
+      width: 3rem;
+      height: 7px;
+      background: rgb(var(--rgbwhite), 0.5);
+      backdrop-filter: invert(1);
+      -webkit-transform: translate(-50%, 0%) rotate(-45deg);
+      -moz-transform: translate(-50%, 0%) rotate(-45deg);
+      transform: translate(-50%, 0%) rotate(-45deg);
       // -webkit-animation: fade_move_down 4s ease-in-out infinite;
       // -moz-animation: fade_move_down 4s ease-in-out infinite;
       // animation: fade_move_down 4s ease-in-out infinite;
@@ -207,10 +223,5 @@
 <!-- <div> © Victoria Flying Club, 2025 </div> -->
 <!-- <div> </div> -->
 <!-- </foot> -->
-
-
-
-<div class="scroll-down"></div>
-
 
 </html>
