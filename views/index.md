@@ -15,11 +15,10 @@ title: Victoria Flying Club
   <button onclick="location.href='/members'" type="button" target="_blank">_Sign In_</button>
 
   <button class="outline" onclick="location.href='mailto:info@flyvfc.com'" type="button"><img src="assets/mail.svg"> info@flyvfc.com</button>
-  <button class="outline secondary" onclick="location.href='tel:+12506562833'" type="button"><img src="assets/phone.svg"> (250) 656 - 2833</button>
-  <button class="outline contrast" onclick="location.href='https://www.google.com/maps/place/1852+Canso+Rd+%23101,+North+Saanich,+BC+V8L+5V5/@48.645088,-123.4226627,781m/data=!3m1!1e3!4m5!3m4!1s0x548f6862d4675999:0x1a95b70ceba8eea7!8m2!3d48.645088!4d-123.4200931?entry=ttu&g_ep=EgoyMDI1MDIwMi4wIKXMDSoASAFQAw%3D%3D'" type="button"><img src="assets/location.svg"> 101 - 1852 Canso Rd, North Saanich, BC, V8L 5V5</button>
+  <button class="outline" onclick="location.href='tel:+12506562833'" type="button"><img src="assets/phone.svg"> (250) 656 - 2833</button>
+  <button class="outline" onclick="location.href='https://www.google.com/maps/place/1852+Canso+Rd+%23101,+North+Saanich,+BC+V8L+5V5/@48.645088,-123.4226627,781m/data=!3m1!1e3!4m5!3m4!1s0x548f6862d4675999:0x1a95b70ceba8eea7!8m2!3d48.645088!4d-123.4200931?entry=ttu&g_ep=EgoyMDI1MDIwMi4wIKXMDSoASAFQAw%3D%3D'" type="button"><img src="assets/location.svg"> 101 - 1852 Canso Road, North Saanich, BC, V8L 5V5</button>
 
-
-  ## _Whether you're planning for a career move, delving into a new hobby, or simply crave a friendly club atmosphere, come say hi!_
+  ## _Whether you're planning for a career in aviation, delving into a new hobby, or crave a friendly club atmosphere, come say hi!_
   ## _We'll aim to help you ..._
 
   </div>
@@ -86,12 +85,14 @@ title: Victoria Flying Club
 
   <br/>
 
-  ### _Do you want to take that first step into aviation?_
+  <br/>
+
+  ### _Take that first step into aviation and ..._
   <button onclick="location.href='/members'" type="button" target="_blank">_Become A Member!_</button>
 
   ### _Looking for specific information? Browse our..._
-  <button class="contrast" onclick="location.href='/resources'" type="button" target="_blank">_Resources_</button>
+  <button class="outline" onclick="location.href='/resources'" type="button" target="_blank">_Resources_</button>
 
   </div>
-  <div style="margin:-2em"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/jfKfPfyJRdk" title="lofi hip hop radio 📚 beats to relax/study to" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+  <div id="webcam" style="margin:-2em"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/jfKfPfyJRdk" title="lofi hip hop radio 📚 beats to relax/study to" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 </section>
